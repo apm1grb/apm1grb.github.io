@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Developer Tree (aka Solution Tree) | BVMS UI Automation </title>
+    <title>Developer Tree | BVMS UI Automation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Developer Tree (aka Solution Tree) | BVMS UI Automation ">
+    <meta name="title" content="Developer Tree | BVMS UI Automation ">
     <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -77,19 +77,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="developer-tree-aka-solution-tree">Developer Tree (aka Solution Tree)</h1>
+<h1 id="developer-tree">Developer Tree</h1>
 
+<h2 id="folders-at-highest-level">Folders at highest level</h2>
+<p>Folder                  | what<code>s in &amp; Intention ------------------------|----------------------</code>.paket<code>| artifacts of our dependency management toolset named [**Paket**](https://fsprojects.github.io/Paket/)</code>cfg<code>| configuration items</code>data<code>| sample data and data sets to play around (in case the data are importand, consider to move to</code>cfg<code>) [</code>doc<code>](#Documentation) | documentation for the project, please read the section [Documentation](#Documentation)</code>packages<code>| extracted packages and tempory artifacts from **Paket** (not included into repository)</code>paket-files<code>| tempory artifacts from **Paket** (not included into repository) [</code>src`](#Solution)      | the source or <a href="#Solution">solution tree</a> containing the source code</p>
+<hr>
 <h2 id="solution">Solution</h2>
-<p>The Solution consists of these projects:</p>
+<p>The <code>src</code>-folder (aka solution tree) is the developer`s main part of the project.<br>
+It consists of these projects:</p>
 <ul>
 <li><p>DomainModel<br>
 Contains the (UI-)Domain classes of the <strong>Configuration Client</strong></p>
 </li>
-<li><p>ConfigClient.ConsoleApp<br>
-The runner to instantiate the <code>ExcelAdapter</code>.</p>
+<li><p>Utils<br>
+Contains some helper classes and extensions.</p>
 </li>
-<li><p>ConfigClient.ExcelAdapter<br>
-The ExcelAdapter is the bridge to configure the <strong>Config Client</strong> via an Excel sheet.</p>
+<li><p>Utils.Tests
+Unit tests to test the helper classes and extensions.</p>
 </li>
 <li><p>ConfigClient.Sdk<br>
 This project could be treated as an internal SDK for test developers to interact with UI elements (abstracts the UI).</p>
@@ -100,8 +104,29 @@ Unit tests for ConfigClient.Sdk</p>
 <li><p>ConfigClient.Api<br>
 API for high level interaction with the <strong>Config Client</strong> to address use cases.</p>
 </li>
+<li><p>ConfigClient.Api.Tests<br>
+Unit tests to test the API correctness as well as the entry point for automatic Use Case tests in the context of complete workflows driving the API</p>
+</li>
+<li><p>ConfigClient.ExcelAdapter<br>
+The ExcelAdapter is the bridge to configure the <strong>Config Client</strong> via an Excel sheet.</p>
+</li>
+<li><p>ConfigClient.ConsoleApp<br>
+The runner to instantiate the <code>ExcelAdapter</code>.</p>
+</li>
+<li><p>AutomationElements<br>
+Contains enhanced or new UI AutomationElements compared to the FlaUI project, for instance the <code>Spinner</code> control.</p>
+</li>
 </ul>
 <p>The disctinction beween the SDK and the API is the level of abstraction. SDK abstracts the UI, API abstracts an use case. To add a device it is one call in the API (<code>Add Device</code>) but it needs different steps of the UI which are triggered via the SDK (<code>Activate Device Pane</code>, <code>Select the device type in tree</code>, <code>setup the device properties</code>).</p>
+<hr>
+<h2 id="documentation">Documentation</h2>
+<p>see also <a href="Documentation.html">Documentation</a></p>
+<p>The <code>doc</code>-folder contains the project`s documentation. This documentation is built upon</p>
+<ul>
+<li>a Git sub-module to reference the project Wiki (sub-folder <code>wiki</code>)</li>
+<li>artifacts to configure the <strong>DocFX</strong> documentation system and temporary output from it (sub-folders <code>sdk</code>, <code>api</code> <code>sdk-api</code>)</li>
+<li>a Git sub-module with the static web-sites for the hosting platform (sub-folder <code>_site</code>)</li>
+</ul>
 </article>
           </div>
           

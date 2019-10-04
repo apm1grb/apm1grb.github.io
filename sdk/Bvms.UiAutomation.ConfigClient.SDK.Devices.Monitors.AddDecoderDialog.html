@@ -147,7 +147,7 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Monitors_AddDecoderDialog__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialog.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Monitors_AddDecoderDialog__ctor_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialog.#ctor(Window)">AddDecoderDialog(Window)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Monitors_AddDecoderDialog__ctor_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialog.#ctor(FlaUI.Core.AutomationElements.Window)">AddDecoderDialog(Window)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -165,7 +165,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Window</span></td>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
         <td><span class="parametername">window</span></td>
         <td></td>
       </tr>
@@ -235,7 +235,8 @@
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Monitors_AddDecoderDialog_EndDialog_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialog.EndDialog*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Monitors_AddDecoderDialog_EndDialog_Bvms_UiAutomation_ConfigClient_SDK_DialogCompletion_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialog.EndDialog(Bvms.UiAutomation.ConfigClient.SDK.DialogCompletion)">EndDialog(DialogCompletion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Quits the dialog with the given mode to quit.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -254,12 +255,29 @@
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.DialogCompletion.html">DialogCompletion</a></td>
         <td><span class="parametername">dialogCompletion</span></td>
-        <td></td>
+        <td><p>The dialog completion mode.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Dialog_EndDialog_Bvms_UiAutomation_ConfigClient_SDK_DialogCompletion_">Dialog.EndDialog(DialogCompletion)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>Safety net to protect againt changed enumerations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Monitors_AddDecoderDialog_GetDeviceName_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialog.GetDeviceName*"></a>
