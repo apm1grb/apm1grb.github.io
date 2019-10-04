@@ -157,7 +157,7 @@ the landing page for the <strong>DocFX</strong> generated online documentation</
 </ul>
 <h2 id="docfx">DocFX</h2>
 <p>To process the content of these sources we use <strong>DocFX</strong> which is the successor of <strong>SHFB</strong> (Sandcastle Help File Builder). DocFX is platform-agnostic and runs perfectly also under .NET Core. <strong>DocFX</strong> creates static web-sites which can easily hosted somewhere.</p>
-<p>To update the documenation whese steps are essential:</p>
+<p>To update the documenation these steps are essential:</p>
 <ol>
 <li>Update the worktree to the latest stand of the Wiki content</li>
 <li>Extract the XML metadata of the source code (the XML comment) with <strong>DocFX</strong></li>
@@ -165,18 +165,33 @@ the landing page for the <strong>DocFX</strong> generated online documentation</
 <li>Commit the output of <strong>DocFX</strong> to the &quot;online documentation&quot; repository connected to hoster</li>
 <li>Push this &quot;online documentation&quot; repository</li>
 </ol>
+<p>Follow the next sections to do that:</p>
 <h3 id="update-the-worktree">Update the worktree</h3>
 <ol>
-<li>Open <strong>Git Bash</strong> in/with sub-folder <code>wiki</code></li>
+<li>Open <strong>Git Bash</strong> in/with sub-folder <code>.../doc/wiki/</code></li>
 <li>Run command <code>git fetch</code> to get the latest stand into your local repository</li>
-<li>Run command <code>git status</code> to ensure that nothing is uncommited and the local and remote branch are at the latest stand</li>
-</ol>
+<li>Run command <code>git status</code> to ensure that nothing is uncommited and the local and remote branch are at the latest stand
 <ul>
 <li>the output should be something like: <code>Your branch is up to date with 'origin/wikiMaster'.</code></li>
 <li>if not: stop further processing and first commit changes, rebase, ...</li>
 </ul>
-<ol>
+</li>
 <li>Run command <code>Git pull --ff-only</code> to get the latest stand in your worktreee</li>
+</ol>
+<h3 id="extract-the-xml-metadata--process-the-documentation-input">Extract the XML metadata &amp; process the documentation input</h3>
+<p>For the following steps the <strong>DocFX</strong> toolset needs to be installed on your machine.<br>
+Use <strong>Chocolatey</strong> with <code>choco install docfx</code></p>
+<ol>
+<li>Open **Command Prompt&quot; in/with sub-folder <code>.../doc/</code></li>
+<li>Run command <code>docfx metadata doc\docfx.json -o doc</code> to extract the metadata of the source code</li>
+<li>Run command <code>docfx build .\doc\docfx.json</code> to create the static web-sites</li>
+</ol>
+<h3 id="publish-the-updated-documentation">Publish the updated documentation</h3>
+<p>To have the updated documentation online available the repository containing the static web-pages must be updated and pushed.</p>
+<ol>
+<li>Open <strong>Git Bash</strong> in/with sub-folder <code>.../doc/_site_/</code></li>
+<li>Run command <code>git commit -am &quot;update DocFX documentation&quot;</code> to commit the changes</li>
+<li>Run command <code>git push</code> to update the remote</li>
 </ol>
 </article>
           </div>
