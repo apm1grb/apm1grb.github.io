@@ -89,10 +89,30 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">DevicesPageObject</span></div>
+    <div class="level1"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></div>
+    <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageComponent</span></div>
+    <div class="level3"><span class="xref">DevicesPageObject</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.SaveScreenshot(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.GetScreenshotName()</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.ParentWindow</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.FindElement&lt;TElement&gt;(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.GetButtonByText(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.FindTree(System.String)</span>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -119,7 +139,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DevicesPageObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class DevicesPageObject : PageComponent</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -132,7 +152,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DevicesPageObject(Window window)</code></pre>
+    <pre><code class="lang-csharp hljs">public DevicesPageObject(Window parentWindow)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -146,8 +166,8 @@
     <tbody>
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
-        <td><span class="parametername">window</span></td>
-        <td><p>The (main) window of the application.</p>
+        <td><span class="parametername">parentWindow</span></td>
+        <td><p>The (main) parentWindow of the application.</p>
 </td>
       </tr>
     </tbody>
@@ -156,14 +176,13 @@
   </h3>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_DeviceTree_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.DeviceTree*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_DeviceTree" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.DeviceTree">DeviceTree</h4>
-  <div class="markdown level1 summary"><p>Gets the DeviceTree <span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span>.</p>
-</div>
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_Context_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.Context*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_Context" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AutomationElement DeviceTree { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected override AutomationElement Context { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,11 +195,12 @@
     <tbody>
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
-        <td><p>The device tree.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.Context</span></div>
   <h3 id="methods">Methods
   </h3>
   
@@ -208,6 +228,82 @@
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></td>
         <td><span class="parametername">device</span></td>
         <td><p>The device to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_ConfigureCommunicationDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.ConfigureCommunicationDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_ConfigureCommunicationDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_CommunicationDevices_CommunicationBase_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_CommunicationDevices_Email__Bvms_UiAutomation_ConfigClient_DomainModel_Devices_CommunicationDevices_EmailConfigurationMask_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.ConfigureCommunicationDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Email},Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.EmailConfigurationMask)">ConfigureCommunicationDevice(CommunicationBase&lt;Email&gt;, EmailConfigurationMask)</h4>
+  <div class="markdown level1 summary"><p>Configures a communication device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfigureCommunicationDevice(CommunicationBase&lt;Email&gt; communicationBase, EmailConfigurationMask mask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase-1.html">CommunicationBase</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Email.html">Email</a>&gt;</td>
+        <td><span class="parametername">communicationBase</span></td>
+        <td><p>The base class <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase-1.html">CommunicationBase&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.EmailConfigurationMask.html">EmailConfigurationMask</a></td>
+        <td><span class="parametername">mask</span></td>
+        <td><p>The mask to define which elements of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.EmailConfigurationPane.html">EmailConfigurationPane</a> should be set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_ConnectMonitorGroupWithDecoder_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.ConnectMonitorGroupWithDecoder*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_ConnectMonitorGroupWithDecoder_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_Decoder_System_Int32_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.ConnectMonitorGroupWithDecoder(System.String,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder,System.Int32)">ConnectMonitorGroupWithDecoder(String, Decoder, Int32)</h4>
+  <div class="markdown level1 summary"><p>Connects the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html">MonitorGroup</a> with a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder.html">Decoder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConnectMonitorGroupWithDecoder(string monitorGroupName, Decoder decoder, int monitorNumber = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">monitorGroupName</span></td>
+        <td><p>Name of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html">MonitorGroup</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">decoder</span></td>
+        <td><p>The <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder.html">Decoder</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">monitorNumber</span></td>
+        <td><p>The number of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Monitor.html">Monitor</a> to connect.</p>
 </td>
       </tr>
     </tbody>

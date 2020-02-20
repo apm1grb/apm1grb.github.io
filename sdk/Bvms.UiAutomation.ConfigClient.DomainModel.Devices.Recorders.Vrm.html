@@ -89,8 +89,9 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.html">Device</a></div>
-    <div class="level2"><span class="xref">Vrm</span></div>
+    <div class="level1"><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html">Device</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.html">Vrm</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html">VideoDeviceBase</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.html">Vrm</a>&gt;</div>
+    <div class="level3"><span class="xref">Vrm</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -99,7 +100,25 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_DeviceName">Device.DeviceName</a>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_IpAddress">VideoDeviceBase&lt;Vrm&gt;.IpAddress</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_Port">VideoDeviceBase&lt;Vrm&gt;.Port</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_SecuredPort">VideoDeviceBase&lt;Vrm&gt;.SecuredPort</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_Credentials">VideoDeviceBase&lt;Vrm&gt;.Credentials</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_PasswordDisplaying">VideoDeviceBase&lt;Vrm&gt;.PasswordDisplaying</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_ConnectionSecurity">VideoDeviceBase&lt;Vrm&gt;.ConnectionSecurity</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_DeviceName">Device&lt;Vrm&gt;.DeviceName</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -127,91 +146,10 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.DomainModel.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Vrm : Device, IDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class Vrm : VideoDeviceBase&lt;Vrm&gt;, IDevice</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_ConnectionSecurity_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.ConnectionSecurity*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_ConnectionSecurity" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.ConnectionSecurity">ConnectionSecurity</h4>
-  <div class="markdown level1 summary"><p>Gets the connection security.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConnectionSecurity? ConnectionSecurity { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a>&gt;</td>
-        <td><p>The connection security.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_Credentials_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.Credentials*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_Credentials" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.Credentials">Credentials</h4>
-  <div class="markdown level1 summary"><p>Gets the credentials.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Credentials Credentials { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Credentials.html">Credentials</a></td>
-        <td><p>The credentials.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_IpAddress_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.IpAddress*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_IpAddress" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.IpAddress">IpAddress</h4>
-  <div class="markdown level1 summary"><p>Gets the IP address.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string IpAddress { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The ip address.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_MasterVrm_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.MasterVrm*"></a>
@@ -241,16 +179,14 @@
   </table>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_PasswordDisplaying_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.PasswordDisplaying*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_PasswordDisplaying" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.PasswordDisplaying">PasswordDisplaying</h4>
-  <div class="markdown level1 summary"><p>
-Gets the password displaying.
-</p>
+  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_Pools_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.Pools*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_Pools" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.Pools">Pools</h4>
+  <div class="markdown level1 summary"><p>Gets the list of pools.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PasswordDisplaying? PasswordDisplaying { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Pool&gt; Pools { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -262,62 +198,8 @@ Gets the password displaying.
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying.html">PasswordDisplaying</a>&gt;</td>
-        <td><p>The password displaying.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_Port_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.Port*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_Port" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.Port">Port</h4>
-  <div class="markdown level1 summary"><p>Gets the port.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? Port { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><p>The port.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_SecuredPort_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.SecuredPort*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_SecuredPort" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.SecuredPort">SecuredPort</h4>
-  <div class="markdown level1 summary"><p>Gets the secured port.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? SecuredPort { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><p>The secured port.</p>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Pool.html">Pool</a>&gt;</td>
+        <td><p>The list of pools.</p>
 </td>
       </tr>
     </tbody>
@@ -351,6 +233,87 @@ Gets the password displaying.
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_AddPool_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.AddPool*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_AddPool_System_String_System_Int32_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_RecordingPreferenceMode_System_Int32_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_SecondaryTargetUsage_System_Int32_System_Boolean_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.AddPool(System.String,System.Int32,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.RecordingPreferenceMode,System.Int32,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.SecondaryTargetUsage,System.Int32,System.Boolean)">AddPool(String, Int32, RecordingPreferenceMode, Int32, SecondaryTargetUsage, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates and adds a pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pool AddPool(string poolName = &quot;Pool 0&quot;, int identification = 0, RecordingPreferenceMode recordingPreferenceMode = RecordingPreferenceMode.Automatic, int sanityCheckPeriod = 2, SecondaryTargetUsage secondaryTargetUsage = SecondaryTargetUsage.Off, int blockReservationTime = 4, bool allowLargeLuns = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">poolName</span></td>
+        <td><p>Name of the pool.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">identification</span></td>
+        <td><p>The identification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.RecordingPreferenceMode.html">RecordingPreferenceMode</a></td>
+        <td><span class="parametername">recordingPreferenceMode</span></td>
+        <td><p>The recording preference mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sanityCheckPeriod</span></td>
+        <td><p>The sanity check period.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.SecondaryTargetUsage.html">SecondaryTargetUsage</a></td>
+        <td><span class="parametername">secondaryTargetUsage</span></td>
+        <td><p>The secondary target usage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">blockReservationTime</span></td>
+        <td><p>The block reservation time.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowLargeLuns</span></td>
+        <td><p>if set to <code>true</code> [allow large luns].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Pool.html">Pool</a></td>
+        <td><p>The new created pool.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vrm_Create_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.Create*"></a>
@@ -449,7 +412,7 @@ Gets the password displaying.
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
-      <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.html">Device</a></div>
+      <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html">Device</a>&lt;T&gt;</div>
   </div>
 </article>
           </div>

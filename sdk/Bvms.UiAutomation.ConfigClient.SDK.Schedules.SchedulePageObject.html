@@ -83,15 +83,36 @@
   
   <h1 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject" class="text-break">Class SchedulePageObject
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A <span class="xref">Bvms.UiAutomation.SDK.Commons.PageComponent</span> to configure a recording.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">SchedulePageObject</span></div>
+    <div class="level1"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></div>
+    <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageComponent</span></div>
+    <div class="level3"><span class="xref">SchedulePageObject</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.SaveScreenshot(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.GetScreenshotName()</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.ParentWindow</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.FindElement&lt;TElement&gt;(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.GetButtonByText(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.FindTree(System.String)</span>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -118,7 +139,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SchedulePageObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class SchedulePageObject : PageComponent</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -153,13 +174,13 @@
   </h3>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_HolidaysPage_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.HolidaysPage*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_HolidaysPage" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.HolidaysPage">HolidaysPage</h4>
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_Context_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.Context*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_Context" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.Context">Context</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AutomationElement HolidaysPage { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected override AutomationElement Context { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,113 +197,16 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_RecordingScheduleTree_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.RecordingScheduleTree*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_RecordingScheduleTree" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.RecordingScheduleTree">RecordingScheduleTree</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AutomationElement RecordingScheduleTree { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_ScheduleTables_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.ScheduleTables*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_ScheduleTables" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.ScheduleTables">ScheduleTables</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Tab ScheduleTables { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.Tab</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_WeekdaysPage_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.WeekdaysPage*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_WeekdaysPage" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.WeekdaysPage">WeekdaysPage</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AutomationElement WeekdaysPage { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_WeekdayTable_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.WeekdayTable*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_WeekdayTable" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.WeekdayTable">WeekdayTable</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AutomationElement WeekdayTable { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.Context</span></div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_GetActiveRecordingSchedule_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.GetActiveRecordingSchedule*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_GetActiveRecordingSchedule" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.GetActiveRecordingSchedule">GetActiveRecordingSchedule()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of the active recording schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -299,32 +223,24 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The name.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_GetRecordingScheduleNames_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.GetRecordingScheduleNames*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_GetRecordingScheduleNames" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.GetRecordingScheduleNames">GetRecordingScheduleNames()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetRecordingScheduleNames()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Description</th>
+        <th>Condition</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.NotImplementedException</span></td>
+        <td><p>Could not be easily implemented, because Select-Pattern is not available and no other feasible criterion is provided.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -332,7 +248,8 @@
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_RenameRecordingSchedule_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.RenameRecordingSchedule*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_RenameRecordingSchedule_System_String_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.RenameRecordingSchedule(System.String,System.String)">RenameRecordingSchedule(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Renames a recording schedule.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -351,12 +268,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">oldName</span></td>
-        <td></td>
+        <td><p>The old name.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">newName</span></td>
-        <td></td>
+        <td><p>The new name.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -364,7 +283,8 @@
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_SetActiveRecordingSchedule_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.SetActiveRecordingSchedule*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_SetActiveRecordingSchedule_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.SetActiveRecordingSchedule(System.String)">SetActiveRecordingSchedule(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the active recording schedule via name.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -383,7 +303,24 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the recording schedule.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Parameter {nameof(name)} is not a valid name for an entry in the Recording Schedules list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -391,7 +328,8 @@
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_SetActiveScheduleTable_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.SetActiveScheduleTable*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_SetActiveScheduleTable_Bvms_UiAutomation_ConfigClient_SDK_Schedules_ScheduleTablesEnumeration_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.SetActiveScheduleTable(Bvms.UiAutomation.ConfigClient.SDK.Schedules.ScheduleTablesEnumeration)">SetActiveScheduleTable(ScheduleTablesEnumeration)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the active schedule table.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -410,7 +348,24 @@
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.ScheduleTablesEnumeration.html">ScheduleTablesEnumeration</a></td>
         <td><span class="parametername">scheduleTables</span></td>
-        <td></td>
+        <td><p>The schedule tables.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Could not find tab for {nameof(scheduleTables)} - null</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -418,7 +373,8 @@
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_SetHolidaysTimeBlock_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.SetHolidaysTimeBlock*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_SetHolidaysTimeBlock_Bvms_UiAutomation_ConfigClient_DomainModel_Schedules_HolidaysTimeBlock_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.SetHolidaysTimeBlock(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.HolidaysTimeBlock)">SetHolidaysTimeBlock(HolidaysTimeBlock)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets a time block for holidays.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -437,7 +393,8 @@
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.HolidaysTimeBlock.html">HolidaysTimeBlock</a></td>
         <td><span class="parametername">holidaysTimeBlock</span></td>
-        <td></td>
+        <td><p>The holidays time block.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -445,7 +402,8 @@
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_SetWeekdaysTimeBlock_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.SetWeekdaysTimeBlock*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SchedulePageObject_SetWeekdaysTimeBlock_Bvms_UiAutomation_ConfigClient_DomainModel_Schedules_WeekdaysTimeBlock_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.SetWeekdaysTimeBlock(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdaysTimeBlock)">SetWeekdaysTimeBlock(WeekdaysTimeBlock)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets a time block for weekdays.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -464,10 +422,15 @@
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdaysTimeBlock.html">WeekdaysTimeBlock</a></td>
         <td><span class="parametername">weekdaysTimeBlock</span></td>
-        <td></td>
+        <td><p>The weekdays time block.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><span class="xref">Bvms.UiAutomation.SDK.Commons.PageComponent</span></div>
+  </div>
 </article>
           </div>
           

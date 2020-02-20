@@ -82,10 +82,10 @@
 <h2 id="main-classes">Main Classes</h2>
 <h3 id="devices">Devices</h3>
 <p>All devices have one common property - that is the name of the device. Depending on the device type a device is listed in the <em>DeviceTree</em> on the left side or a pane on the right side.</p>
-<p>All devices are derives from <code>IDevice</code> and <code>Device</code>.</p>
+<p>All devices are derived from <code>IDevice</code> and <code>Device</code>.</p>
 <h3 id="devicemanager">DeviceManager</h3>
-<p>To add and/or configure a device it is necessary to know how the device needs to be added. Some devices are added by using a context sensitive menu at the device type node in the tree others are added via button in the pane.</p>
-<p>A DeviceManager is responisible to handle that logic for a specific device. That means, each device needs a corresponding and individual DeviceManager. All these DeviceManagers are subclasses of <code>DeviceManager</code>.</p>
+<p>To add and/or configure a device it is necessary to know how the device needs to be added. Some devices are added by using a context-sensitive menu at the device type node in the tree others are added via a button in the pane.</p>
+<p>A <code>DeviceManager</code> is responsible to handle that logic for a specific device. That means each device needs a corresponding and individual DeviceManager. All these DeviceManagers are subclasses of <code>DeviceManager</code>.</p>
 <h3 id="adddevicedialog">AddDeviceDialog</h3>
 <p>During adding a device, most devices need some details specified via a dialog. These dialogs are subclasses of a class generic  <code>AddDeviceDialog&lt;T&gt; where T : IDevice</code>. All devices with needs further details captured via a dialog, should derive from <code>AddDeviceDialog&lt;T&gt;</code> and implement the necessary individual logic.</p>
 </article>

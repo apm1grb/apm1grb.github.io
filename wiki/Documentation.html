@@ -85,7 +85,7 @@
 <li>XML Comments<br>
 this is the in-source XML-based code documentation with triple slash (<code>/// &lt;summary&gt;...&lt;/summary&gt;</code>).</li>
 <li>Wiki<br>
-which is hosted on Auzure DevOps and based on MarkDown as the markup language and Git as the storage to interact with.<br>
+which is hosted on Azure DevOps and based on MarkDown as the markup language and Git as the storage to interact with.<br>
 It is located here: <a href="https://dev.azure.com/pas4/Bvms.UiAutomation/_wiki/wikis/Bvms.UiAutomation.wiki">Wiki for BVMS UI Automation</a></li>
 </ul>
 <p>To keep the documentation parts as most as possible together we use the technique of Git sub-modules. Git sub-modules allow a Git (&quot;main&quot;) repository to reference other (&quot;sub&quot;) repositories. This gives the possibility to divide a project into several containers (e.g. because of different life cycle or usage needs) but bundle them together at a top level.</p>
@@ -103,9 +103,9 @@ this Wiki is a Git repository itself containing the <strong>MarkDown</strong> wi
 <p>The <a href="DevTree.html">DevTree's</a> <code>doc</code>-folder contains the project`s documentation itself and the configuration files for <strong>DocFX</strong> to process the content.<br>
 The content and intention in detail:</p>
 <ul>
-<li>folder <code>doc</code> itself
+<li><p>folder <code>doc</code> itself</p>
 <ul>
-<li>artifacts to configure the <strong>DocFX</strong> documentation system
+<li><p>artifacts to configure the <strong>DocFX</strong> documentation system</p>
 <ul>
 <li><code>docfx-json</code><br>
 the <strong>DocFX</strong> project file</li>
@@ -117,72 +117,74 @@ the landing page for the <strong>DocFX</strong> generated online documentation</
 </li>
 </ul>
 </li>
-<li>sub-folder <code>wiki</code>
+<li><p>sub-folder <code>wiki</code></p>
 <ul>
-<li>this is the repository of the Git sub-module from <a href="https://dev.azure.com/pas4/Bvms.UiAutomation/_wiki/wikis/Bvms.UiAutomation.wiki">BVMS UI Automation project Wiki</a></li>
-<li>it was included via Git's <code>submodule</code> subcommand
-<pre><code class="lang-bash">git submodule add 
+<li><p>this is the repository of the Git sub-module from <a href="https://dev.azure.com/pas4/Bvms.UiAutomation/_wiki/wikis/Bvms.UiAutomation.wiki">BVMS UI Automation project Wiki</a></p>
+</li>
+<li><p>it was included via Git´s <code>submodule</code> sub-command</p>
+<pre><code class="lang-bash">git submodule add
   git@ssh.dev.azure.com:v3/&lt;organization&gt;/&lt;project&gt;/&lt;repository&gt;.wiki doc/wiki
 </code></pre>
 </li>
 </ul>
 </li>
-<li>sub-folder <code>sdk</code>
+<li><p>sub-folder <code>sdk</code></p>
 <ul>
 <li>contains the metadata for the SDK part of the documentation</li>
 <li>extracted from projects <code>ConfigClient.DomainModel</code> and <code>ConfigClient.Sdk</code></li>
 </ul>
 </li>
-<li>sub-folder <code>api</code>
+<li><p>sub-folder <code>api</code></p>
 <ul>
 <li>contains the metadata for the API part of the documentation</li>
 <li>extracted from projects <code>ConfigClient.Api</code> and <code>ConfigClient.ConsoleApp</code></li>
 </ul>
 </li>
-<li>sub-folder <code>sdk-api</code>
+<li><p>sub-folder <code>sdk-api</code></p>
 <ul>
 <li>artifacts to configure the <strong>DocFX</strong> documentation system</li>
-<li>merges content based on SDK and API metadate together</li>
+<li>merges content based on SDK and API metadata together</li>
 </ul>
 </li>
-<li>sub-folder <code>_site</code>
+<li><p>sub-folder <code>_site</code></p>
 <ul>
-<li>this is the repository of the Git sub-module with the static web-sites as an output of <strong>DocFX</strong></li>
-<li>the repository is connected to the web site hosting plattform (e.g. github.io as a remote)</li>
-</ul>
-<pre><code class="lang-bash">git submodule add 
-  git@&lt;alias&gt;:&lt;username&gt;/&lt;username&gt;.github.io.git doc/_site
+<li><p>this is the repository of the Git sub-module with the static web-sites as an output of <strong>DocFX</strong></p>
+</li>
+<li><p>the repository is connected to the web site hosting platform (e.g. github.io as a remote)</p>
+<pre><code class="lang-bash">git submodule add git@&lt;alias&gt;:&lt;username&gt;/&lt;username&gt;.github.io.git doc/_site
 </code></pre>
+</li>
+</ul>
 </li>
 </ul>
 <h2 id="docfx">DocFX</h2>
 <p>To process the content of these sources we use <strong>DocFX</strong> which is the successor of <strong>SHFB</strong> (Sandcastle Help File Builder). DocFX is platform-agnostic and runs perfectly also under .NET Core. <strong>DocFX</strong> creates static web-sites which can easily hosted somewhere.</p>
-<p>To update the documenation these steps are essential:</p>
+<p>To update the documentation these steps are essential:</p>
 <ol>
-<li>Update the worktree to the latest stand of the Wiki content</li>
+<li>Update the working tree to the latest stand of the Wiki content</li>
 <li>Extract the XML metadata of the source code (the XML comment) with <strong>DocFX</strong></li>
 <li>Process the documentation input with <strong>DocFX</strong> to create static web sites as output</li>
 <li>Commit the output of <strong>DocFX</strong> to the &quot;online documentation&quot; repository connected to hoster</li>
 <li>Push this &quot;online documentation&quot; repository</li>
 </ol>
 <p>Follow the next sections to do that:</p>
-<h3 id="update-the-worktree">Update the worktree</h3>
+<h3 id="update-the-working-tree">Update the working tree</h3>
 <ol>
 <li>Open <strong>Git Bash</strong> in/with sub-folder <code>.../doc/wiki/</code></li>
 <li>Run command <code>git fetch</code> to get the latest stand into your local repository</li>
-<li>Run command <code>git status</code> to ensure that nothing is uncommited and the local and remote branch are at the latest stand
+<li>Run command <code>git status</code> to ensure that nothing is uncommitted and the local and remote branch are at the latest stand
 <ul>
 <li>the output should be something like: <code>Your branch is up to date with 'origin/wikiMaster'.</code></li>
 <li>if not: stop further processing and first commit changes, rebase, ...</li>
 </ul>
 </li>
-<li>Run command <code>Git pull --ff-only</code> to get the latest stand in your worktreee</li>
+<li>Run command <code>Git pull --ff-only</code> to get the latest stand in your working tree</li>
 </ol>
 <h3 id="extract-the-xml-metadata--process-the-documentation-input">Extract the XML metadata &amp; process the documentation input</h3>
 <p>For the following steps the <strong>DocFX</strong> toolset needs to be installed on your machine.<br>
 Use <strong>Chocolatey</strong> with <code>choco install docfx</code></p>
 <ol>
-<li>Open **Command Prompt&quot; in/with sub-folder <code>.../doc/</code></li>
+<li>Open <strong>Command Prompt</strong> in/with sub-folder <code>.../doc/</code></li>
 <li>Run command <code>docfx metadata doc\docfx.json -o doc</code> to extract the metadata of the source code</li>
 <li>Run command <code>docfx build .\doc\docfx.json</code> to create the static web-sites</li>
 </ol>

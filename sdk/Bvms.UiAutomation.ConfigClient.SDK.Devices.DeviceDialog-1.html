@@ -89,26 +89,47 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html">Dialog</a></div>
-    <div class="level2"><span class="xref">DeviceDialog&lt;T&gt;</span></div>
-      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.AddDeviceDialog-1.html">AddDeviceDialog&lt;T&gt;</a></div>
+    <div class="level1"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></div>
+    <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO</span></div>
+    <div class="level3"><span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog</span></div>
+    <div class="level4"><span class="xref">DeviceDialog&lt;T&gt;</span></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.AddDeviceDialog-1.html">AddDeviceDialog&lt;T&gt;</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.EditDeviceDialog-1.html">EditDeviceDialog&lt;T&gt;</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Dialog_Window">Dialog.Window</a>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)</span>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Dialog_EndDialog_Bvms_UiAutomation_ConfigClient_SDK_DialogCompletion_">Dialog.EndDialog(DialogCompletion)</a>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.EndDialogCore()</span>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Dialog_FindElement__1_System_String_">Dialog.FindElement&lt;TElement&gt;(String)</a>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.OkButton</span>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Dialog_OkButton">Dialog.OkButton</a>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.CancelButton</span>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Dialog_CancelButton">Dialog.CancelButton</a>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO.Context</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.SaveScreenshot(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.GetScreenshotName()</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.ParentWindow</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.FindElement&lt;TElement&gt;(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.GetButtonByText(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.FindTree(System.String)</span>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -158,13 +179,12 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceDialog_1__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialog`1.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceDialog_1__ctor_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialog`1.#ctor(FlaUI.Core.AutomationElements.Window)">DeviceDialog(Window)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html">Dialog</a> class.</p>
-</div>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceDialog_1__ctor_FlaUI_Core_AutomationElements_Window_Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceDialogConfig__0__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialog`1.#ctor(FlaUI.Core.AutomationElements.Window,Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialogConfig{`0})">DeviceDialog(Window, DeviceDialogConfig&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected DeviceDialog(Window window)</code></pre>
+    <pre><code class="lang-csharp hljs">protected DeviceDialog(Window parentWindow, DeviceDialogConfig&lt;T&gt; config)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -178,8 +198,43 @@
     <tbody>
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
-        <td><span class="parametername">window</span></td>
-        <td><p>The parent window.</p>
+        <td><span class="parametername">parentWindow</span></td>
+        <td><p>The parent parentWindow.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialogConfig-1.html">DeviceDialogConfig</a>&lt;T&gt;</td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The configuration for this dialog.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceDialog_1_Config_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialog`1.Config*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceDialog_1_Config" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialog`1.Config">Config</h4>
+  <div class="markdown level1 summary"><p>Gets the configuration for a dialog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DeviceDialogConfig&lt;T&gt; Config { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialogConfig-1.html">DeviceDialogConfig</a>&lt;T&gt;</td>
+        <td><p>The configuration.</p>
 </td>
       </tr>
     </tbody>

@@ -83,7 +83,7 @@
   
   <h1 id="Bvms_UiAutomation_ConfigClient_SDK_Utils_MappingDeviceToDeviceManager" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Utils.MappingDeviceToDeviceManager" class="text-break">Class MappingDeviceToDeviceManager
   </h1>
-  <div class="markdown level0 summary"><p>Maps a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.html">Device</a> to its responsible <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html">DeviceManager</a></p>
+  <div class="markdown level0 summary"><p>Maps a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html">Device&lt;T&gt;</a> to its responsible <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html">DeviceManager</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -126,13 +126,13 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Utils_MappingDeviceToDeviceManager_GetDeviceManagerFor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Utils.MappingDeviceToDeviceManager.GetDeviceManagerFor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Utils_MappingDeviceToDeviceManager_GetDeviceManagerFor_System_Type_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Utils.MappingDeviceToDeviceManager.GetDeviceManagerFor(System.Type)">GetDeviceManagerFor(Type)</h4>
-  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html">DeviceManager</a> for a given type of a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.html">Device</a>.</p>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Utils_MappingDeviceToDeviceManager_GetDeviceManagerFor_System_Type_Bvms_UiAutomation_SDK_Commons_TreeRepository_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Utils.MappingDeviceToDeviceManager.GetDeviceManagerFor(System.Type,Bvms.UiAutomation.SDK.Commons.TreeRepository)">GetDeviceManagerFor(Type, TreeRepository)</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html">DeviceManager</a> for a given type of a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html">Device&lt;T&gt;</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DeviceManager GetDeviceManagerFor(Type type)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DeviceManager GetDeviceManagerFor(Type type, TreeRepository treeRepository)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,7 +147,13 @@
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
-        <td><p>The type of a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.html">Device</a>.</p>
+        <td><p>The type of a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html">Device&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Bvms.UiAutomation.SDK.Commons.TreeRepository</span></td>
+        <td><span class="parametername">treeRepository</span></td>
+        <td><p>The <span class="xref">Bvms.UiAutomation.SDK.Commons.TreeRepository</span> to use.</p>
 </td>
       </tr>
     </tbody>
@@ -163,7 +169,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html">DeviceManager</a></td>
-        <td><p><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.MessageOption.html">MessageOption</a> for the type of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.html">Device</a>.</p>
+        <td><p><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.MessageOption.html">MessageOption</a> for the type of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html">Device&lt;T&gt;</a>.</p>
 </td>
       </tr>
     </tbody>

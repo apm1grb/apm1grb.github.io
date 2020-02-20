@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Guidelines | BVMS UI Automation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Guidelines | BVMS UI Automation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="guidelines">Guidelines</h1>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#Naming">Naming</a></p>
+<ul>
+<li><a href="#Page-Object">Page Object</a><br>
+how to name the classes and parts of it</li>
+<li><a href="#Branches">Branches</a><br>
+naming the <strong>Git</strong> branches</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="naming">Naming</h2>
+<h3 id="page-object">Page Object</h3>
+<p>see also <a href="./Patterns#Page-Object-Pattern">Pattern: Page Object Pattern</a></p>
+<ul>
+<li>page objects (aka page components/fragments) should contain a partial class (with suffix <code>ElementMap</code>) containing the access to UI elements as private properties</li>
+<li>these properties must (or must not?) end with the UI element type (e.g. <code>private TextBox ServerNameTextBox</code>) Todo: clarify what better is (must or must not?)</li>
+<li>data input to page objects must follow the Fluent Interface design principle (must have for creational fashion!)</li>
+<li>data input must/should? be done via methods having the prefix <code>Set</code> to facilitate the fluent utilization (<code>fooDialog.SetPassword(&quot;p&quot;).SetUsername(&quot;u&quot;).SetPasswordShowing(false)</code>) Todo: clarify must/should</li>
+</ul>
+<h3 id="branches">Branches</h3>
+<ul>
+<li><p>default branches:</p>
+<ul>
+<li><code>develop</code><br>
+common branch to share information; similar to <code>Main</code> in <strong>TFVC</strong></li>
+<li><code>master</code><br>
+we don't care now; but important in the future; don't use it yet</li>
+</ul>
+</li>
+<li><p>individual/feature/realization branches follow this scheme <code>[branch-type]/[user-identification]/[backlog-item-number]/[context]</code>, where:</p>
+<ul>
+<li><p><code>branch type</code> could be one of the following values:</p>
+<ul>
+<li><code>feat</code><br>
+realize a backlog-item</li>
+<li><code>spike</code><br>
+play around with new stuff, prototype new ideas</li>
+<li><code>dev</code><br>
+under consideration; might be meaningful in case where we don't have a PBI which could be referenced</li>
+</ul>
+</li>
+<li><p><code>user-identification</code> is the prefix of the Bosch identifier (e.g. <code>mue</code> for Erika Mustermann</p>
+</li>
+<li><p><code>[backlog-item-number]</code> is the ID of that backlog item</p>
+</li>
+<li><p><code>[context]</code> short name of the backlog item to allow a easier understanding and avoid the necessity to dive into <strong>Azure DevOps Server</strong> to catch the topic/context</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="sample">Sample</h4>
+<ul>
+<li><p><code>feat/mas/248691/replace-timespan</code></p>
+<ul>
+<li>addresses the task <a href="https://tfsservice.bst-eng.com/tfs/OT1TFS/BVMS/_workitems/edit/248691">Replace TimeSpan.FromXyz(#) with #.Xyz()</a></li>
+<li>is realized from Stefan</li>
+</ul>
+</li>
+<li><p><code>dev/apm/convert-to-tree-structure</code></p>
+<ul>
+<li>doesn't belong to a backlog item (e.g. for a &quot;spontaneous&quot; work package)</li>
+</ul>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

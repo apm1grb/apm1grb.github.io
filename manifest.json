@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "c:/_projects/visualstudio/pas4/Bvms.UiAutomation/doc",
+  "source_base_path": "C:/_projects/visualstudio/pas4/Bvms.UiAutomation/doc",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,55 @@
       "output": {
         ".html": {
           "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.html",
-          "hash": "fss/I2zWTL8p2gvBLUPbuw=="
+          "hash": "keNM06qbk0RbVDCAof1imQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.ConfigurationManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.ConfigurationManager.html",
+          "hash": "Cf2yfeuiv7zQiKXwYBX8Xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.Devices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.Devices.html",
+          "hash": "ZPnMWa0XaORHzWUrQDuYfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.IConfigurationManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.IConfigurationManager.html",
+          "hash": "2VPGniCW+ne3cJkm8UV54A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.IDevices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.IDevices.html",
+          "hash": "dRsTpoHGWlLeuvEHlhyxig=="
         }
       },
       "is_incremental": false,
@@ -50,6 +98,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.ILogicalTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.ILogicalTree.html",
+          "hash": "levfVyh7mooPENtLAuiBQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.IResourceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.IResourceManager.html",
+          "hash": "6KbxxqNxZxlkgmQvoJ4tlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.ISchedules.yml",
       "output": {
         ".html": {
@@ -74,11 +146,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.LogicalTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.LogicalTree.html",
+          "hash": "Nx3peZEhTHTHZaa7HK+sGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.Resource.html",
+          "hash": "uwyUf76uqDg96Sa+pEvGRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Bvms.UiAutomation.ConfigClient.API.Schedules.yml",
       "output": {
         ".html": {
           "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.Schedules.html",
-          "hash": "JTBt8LQPAh29kiaEYI5c7A=="
+          "hash": "W9QI3JkYnpJLVFlbRekjlQ=="
         }
       },
       "is_incremental": false,
@@ -90,7 +186,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Bvms.UiAutomation.ConfigClient.API.html",
-          "hash": "43gtY8YsF+PUnNH7K2gNZg=="
+          "hash": "aUOboDyxbPuJndXYAFJZ6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.OpClient.Api.IBvmsApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.OpClient.Api.IBvmsApp.html",
+          "hash": "DSMCy44gQDVrcFCH/OHhXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.OpClient.Api.OperatorClientApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.OpClient.Api.OperatorClientApp.html",
+          "hash": "T7DJ2ddsbiu1PSk91HwUPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Bvms.UiAutomation.OpClient.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Bvms.UiAutomation.OpClient.Api.html",
+          "hash": "53UUUD/QdCrjOC4KZR2n9A=="
         }
       },
       "is_incremental": false,
@@ -126,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk-api/toc.html",
-          "hash": "SmG25DYc7utgppL6KXKTPA=="
+          "hash": "PdHcB4YAcc5ZffsYHBcrCw=="
         }
       },
       "is_incremental": false,
@@ -182,11 +314,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase-1.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase.html",
-          "hash": "v6IFGzsgdZNsekpuDh+RSw=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase-1.html",
+          "hash": "vpHX3gu5XmMMAWGt2/L76Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBaseConfiguration-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBaseConfiguration-1.html",
+          "hash": "0M1kekbUaePoGpVfcW3BWA=="
         }
       },
       "is_incremental": false,
@@ -246,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.DeviceOptions.html",
-          "hash": "VEpPq9v58YMjSn1Z5wSC+g=="
+          "hash": "b2rz2hduKOXVex/hfr9bYw=="
         }
       },
       "is_incremental": false,
@@ -258,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Email.html",
-          "hash": "RxToTl+xRurxoN9pb0NZbA=="
+          "hash": "BLBieN7CTf1TfI1HYn8Vsw=="
         }
       },
       "is_incremental": false,
@@ -282,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Gsm.html",
-          "hash": "waRBbv5UCgop3o4oIQilrg=="
+          "hash": "yx9S0t4ChrMcbaLhB0ORJg=="
         }
       },
       "is_incremental": false,
@@ -330,7 +474,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Sms.html",
-          "hash": "+Bl01BeNB4rWUgP3OOLtog=="
+          "hash": "Bo8Ykdmh4oNhGO4vnODrkg=="
         }
       },
       "is_incremental": false,
@@ -342,7 +486,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Smsc.html",
-          "hash": "kOJtjXFcPuFDOtMie6kdsA=="
+          "hash": "AgSz1gF2pTrc2TuzZhiCdg=="
         }
       },
       "is_incremental": false,
@@ -366,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.html",
-          "hash": "lUl+krFkIzNuxB9/waHBDw=="
+          "hash": "CaSWr1wmB0ymFdrdHuMECA=="
         }
       },
       "is_incremental": false,
@@ -386,11 +530,47 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device.html",
-          "hash": "VJm4sQe2vQZsVVTd71/yAw=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html",
+          "hash": "n2IIvaOk/ADkqOfFHFY4xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.DeviceConfiguration-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.DeviceConfiguration-1.html",
+          "hash": "1jSeQ22PY6d7Jt4FZmFQNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.EnterpriseSystems.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.EnterpriseSystems.Server.html",
+          "hash": "zaISDY7ReokyD2I0Xbh0Kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.EnterpriseSystems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.EnterpriseSystems.html",
+          "hash": "V/h0sDAcVCkm1fed5zMVNw=="
         }
       },
       "is_incremental": false,
@@ -414,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.BarcoMonitorWallDecoder.html",
-          "hash": "pn9eJu2J+i/z2IwX/h4v5w=="
+          "hash": "lTP/qCBbH+/aww0uCew7qw=="
         }
       },
       "is_incremental": false,
@@ -426,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder.html",
-          "hash": "fVc71QVl83iDbsw/Y8AYLQ=="
+          "hash": "VQwSe4qKhEgRZyloPNyFRQ=="
         }
       },
       "is_incremental": false,
@@ -438,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderFactory.html",
-          "hash": "MdOJkeVQOMgoUTF4i3gUEQ=="
+          "hash": "m5OfSwYgm3UQA/1EQaszDA=="
         }
       },
       "is_incremental": false,
@@ -458,11 +638,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Monitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Monitor.html",
+          "hash": "WplEIWiIDHzQuxW28FHSwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html",
+          "hash": "CFXtJlJG2SRy4PPiuqABfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorWall.yml",
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorWall.html",
-          "hash": "XEpxVcDQ0uJHPhXfJ0jx6Q=="
+          "hash": "O85QnZwIpw7gAxFa7lR5VA=="
         }
       },
       "is_incremental": false,
@@ -474,7 +678,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.NullDecoder.html",
-          "hash": "ms1KeyQ9xH0z1ddtW/iGhA=="
+          "hash": "YE5NOlHRPnMJx2NaCnmWTA=="
         }
       },
       "is_incremental": false,
@@ -498,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VideoJet1000Decoder.html",
-          "hash": "456viv/8/sw3dM7J52AY9A=="
+          "hash": "LKEcxQt+++rFRrWGN3tczA=="
         }
       },
       "is_incremental": false,
@@ -510,7 +714,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VideoJet10Decoder.html",
-          "hash": "k27UAZT1/aD+s7cQ5svycg=="
+          "hash": "5AW5dYRbLnb41nbvVW51fA=="
         }
       },
       "is_incremental": false,
@@ -522,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VideoJetDecoder3000Decoder.html",
-          "hash": "n+4pqT4rstl+mirBWDxLPg=="
+          "hash": "lchnbUtsBkqGjnVVzwyYvQ=="
         }
       },
       "is_incremental": false,
@@ -534,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VideoJetDecoder7000Decoder.html",
-          "hash": "XLL3C2jJa40CzI5RS1/kZg=="
+          "hash": "4c8pwx7lJeAXglMpDar4gA=="
         }
       },
       "is_incremental": false,
@@ -546,7 +750,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VideoJetDecoder8000Decoder.html",
-          "hash": "xFKza34KOPBqbe6lIybsSg=="
+          "hash": "F6a81j7v3/sE80vomKmL2w=="
         }
       },
       "is_incremental": false,
@@ -558,7 +762,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Vip10Decoder.html",
-          "hash": "WHwUnt5kpazxyBan15PCcQ=="
+          "hash": "1jjhqxwxM2LPiFkfuW3Q+A=="
         }
       },
       "is_incremental": false,
@@ -570,7 +774,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VipX1600XFAudioDecoder.html",
-          "hash": "JH6TiamB37M5qlq4H3P3fQ=="
+          "hash": "WELQYUu6k4zjN/tSFZQ3Lw=="
         }
       },
       "is_incremental": false,
@@ -582,7 +786,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VipXdAudioDecoder.html",
-          "hash": "Na0BKT4wLSuSBE/+GR0fEg=="
+          "hash": "zJOvBTOR6ICdYCQFaB1eaQ=="
         }
       },
       "is_incremental": false,
@@ -594,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VipXdDecoder.html",
-          "hash": "PKE6iYVHoqD3pLP9k/mpLw=="
+          "hash": "OJ7vkkLNCxhh4R5jSiUcng=="
         }
       },
       "is_incremental": false,
@@ -606,7 +810,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.VipXdhdDecoder.html",
-          "hash": "/KG2mA/okvLtzkBGVelZSA=="
+          "hash": "moqKOcCTF83WkJiKz+iEcQ=="
         }
       },
       "is_incremental": false,
@@ -618,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.html",
-          "hash": "W4rg5RWiDoCY9GNtU/iqwQ=="
+          "hash": "IX3WkPt5uUlnoXViuE5Wxg=="
         }
       },
       "is_incremental": false,
@@ -630,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.BrsDibos.html",
-          "hash": "CM267Enz88Bk4nlU13uLVQ=="
+          "hash": "bDVvc3gb6fmeNNXOZorzpg=="
         }
       },
       "is_incremental": false,
@@ -650,6 +854,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Encoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Encoder.html",
+          "hash": "1WoYW1m8xheIuqATfmOckg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying.yml",
       "output": {
         ".html": {
@@ -662,11 +878,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Pool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Pool.html",
+          "hash": "RWhNYxxGFp3O+BiU09vJsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.RecordingPreferenceMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.RecordingPreferenceMode.html",
+          "hash": "8lL9ashMsL3CGWOHDDBTcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Scsi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Scsi.html",
+          "hash": "yVh5AmskP78fq2sToLGCOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.SecondaryTargetUsage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.SecondaryTargetUsage.html",
+          "hash": "cqmpa0LsuHG9Qk0fj2rVYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html",
+          "hash": "JTtguJhm1j8bViil91Qe/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceConfigurationBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceConfigurationBase-1.html",
+          "hash": "9kJdWE+tUREjAa+nYzdw/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.yml",
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.html",
-          "hash": "/+1go5yC4caShye8RQ2NlQ=="
+          "hash": "ZPrdOugjQntsLQKwbOF3FA=="
         }
       },
       "is_incremental": false,
@@ -686,11 +974,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vsg.html",
+          "hash": "Q3mtf8wU4seZWtGJp79s4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.yml",
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.html",
-          "hash": "HNMG4ZcNqwn7UgOXGkw+Kw=="
+          "hash": "POP/+W3KMTpgytHwYdtEGg=="
         }
       },
       "is_incremental": false,
@@ -702,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.html",
-          "hash": "YeQhDHrlq6VH2Oq/tcqS1A=="
+          "hash": "wKOcePVqI0nJhMefpBB3Lw=="
         }
       },
       "is_incremental": false,
@@ -738,7 +1038,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.ExceptionDayTimeQuarter.html",
-          "hash": "0B3E03BPhlfTAQ2k2XwGIw=="
+          "hash": "O8dzVguKJNvbmHKERVweQA=="
         }
       },
       "is_incremental": false,
@@ -750,7 +1050,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.ExceptionDaysTimeBlock.html",
-          "hash": "zVI+JMmQPzGfbUreLJgqKA=="
+          "hash": "UI9lTbMTSFnwV1Uy5WNKyQ=="
         }
       },
       "is_incremental": false,
@@ -762,7 +1062,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.HolidayTimeQuarter.html",
-          "hash": "H9ELsNk+F2RMA/p9Q/3X5w=="
+          "hash": "Sp1kBzqK/hDFSfa9yWEe8g=="
         }
       },
       "is_incremental": false,
@@ -774,7 +1074,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.HolidaysTimeBlock.html",
-          "hash": "JMwz9couCF0ZxKWff0amVw=="
+          "hash": "YyGWaKgGUbj2BVwrh76Byw=="
         }
       },
       "is_incremental": false,
@@ -786,7 +1086,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.ScheduleUtils.html",
-          "hash": "0iCZlmOzb986Ls7RnxmvPQ=="
+          "hash": "PyuG4sxwLOltrLRPNZxpKQ=="
         }
       },
       "is_incremental": false,
@@ -822,7 +1122,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.Weekday.html",
-          "hash": "DKWCXHI1TjaMuinpBaUoCQ=="
+          "hash": "n4o78iQiKoU0Od62V8KNgA=="
         }
       },
       "is_incremental": false,
@@ -834,7 +1134,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdayTimeQuarter.html",
-          "hash": "vYVVc7lNbh8Kpla4iXHdwg=="
+          "hash": "G/ND9llH+6YLPTLwdpivcg=="
         }
       },
       "is_incremental": false,
@@ -846,7 +1146,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdaysSchedule.html",
-          "hash": "vmgV7w2tbMG0ZXdneilYnQ=="
+          "hash": "RcaQQf/AU0NDGb2HVvvRPg=="
         }
       },
       "is_incremental": false,
@@ -858,7 +1158,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdaysTimeBlock.html",
-          "hash": "ZUyjSX1fLPPFHUk9zimXFw=="
+          "hash": "ULfad190bBk3fhVQwW1QWg=="
         }
       },
       "is_incremental": false,
@@ -870,7 +1170,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.html",
-          "hash": "PVubqh7KLspPficfzju8Uw=="
+          "hash": "kc4Dr8wHOhDkulaKFQ9pRA=="
         }
       },
       "is_incremental": false,
@@ -890,11 +1190,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html",
+          "hash": "2XDrusn36kuFLO/LrmWGdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html",
+          "hash": "XCljtuW32A/lxW8r5R3kwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.BrsDibosFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.BrsDibosFactory.html",
+          "hash": "jtq46kZWzHpkCFBCfzG+xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ClickMode.yml",
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ClickMode.html",
-          "hash": "4wmuogY/v3NwDnXBd11JHA=="
+          "hash": "HQYgNARBsEVfM3FBfAUeJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html",
+          "hash": "nY40UfFIEn2KJ+49T4K6Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Configuration.html",
+          "hash": "XeAD8yw1BnCk/h6mdHm1yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.DecoderFactory2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.DecoderFactory2.html",
+          "hash": "+uUKCb2Gnf0XvL79N7jK9w=="
         }
       },
       "is_incremental": false,
@@ -906,7 +1278,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.AddDeviceDialog-1.html",
-          "hash": "GLrdlgDpC4oEhHb+jkVAdw=="
+          "hash": "cTWlj4fCAE6PXKD9VjYACQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.AddDeviceDialogConfig-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.AddDeviceDialogConfig-1.html",
+          "hash": "DRsJlm2am8DSjy3t2iDF6w=="
         }
       },
       "is_incremental": false,
@@ -918,7 +1302,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.AddEmailDialog.html",
-          "hash": "xlL0N/ekTBuj6yUn4CcHpQ=="
+          "hash": "PQKPC4p8riYRpCVAUr9qyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.AddEmailDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.AddEmailDialogConfig.html",
+          "hash": "EFwGuBF6BQex1MMzjsgIQA=="
         }
       },
       "is_incremental": false,
@@ -930,7 +1326,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.AddSmsDialog.html",
-          "hash": "bS5kB3GhrO+WPQD3ZKz5PQ=="
+          "hash": "DE2cXmIsvch42j3DqQVSHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.AddSmsDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.AddSmsDialogConfig.html",
+          "hash": "fVjRfuA+OBWI9hdHRqiefg=="
         }
       },
       "is_incremental": false,
@@ -942,7 +1350,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.EmailConfigurationPane.html",
-          "hash": "77YEPnYrFbtWhjw0Z+cNXA=="
+          "hash": "pA3y23L0hO2iYVb1RGFDHw=="
         }
       },
       "is_incremental": false,
@@ -954,7 +1362,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.EmailManager.html",
-          "hash": "Bhd9T2OB6DxR+dEAm9070w=="
+          "hash": "l0jFVERIhiwmchNLFmF8Fw=="
         }
       },
       "is_incremental": false,
@@ -966,7 +1374,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.GsmManager.html",
-          "hash": "Y+6gXoF0D9SWWv0V9lU2Iw=="
+          "hash": "YXhcDnFDbMl31YDCrPu7aA=="
         }
       },
       "is_incremental": false,
@@ -978,7 +1386,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.SmsCommunicationDeviceManager.html",
-          "hash": "Yv1VloJmYhq24Hfe0iZmvA=="
+          "hash": "We9kS1/fvVj0mbTr0vFdIg=="
         }
       },
       "is_incremental": false,
@@ -990,7 +1398,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.SmscManager.html",
-          "hash": "blTqFGvyMKWTzxGJh7r8MQ=="
+          "hash": "DUhPSNaEvGV69pfo2uE4Ww=="
         }
       },
       "is_incremental": false,
@@ -1002,7 +1410,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.html",
-          "hash": "EWw3gfa2IbpzQHc/eRVdPw=="
+          "hash": "+Y6otMdu8FZXsLObcHCtLw=="
         }
       },
       "is_incremental": false,
@@ -1014,7 +1422,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.ContextMenuManager.html",
-          "hash": "tNQOobKcu+tmHsxmqpN/bg=="
+          "hash": "R2Hd1u90CLzgV4aTfqo0jg=="
         }
       },
       "is_incremental": false,
@@ -1026,7 +1434,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialog-1.html",
-          "hash": "o9kIGmzV0/YGjLs4vHiX3w=="
+          "hash": "7+aAey5QqrL0EYDkxh5B+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialogConfig-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceDialogConfig-1.html",
+          "hash": "hXG63SHyXdtkCXSeUc0SDg=="
         }
       },
       "is_incremental": false,
@@ -1038,7 +1458,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html",
-          "hash": "2Y+05va1pAzZJyAOpsYvJg=="
+          "hash": "WUJgsPQAIe/hvr9kjfsfjg=="
         }
       },
       "is_incremental": false,
@@ -1050,7 +1470,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.html",
-          "hash": "/rXbz2D8sn/0qC3gcX9pYA=="
+          "hash": "7S32RDmz0A/U7wxyjs0ZhA=="
         }
       },
       "is_incremental": false,
@@ -1058,11 +1478,71 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EditDeviceDialog-1.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Dialog.html",
-          "hash": "b4san0spgMpKoH0u+iJD3A=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EditDeviceDialog-1.html",
+          "hash": "Jk6ydhdPHDPFJoyFeeUh4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.AddServerDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.AddServerDialog.html",
+          "hash": "7s+/JfYC96qeN3zefSLxbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.AddServerDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.AddServerDialogConfig.html",
+          "hash": "W/vteyDE1PQhW4wuJ+cPTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.ServerListPane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.ServerListPane.html",
+          "hash": "Zi78tVBE3wHlHJU1Tgxt0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.ServerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.ServerManager.html",
+          "hash": "4QaDlAb6q1eoARXXeYrPxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.html",
+          "hash": "LfUlqY9iSNWjeTDVb6t4NA=="
         }
       },
       "is_incremental": false,
@@ -1074,7 +1554,43 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialog.html",
-          "hash": "cEdKcoD7oJUWhDPWFccs9w=="
+          "hash": "aAn3SYwA6W5dvBi0DQOrlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddDecoderDialogConfig.html",
+          "hash": "kmZAc/RAC+JFTvOli+3EUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddMonitorGroupDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddMonitorGroupDialog.html",
+          "hash": "FHx1lHd3bvKt2yqXJ6ZL2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddMonitorGroupDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddMonitorGroupDialogConfig.html",
+          "hash": "Cc5IKofmD7QcnyfEvSnyAA=="
         }
       },
       "is_incremental": false,
@@ -1086,7 +1602,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddMonitorWallDialog.html",
-          "hash": "f840suZ7BWWYKLIQ9eln/w=="
+          "hash": "/L1w4UMybOJRwn7w7IRWRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddMonitorWallDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.AddMonitorWallDialogConfig.html",
+          "hash": "KYC3gwL6xhsmM7JSHPjkTw=="
         }
       },
       "is_incremental": false,
@@ -1098,7 +1626,55 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.DecoderManager.html",
-          "hash": "W0nzVVU7vMTxoFr4W2seZA=="
+          "hash": "Pr3WtxSGaJVaphHY9Z3MIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.EditDecoderDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.EditDecoderDialogConfig.html",
+          "hash": "A0gi5OIM1ayTTXmF8r0WnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.IdentificationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.IdentificationMode.html",
+          "hash": "x8X9p1qw66FZjG4GotlbkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.MonitorGroupManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.MonitorGroupManager.html",
+          "hash": "mjhQTTiCF3pWhK0I+97hYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.MonitorGroupPageComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.MonitorGroupPageComponent.html",
+          "hash": "+kuhuColDrGFBCbQfkGeFA=="
         }
       },
       "is_incremental": false,
@@ -1110,7 +1686,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.MonitorWallManager.html",
-          "hash": "EmLo5UixgbhRRPuB9Wlfxg=="
+          "hash": "n+BVBm8hHwN6T35lZCJYNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.UpdatingDeviceNamesDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.UpdatingDeviceNamesDialog.html",
+          "hash": "0SqRpwtVLRG3Z1unRky7FQ=="
         }
       },
       "is_incremental": false,
@@ -1122,7 +1710,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.html",
-          "hash": "1g615wizccHwa6W0bsaezw=="
+          "hash": "fIKXq2l7bRR/gTKPRW59Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.PaneDeviceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.PaneDeviceManager.html",
+          "hash": "M/99+56XMngLY+ibVusmcQ=="
         }
       },
       "is_incremental": false,
@@ -1134,7 +1734,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddBrsDibosDialog.html",
-          "hash": "R1RNKYyJ+PB2K6sUXazd/g=="
+          "hash": "Cz0muySQQCLsEshyrnxbkg=="
         }
       },
       "is_incremental": false,
@@ -1142,11 +1742,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddVrmDialog.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddBrsDibosDialogConfig.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddVrmDialog.html",
-          "hash": "WTHTNoGA6Eh+0jj+GVCgBg=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddBrsDibosDialogConfig.html",
+          "hash": "H+xEuAR1xf4d67z+Y/fUcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddEncoderDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddEncoderDialog.html",
+          "hash": "HVr1+S2OcZar/YaM9/V7FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddEncoderDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddEncoderDialogConfig.html",
+          "hash": "Ucd31BFlJy+u+vEl7HnsEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddScsiDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddScsiDialog.html",
+          "hash": "memRyPwIE/VVddhH1xvu4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddScsiDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.AddScsiDialogConfig.html",
+          "hash": "KstxzkGQs6Yht3B4D0tB2Q=="
         }
       },
       "is_incremental": false,
@@ -1158,7 +1806,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.BrsDibosManager.html",
-          "hash": "jTDZHtIe6uz8byBs+kmqSw=="
+          "hash": "qbpE2DUQnm2udIdOHWo1vA=="
         }
       },
       "is_incremental": false,
@@ -1170,7 +1818,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.BrsDibosSettingsPane.html",
-          "hash": "E+NkS6nKzLLvmjNIW1P4ew=="
+          "hash": "m28srd1/9RTNGpKUIhsptQ=="
         }
       },
       "is_incremental": false,
@@ -1178,11 +1826,143 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.UpdateVrmDialog.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditDecoderDialog.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.UpdateVrmDialog.html",
-          "hash": "r2HAVJMOdcFKoMimZuxpfQ=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditDecoderDialog.html",
+          "hash": "34XP2kGNVpMcDPX6NYPlXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditDeviceDialogConfig-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditDeviceDialogConfig-1.html",
+          "hash": "G+zY1EtxY/YzvGP2vBZraA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogBase-1.html",
+          "hash": "RJHD7D3skx2bAVu9khVt0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig-1.html",
+          "hash": "tzd/ZQkB4R+wfNPXAxujGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialog.html",
+          "hash": "TBoTg0UzCfWpxgNHgtbdRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.html",
+          "hash": "sV3xgl85WugySyum/XG1aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVsgDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVsgDialog.html",
+          "hash": "pMGO83Ccji3z38Lct8BY1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVsgDialogConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVsgDialogConfig.html",
+          "hash": "+fMF4Up28aaIeBzvHDa14w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EncoderManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EncoderManager.html",
+          "hash": "EgxgXRaf2oG5JhCNRbzMpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.PoolManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.PoolManager.html",
+          "hash": "8VMBkQqkjGUy47a79RQ+pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.PoolPane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.PoolPane.html",
+          "hash": "Rh/Ynunk+Etxxnt1D4EGwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.ScsiManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.ScsiManager.html",
+          "hash": "hrjIXVcrEnas9B64hRq8ww=="
         }
       },
       "is_incremental": false,
@@ -1194,7 +1974,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.VrmManager.html",
-          "hash": "ryF9XFb3dOHtpfbXVkFzsA=="
+          "hash": "9rtI09cJE+y2pOIcfxCrzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.VsgManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.VsgManager.html",
+          "hash": "4JGPlocf3ZDVfZ9lXYQW+w=="
         }
       },
       "is_incremental": false,
@@ -1206,19 +1998,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.html",
-          "hash": "ukUdUPZotNnSQOosOUuEyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.SimpleDialog.yml",
-      "output": {
-        ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.SimpleDialog.html",
-          "hash": "ni1Kc85qStAtMTW9YmhbMg=="
+          "hash": "Ew8q81IZJ96BVeJDhyiioA=="
         }
       },
       "is_incremental": false,
@@ -1230,7 +2010,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.html",
-          "hash": "shOqZ8Z47DCZHYC2KE9yTA=="
+          "hash": "XrAhZWi1kYN7Nk3Klfk1xQ=="
         }
       },
       "is_incremental": false,
@@ -1242,7 +2022,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.html",
-          "hash": "ovKWjCyKl+ZhNOnqvm8tnw=="
+          "hash": "lRqlUKt7LTTuYNKwTX3Ujg=="
         }
       },
       "is_incremental": false,
@@ -1250,11 +2030,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.DialogCompletion.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.EmailFactory.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.DialogCompletion.html",
-          "hash": "4XzT60Mr4uJOdNY6VB/JvQ=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.EmailFactory.html",
+          "hash": "saNvlRXo8Rr1DBdReIWcLg=="
         }
       },
       "is_incremental": false,
@@ -1262,11 +2042,71 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.PageObject.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.EncoderFactory.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.PageObject.html",
-          "hash": "dX5uqtcB/yFwQTQyeqFAbA=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.EncoderFactory.html",
+          "hash": "Fa5H/5QA4Oue0QguiPovEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Factory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Factory-1.html",
+          "hash": "btQjtojL3ijxubdzGoTo4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html",
+          "hash": "fDIn2xUATelVIym1v2RWGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.MonitorGroupFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.MonitorGroupFactory.html",
+          "hash": "VOjHa4m6aFdS9iYnrNsrIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.MonitorWallFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.MonitorWallFactory.html",
+          "hash": "n3n0xvwA8frEb4qd7mpzbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode.html",
+          "hash": "THKxaNZT0mt2qHtKW1PA2w=="
         }
       },
       "is_incremental": false,
@@ -1278,7 +2118,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.PaneSelectorPageObject.html",
-          "hash": "I5HI3mkv+59zKCZZed1kmg=="
+          "hash": "7hkrk+vaqJCikmWFFTO2OA=="
         }
       },
       "is_incremental": false,
@@ -1298,35 +2138,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Repositories.TreeRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Repositories.TreeRepository.html",
-          "hash": "uKhWq7FAmh6/4gGt0S5c/Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Repositories.yml",
-      "output": {
-        ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Repositories.html",
-          "hash": "4L7E+GbNeo2YZlNwflAYEQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.Cell.yml",
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.Cell.html",
-          "hash": "J4+G/4LDLDhmWsjkIEeFSQ=="
+          "hash": "5fc0tq6ieZRtvTxwq50A3w=="
         }
       },
       "is_incremental": false,
@@ -1338,7 +2154,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.html",
-          "hash": "gi08blPl3JBvGK1mymP5CA=="
+          "hash": "qCbK4/Xb8HpCGXuWndPR9w=="
         }
       },
       "is_incremental": false,
@@ -1350,7 +2166,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ScheduleTable.html",
-          "hash": "L/1frGbBWjMJodR+xkUs0A=="
+          "hash": "eX0BefeaNyaYbpjgg84MOg=="
         }
       },
       "is_incremental": false,
@@ -1362,7 +2178,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ScheduleTablesEnumeration.html",
-          "hash": "j7StPWSbUYopTiOMv5YhDg=="
+          "hash": "MeA/6JhQx9mdv3sdHvaUKA=="
         }
       },
       "is_incremental": false,
@@ -1374,7 +2190,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.html",
-          "hash": "ypHEQVRqxu5Nrvqy88xxfg=="
+          "hash": "DK5TeAgzvZckFvj2LZ3KFg=="
         }
       },
       "is_incremental": false,
@@ -1382,11 +2198,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Services.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ScsiFactory.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Services.html",
-          "hash": "db9YodOe1IaRVsyqsf0XHQ=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ScsiFactory.html",
+          "hash": "oCPtwNT0T5ZBQU9F0jYpMQ=="
         }
       },
       "is_incremental": false,
@@ -1394,11 +2210,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Utils.AutomationHelper.yml",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ServerFactory.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Utils.AutomationHelper.html",
-          "hash": "GEo4yUMQytWk2KIjqIp4pg=="
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.ServerFactory.html",
+          "hash": "UCDg7ziZCHBTOSqFK3slnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.SmsFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.SmsFactory.html",
+          "hash": "u55dMaPjI8w8L8/OzXbg/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePageObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePageObject.html",
+          "hash": "5CYBlkhYe473t85tWLnCJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.html",
+          "hash": "fmoYB9qZpiQbIvmwVjGi7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.html",
+          "hash": "xED/ZRzoLacC3JfTS4hKsA=="
         }
       },
       "is_incremental": false,
@@ -1410,7 +2274,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Utils.MappingDeviceToDeviceManager.html",
-          "hash": "H4QgvFW14R82/TjPMj8RvA=="
+          "hash": "+EijgQ8xqHM5EoOK6Joqcg=="
         }
       },
       "is_incremental": false,
@@ -1422,7 +2286,19 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.Utils.html",
-          "hash": "TCyUnNZsX3USGkeKIcILUQ=="
+          "hash": "y8qv6CTgtGdXCpqpW+8ulA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.VrmFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.VrmFactory.html",
+          "hash": "v8PtH9939Ld3BY0FzCrREA=="
         }
       },
       "is_incremental": false,
@@ -1434,7 +2310,67 @@
       "output": {
         ".html": {
           "relative_path": "sdk/Bvms.UiAutomation.ConfigClient.SDK.html",
-          "hash": "4Z1Qf2CyKL2l8fj42exyCQ=="
+          "hash": "vtXd3sn3mZu8YqClQxfplQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.ILogicalTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.ILogicalTree.html",
+          "hash": "yPcDcuFHrQ/ie5hLBgsWEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.LoginDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.LoginDialog.html",
+          "hash": "gUjP3zaehRUCQKkuGQGH4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClient.html",
+          "hash": "uGJJx8nLs5VJijCOsD66eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.html",
+          "hash": "zZZhM36u9PhTfDmJQMxMXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Bvms.UiAutomation.OpClient.Sdk.html",
+          "hash": "O+tAMXX7tT6wsIk8/IQSGQ=="
         }
       },
       "is_incremental": false,
@@ -1458,7 +2394,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Architecture.html",
-          "hash": "5aV2prdjfe/kJwmXv/VY6w=="
+          "hash": "FR9ZPuetbvSZFfTaUO4xIQ=="
         }
       },
       "is_incremental": false,
@@ -1470,7 +2406,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/DevTree.html",
-          "hash": "tSA/k99HqQysk49J99S7DQ=="
+          "hash": "yy778lDzKGBjBuk1sD6gxQ=="
         }
       },
       "is_incremental": false,
@@ -1482,7 +2418,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Documentation.html",
-          "hash": "n5X0MtFuT748FrKePMGLoA=="
+          "hash": "WofGowzUu+ZHJwxzXFq+6A=="
         }
       },
       "is_incremental": false,
@@ -1494,7 +2430,37 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Good_to_know.html",
-          "hash": "ydmybOQ38Cl8hKsSFHS14w=="
+          "hash": "c9QSxqogixJscgyfhntSBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/Guidelines.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/Guidelines.html",
+          "hash": "HSeK9Owc9Aa+rkO4cr7YIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/NoticeableProblems.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/NoticeableProblems.html",
+          "hash": "xiSMtlCmYt03aOljkGyymA=="
         }
       },
       "is_incremental": false,
@@ -1509,7 +2475,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Overview.html",
-          "hash": "Z5rv8cASNrtAuMR5sIRAEw=="
+          "hash": "u0DnOUKOyARchtYTOfikCg=="
         }
       },
       "is_incremental": false,
@@ -1521,7 +2487,22 @@
       "output": {
         ".html": {
           "relative_path": "wiki/Patterns.html",
-          "hash": "8nTPv8i163IzPkhr/BUUgA=="
+          "hash": "YpjkbGxZsnvBN0WS9vbdqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "wiki/SMM.md",
+      "output": {
+        ".html": {
+          "relative_path": "wiki/SMM.html",
+          "hash": "cUtlXOQcwB66o0FdHqWQ8Q=="
         }
       },
       "is_incremental": false,
@@ -1529,10 +2510,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "wiki/images/Xunit.UnitTestExplorer.01.png",
+      "source_relative_path": "wiki/images/MismatchUiElementName2AutomationId&Usage.01.png",
       "output": {
         "resource": {
-          "relative_path": "wiki/images/Xunit.UnitTestExplorer.01.png"
+          "relative_path": "wiki/images/MismatchUiElementName2AutomationId&Usage.01.png"
         }
       },
       "is_incremental": false,
@@ -1540,10 +2521,43 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "wiki/images/Xunit.UnitTestExplorer.01.small.png",
+      "source_relative_path": "wiki/images/MismatchUiElementName2AutomationId&Usage.02.png",
       "output": {
         "resource": {
-          "relative_path": "wiki/images/Xunit.UnitTestExplorer.01.small.png"
+          "relative_path": "wiki/images/MismatchUiElementName2AutomationId&Usage.02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/images/MismatchUiElementName2AutomationId&Usage.03.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/images/MismatchUiElementName2AutomationId&Usage.03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/images/xUnit.UnitTestExplorer.01.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/images/xUnit.UnitTestExplorer.01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/images/xUnit.UnitTestExplorer.01.small.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/images/xUnit.UnitTestExplorer.01.small.png"
         }
       },
       "is_incremental": false,
@@ -1565,17 +2579,24 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 194,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 11,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
@@ -1585,17 +2606,12 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 116,
-          "skipped_file_count": 116
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 8,
-          "skipped_file_count": 6
+          "total_file_count": 0,
+          "skipped_file_count": 0
         }
       }
     },

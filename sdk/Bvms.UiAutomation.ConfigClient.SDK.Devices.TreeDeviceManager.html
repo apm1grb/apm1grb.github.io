@@ -83,7 +83,7 @@
   
   <h1 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager" class="text-break">Class TreeDeviceManager
   </h1>
-  <div class="markdown level0 summary"><p>A TreeDeviceManager handles how devices, which appears as own nodes in the DeviceTree, has to be managed.
+  <div class="markdown level0 summary"><p>A <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.html">TreeDeviceManager</a> handles how a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html">Device&lt;T&gt;</a>s, which appears as own nodes in the DeviceTree, have to be managed.
 Usually it covers the calling of context sensitive menus and showing related dialog.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -95,12 +95,20 @@ Usually it covers the calling of context sensitive menus and showing related dia
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.EmailManager.html">EmailManager</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Communication.SmsCommunicationDeviceManager.html">SmsCommunicationDeviceManager</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.DecoderManager.html">DecoderManager</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.MonitorGroupManager.html">MonitorGroupManager</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.MonitorWallManager.html">MonitorWallManager</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.BrsDibosManager.html">BrsDibosManager</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EncoderManager.html">EncoderManager</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.PoolManager.html">PoolManager</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.ScsiManager.html">ScsiManager</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.VrmManager.html">VrmManager</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.VsgManager.html">VsgManager</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_DeviceTreeRepository">DeviceManager.DeviceTreeRepository</a>
+    </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_Uri">DeviceManager.Uri</a>
     </div>
@@ -108,10 +116,28 @@ Usually it covers the calling of context sensitive menus and showing related dia
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_AddDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.AddDevice(IDevice)</a>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_ConfigureDevice_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.ConfigureDevice(String, IDevice)</a>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_EditDevice_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.EditDevice(String, IDevice)</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_RemoveDevice_System_String_">DeviceManager.RemoveDevice(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_GetUriOfDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.GetUriOfDevice(IDevice)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_GetDeviceByName_System_String_">DeviceManager.GetDeviceByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_AddSubDevices_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.AddSubDevices(IDevice)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_SelectDeviceTypeNode_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.SelectDeviceTypeNode(IDevice)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_BeforeAddDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.BeforeAddDevice(IDevice)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_AfterAddDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.AfterAddDevice(IDevice)</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -141,6 +167,36 @@ Usually it covers the calling of context sensitive menus and showing related dia
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class TreeDeviceManager : DeviceManager</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.#ctor*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager__ctor_Bvms_UiAutomation_SDK_Commons_TreeRepository_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.#ctor(Bvms.UiAutomation.SDK.Commons.TreeRepository)">TreeDeviceManager(TreeRepository)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html">DeviceManager</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TreeDeviceManager(TreeRepository deviceTreeRepository)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bvms.UiAutomation.SDK.Commons.TreeRepository</span></td>
+        <td><span class="parametername">deviceTreeRepository</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -262,7 +318,7 @@ Usually it covers the calling of context sensitive menus and showing related dia
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void AddDeviceCore(AutomationElement node, IDevice device)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override string AddDeviceCore(AutomationElement node, IDevice device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -288,6 +344,22 @@ Usually it covers the calling of context sensitive menus and showing related dia
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of the new device given from the system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_AddDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.AddDeviceCore(AutomationElement, IDevice)</a></div>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_AddDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice__remarks">Remarks</h5>
@@ -302,7 +374,7 @@ Usually it covers the calling of context sensitive menus and showing related dia
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void AddTreeDeviceCore(IDevice device)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract string AddTreeDeviceCore(IDevice device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -322,16 +394,84 @@ Usually it covers the calling of context sensitive menus and showing related dia
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of the new device given from the system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_ConfigureDeviceCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.ConfigureDeviceCore*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_ConfigureDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.ConfigureDeviceCore(FlaUI.Core.AutomationElements.AutomationElement,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)">ConfigureDeviceCore(AutomationElement, IDevice)</h4>
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_ConfigureDeviceWhenAdding_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.ConfigureDeviceWhenAdding*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_ConfigureDeviceWhenAdding_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.ConfigureDeviceWhenAdding(FlaUI.Core.AutomationElements.AutomationElement,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)">ConfigureDeviceWhenAdding(AutomationElement, IDevice)</h4>
+  <div class="markdown level1 summary"><p>Configures the device during adding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override PageObject ConfigureDeviceWhenAdding(AutomationElement automationElement, IDevice device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td><span class="parametername">automationElement</span></td>
+        <td><p>The automation element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_ConfigureDeviceWhenAdding_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.ConfigureDeviceWhenAdding(AutomationElement, IDevice)</a></div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_EditDeviceCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.EditDeviceCore*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_EditDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.EditDeviceCore(FlaUI.Core.AutomationElements.AutomationElement,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)">EditDeviceCore(AutomationElement, IDevice)</h4>
   <div class="markdown level1 summary"><p>Individual configuration logic to configure a device inside sub classes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void ConfigureDeviceCore(AutomationElement node, IDevice device)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override PageObject EditDeviceCore(AutomationElement node, IDevice device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,21 +497,36 @@ Usually it covers the calling of context sensitive menus and showing related dia
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_ConfigureDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.ConfigureDeviceCore(AutomationElement, IDevice)</a></div>
-  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_ConfigureDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice__remarks">Remarks</h5>
+  <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_EditDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_">DeviceManager.EditDeviceCore(AutomationElement, IDevice)</a></div>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_EditDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Needs to get overwritten for individual device types (variable part of the calling template method).</p>
 </div>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_ConfigureTreeDeviceCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.ConfigureTreeDeviceCore*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_ConfigureTreeDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.ConfigureTreeDeviceCore(FlaUI.Core.AutomationElements.AutomationElement,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)">ConfigureTreeDeviceCore(AutomationElement, IDevice)</h4>
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_EditTreeDeviceCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.EditTreeDeviceCore*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_EditTreeDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.EditTreeDeviceCore(FlaUI.Core.AutomationElements.AutomationElement,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)">EditTreeDeviceCore(AutomationElement, IDevice)</h4>
   <div class="markdown level1 summary"><p>Configures the tree device core.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void ConfigureTreeDeviceCore(AutomationElement node, IDevice device)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract PageObject EditTreeDeviceCore(AutomationElement node, IDevice device)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -394,6 +549,21 @@ Usually it covers the calling of context sensitive menus and showing related dia
         <td><span class="parametername">device</span></td>
         <td><p>The device to configure.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -517,6 +687,17 @@ Usually it covers the calling of context sensitive menus and showing related dia
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_SelectDevice_System_String_">DeviceManager.SelectDevice(String)</a></div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_WaitUntilSelected_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.WaitUntilSelected*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_TreeDeviceManager_WaitUntilSelected" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager.WaitUntilSelected">WaitUntilSelected()</h4>
+  <div class="markdown level1 summary"><p>Allows to define a waiting period to ensure that all necessary activities in conjunction with a device selection have finished.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WaitUntilSelected()</code></pre>
+  </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager.html">DeviceManager</a></div>

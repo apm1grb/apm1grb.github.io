@@ -127,7 +127,8 @@
   
   <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.#ctor*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient__ctor" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.#ctor">ConfigurationClient()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.html">ConfigurationClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -136,13 +137,13 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient__ctor_Bvms_UiAutomation_ConfigClient_SDK_PageObject_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.#ctor(Bvms.UiAutomation.ConfigClient.SDK.PageObject)">ConfigurationClient(PageObject)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient__ctor_Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.#ctor(Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject)">ConfigurationClient(ConfigClientPageObject)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.html">ConfigurationClient</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConfigurationClient(PageObject pageObject)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConfigurationClient(ConfigClientPageObject configClientPageObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,37 +156,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="../sdk/Bvms.UiAutomation.ConfigClient.SDK.PageObject.html">PageObject</a></td>
-        <td><span class="parametername">pageObject</span></td>
+        <td><a class="xref" href="../sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a></td>
+        <td><span class="parametername">configClientPageObject</span></td>
         <td><p>The page object.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient__ctor_FlaUI_Core_Application_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.#ctor(FlaUI.Core.Application)">ConfigurationClient(Application)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConfigurationClient(Application application)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FlaUI.Core.Application</span></td>
-        <td><span class="parametername">application</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -193,9 +167,91 @@
   </h3>
   
   
+  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_ConfigurationManager_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.ConfigurationManager*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_ConfigurationManager" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.ConfigurationManager">ConfigurationManager</h4>
+  <div class="markdown level1 summary"><p>Gets the configuration manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IConfigurationManager ConfigurationManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.API.IConfigurationManager.html">IConfigurationManager</a></td>
+        <td><p>The configuration manager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_Devices_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.Devices*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_Devices" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.Devices">Devices</h4>
+  <div class="markdown level1 summary"><p>Gets the devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDevices Devices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.API.IDevices.html">IDevices</a></td>
+        <td><p>The devices.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_LogicalTree_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.LogicalTree*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_LogicalTree" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.LogicalTree">LogicalTree</h4>
+  <div class="markdown level1 summary"><p>Gets the logical tree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILogicalTree LogicalTree { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.API.ILogicalTree.html">ILogicalTree</a></td>
+        <td><p>The logical tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_Schedules_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.Schedules*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_Schedules" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.Schedules">Schedules</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the schedules.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -212,7 +268,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.API.ISchedules.html">ISchedules</a></td>
-        <td></td>
+        <td><p>The schedules.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -220,14 +277,25 @@
   </h3>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_AddDevice_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.AddDevice*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_AddDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.AddDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)">AddDevice(IDevice)</h4>
-  <div class="markdown level1 summary"><p>Adds a device.</p>
+  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_Kill_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.Kill*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_Kill" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.Kill">Kill()</h4>
+  <div class="markdown level1 summary"><p>Kills the application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddDevice(IDevice device)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Kill()</code></pre>
+  </div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_SaveScreenshot_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.SaveScreenshot*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_SaveScreenshot_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.SaveScreenshot(System.String)">SaveScreenshot(String)</h4>
+  <div class="markdown level1 summary"><p>Saves a screenshot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveScreenshot(string fileName = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -240,9 +308,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="../sdk/Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></td>
-        <td><span class="parametername">device</span></td>
-        <td><p>The device to add.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file.</p>
 </td>
       </tr>
     </tbody>

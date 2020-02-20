@@ -79,6 +79,96 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="good-to-know">Good to know</h1>
 
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#Frequently-used-CLI-commands">Frequently used CLI commands</a><br>
+<strong>CLI</strong> commands for compilation, unit testing, <strong>Paket</strong>, <strong>Git</strong></li>
+<li><a href="#Dependency-Management">Dependency Management</a><br>
+some knowledge about dependency and package management</li>
+<li><a href="#Aspect-Oriented-Programming">Aspect Oriented Programming</a><br>
+How the project is benefiting from AOP with <strong>PostSharp</strong></li>
+<li><a href="#XUnit">xUnit</a><br>
+Knowledge around <strong>xUnit</strong></li>
+<li><a href="#Benefits-of-Visual-Studio-Code">Benefits of Visual Studio Code</a><br>
+How <strong>Visual Studio Code</strong> can be used to debug FAKE build scripts.</li>
+<li><a href="#Benefits-of-LINQPad">Benefits of LINQPad</a><br>
+How <strong>LINQPad</strong> can speed you up during development</li>
+</ul>
+<hr>
+<h2 id="frequently-used-cli-commands">Frequently used CLI commands</h2>
+<blockquote>
+<p><strong>Hint:</strong> The following commands are supposed to be used inside a <strong>Git Bash</strong> or <strong>Developer Prompt for Visual Studio</strong>. Therefore they use forward slashes (<code>/</code>) or backward slashes (<code>\</code>) for folder separation. So please use the right CLI environment to run the program.</p>
+</blockquote>
+<blockquote>
+<p><strong>Recommendation:</strong> Use the <strong>Developer Prompt for Visual Studio</strong> for everything around compiling the codebase and the <strong>Git Bash</strong> for everything around versioning.</p>
+</blockquote>
+<blockquote>
+<p><strong>Hint:</strong> All commands are treated as used from the project root folder (aka DevTree root folder).</p>
+</blockquote>
+<h3 id="compilationbuild">Compilation/Build</h3>
+<pre><code class="lang-prompt">msbuild .\src\Bvms.UiAutomation.sln /t:Restore
+msbuild .\src\Bvms.UiAutomation.sln
+</code></pre>
+<h3 id="run-unit-tests">Run unit tests</h3>
+<p>Bash:</p>
+<pre><code class="lang-bash">./packages/xunit.runner.console/tools/net472/xunit.console.exe ./src/ConfigClient.DomainModel/ConfigClient.DomainModel.Tests/bin/Debug/ConfigClient.DomainModel.Tests.dll
+./packages/xunit.runner.console/tools/net472/xunit.console.exe ./src/UseCaseTests/UseCaseTests/bin/Debug/Bvms.UiAutomation.UseCaseTests.dll
+./deploy/xunit.console.exe ./deploy/Bvms.UiAutomation.UseCaseTests.dll
+</code></pre>
+<p>Command Prompt:</p>
+<pre><code class="lang-prompt">.\packages\xunit.runner.console\tools\net472\xunit.console.exe .\src\ConfigClient.DomainModel\ConfigClient.DomainModel.Tests\bin\Debug\Bvms.UiAutomation.ConfigClient.DomainModel.Tests.dll
+.\packages\xunit.runner.console\tools\net472\xunit.console.exe .\src\UseCaseTests\UseCaseTests\bin\Debug\Bvms.UiAutomation.UseCaseTests.dll
+</code></pre>
+<h3 id="paket">Paket</h3>
+<p>install or update dependencies (after modifying central <code>paket.dependencies</code> or project specific <code>paket.reference</code>)</p>
+<pre><code class="lang-bash">.paket/paket.exe install
+.paket/paket.exe restore
+</code></pre>
+<h2 id="git">Git</h2>
+<blockquote>
+<p><strong>Hint:</strong> Some of the following <strong>Git</strong> commands make use of aliases. Ensure that your personal <code>.gitconfig</code> contains these aliases. You can read more about the default configuration in the <em>Baseline</em> chapter of the <em>Installation Guideline</em> .</p>
+</blockquote>
+<p>show the status</p>
+<pre><code class="lang-bash">git st
+</code></pre>
+<p>switch to branch; Create new branch and switch to it</p>
+<pre><code class="lang-bash">git co &lt;branch-name&gt;
+git co -b &lt;new-branch-name&gt;
+</code></pre>
+<p>merge or rebase content of other branch in current branch</p>
+<blockquote>
+<p>Important: Use always the <code>--ff-only</code> option for a merge to avoid a 2-way merge!</p>
+</blockquote>
+<pre><code class="lang-bash">git merge &lt;other-branch-name&gt; --ff-only
+git rebase &lt;new-branch-name&gt;
+</code></pre>
+<p>synchronization between local and remote repository</p>
+<pre><code class="lang-bash">git fetch --all
+git push
+git pull --ff-only
+</code></pre>
+<hr>
+<h2 id="dependency-management">Dependency Management</h2>
+<ul>
+<li>dependency management is done with Paket (on top of <strong>NuGet</strong>)</li>
+</ul>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://azuredevops2019.bosi-eng.global/OT1TFS/BVMS/_wiki/wikis/BVMS.wiki?pagePath=Dependency-Management-With-Paket">BVMS.wiki: Dependency Management With Paket</a></li>
+<li><a href="http://bit.ly/ma-paket">Google Docs Presentation: Paket</a></li>
+<li><a href="https://fsprojects.github.io/Paket/">Paket Project</a></li>
+<li><a href="http://bit.ly/ma-nuget">Google Docs Presentation: NuGet</a></li>
+</ul>
+<blockquote>
+<p>Hint: Google Docs Presentations are currently not accessible from E-Net, but from BCN.</p>
+</blockquote>
+<hr>
+<h2 id="aspect-oriented-programming">Aspect Oriented Programming</h2>
+<ul>
+<li>we use PostSharp for AOP</li>
+<li>it allows us to target the anti-pattern &quot;Primitive Obsession&quot; elegant, e.g. for range limited types</li>
+</ul>
+<hr>
 <h2 id="xunit">XUnit</h2>
 <h3 id="categories-trait">Categories, Trait</h3>
 <p>To group unit test in a way which makes sense for a project, the Attribute <code>Trait</code> is used. The following example puts the test method <code>Can_Start_App</code> under the category <code>UI-Basics</code>.</p>
@@ -87,9 +177,9 @@
 public void Can_Start_App(bool closeAppAfterRun)
 </code></pre>
 <p><strong>ReSharper</strong>'s <em>Unit Test Explorer</em> (<em>Extensions</em> &gt; <em>ReSharper</em> &gt; <em>Windows</em> &gt; <em>Unit Tests</em> or <code>Ctrl</code>+<code>Alt</code>+<code>U</code>) shows the method then under category <em>UI-Basics</em> and belonging class:</p>
-<p><img src="images/Xunit.UnitTestExplorer.01.small.png" alt="Xunit.UnitTestExplorer.01.png"></p>
+<p><img src="images/xUnit.UnitTestExplorer.01.small.png" alt="xUnit.UnitTestExplorer.01.png"></p>
 <h3 id="inlinedata-and-memberdata">InlineData and MemberData</h3>
-<p><strong>XUnit</strong> allows the definition of multiple input values for a test. Such parametrizable tests needs to have the attribute <code>Theory</code>. Test without parameters are setup as <code>Fact</code>.</p>
+<p><strong>xUnit</strong> allows the definition of multiple input values for a test. Such parametrizable tests needs to have the attribute <code>Theory</code>. Test without parameters are setup as <code>Fact</code>.</p>
 <p>With <code>InlineData</code> the parameters of the text method are filled with the corresponding data of the <code>InlineData</code> definition:</p>
 <pre><code class="lang-cs">[Theory]
 [InlineData(&quot;1.1.1.1&quot;, DecoderType.BarcoMonitorWall)]
@@ -102,13 +192,100 @@ public void Can_add_and_configure_decoder_device(string deviceName, DecoderType 
 public void Can_switch_Panes(PaneTypeWithPaneName paneTypeWithPaneName)
 {
     ...
- 
+
 public static IEnumerable&lt;object[]&gt; Data =&gt;
 new List&lt;object[]&gt;
 {
     new object[] { new  PaneTypeWithPaneName(...) },
     new object[] { new  PaneTypeWithPaneName(...) },
     ...
+</code></pre>
+<hr>
+<h2 id="benefits-of-visual-studio-code">Benefits of Visual Studio Code</h2>
+<h3 id="debugging-fake-scripts">Debugging <strong>FAKE</strong> scripts</h3>
+<p>Debugging <strong>FAKE</strong> scripts without a proper tool set can be a time consuming and annoying task. But <strong>VSC</strong> can be used as real IDE with debugging capabilities.</p>
+<p>see also <a href="https://fake.build/fake-debugging.html">Debugging of FAKE 5 build scripts</a></p>
+<ol>
+<li><p>Download <code>fake-dotnetcore-portable.zip</code><br>
+(e.g. from <a href="https://github.com/fsharp/FAKE/releases">https://github.com/fsharp/FAKE/releases</a>)</p>
+</li>
+<li><p>Extract the archive to the portable apps folder<br>
+(e.g. <code>c:\_apps\Tools\fake-dotnetcore-portable</code>)</p>
+</li>
+<li><p>Open <strong>Visual Studio Code</strong></p>
+</li>
+<li><p>Click in the sidebar <em>Extensions</em> and install the following extensions:</p>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C#</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp">Ionide-fsharp</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE">Ionide-FAKE</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket">Ionide-Paket</a></li>
+</ul>
+</li>
+<li><p>Click in the sidebar <em>Debug</em></p>
+</li>
+<li><p>expand configurations-combobox and choose <em>Add Configuration…</em></p>
+</li>
+<li><p>in the list select <em>dotnet core</em></p>
+</li>
+<li><p>paste this configuration block directly inside the square brackets of the <code>configuration</code> key</p>
+<pre><code class="lang-json">{
+&quot;name&quot;: “Debug Fake Script”,
+&quot;type&quot;: “coreclr”,
+&quot;request&quot;: “launch”,
+&quot;program&quot;: “c:\_apps\Tools\fake-dotnetcore-portable\fake.dll”,
+&quot;args&quot;: [“run”, “–nocache”, “–fsiargs”, “–debug:portable –optimize-”, “build.fsx”],
+&quot;cwd&quot;: “${workspaceRoot}”,
+&quot;stopAtEntry&quot;: false,
+&quot;console&quot;: “internalConsole”
+}
+</code></pre>
+</li>
+<li><p>save the <code>launch.json</code> configuration file</p>
+</li>
+<li><p>set breakpoints where wanted</p>
+</li>
+<li><p>select in the configurations-combobox the new configuration  <em>Debug Fake Script</em> and run this configuration</p>
+</li>
+</ol>
+<hr>
+<h2 id="benefits-of-linqpad">Benefits of LINQPad</h2>
+<p><strong>LINQPad</strong> is a small utility to interactively writing C# code without the need for a heavyweight IDE. It comes in different edition where also the free edition give some benefits. But only the <a href="https://www.linqpad.net/Purchase.aspx">higher versions</a> are really useful.</p>
+<p>With <strong>LINQPad</strong> it is much more faster to interact with an application which needs to get <em>UI Automation</em> driven. The most important fact is the almost infinite small compilation and startup time.</p>
+<p>Here are the steps to connect to the <strong>ConfigClient</strong>:</p>
+<ol>
+<li>Start the <strong>ConfigClient</strong></li>
+<li>Start <strong>LINQPad</strong></li>
+<li>Under <em>Language</em> select <em>C# Program</em></li>
+<li>Press <code>F4</code> to open dialog <em>Query Properties</em> where you can adjust some properties</li>
+<li>On tab <em>Additional References</em> click button <em>Add NuGet...</em></li>
+<li>In new opened dialog <em>LINQPad NuGet Manager</em> search for <code>FlaUI.UIA3</code> and add the package with button <em>Add to Query</em> and close the dialog with button <em>Close</em>.
+this should also add the package _<em>FlaUI Core</em>. If not, add the package like the first package.</li>
+<li>On tab <em>Additional Namespace Imports</em> add some default namespaces, like <code>FlaUI.UIA3</code>, <code>FlaUI.Core</code>, <code>FlaUI.Core.AutomationElements</code> and close with <em>OK</em></li>
+<li>Use the script below as a example to interact with the <strong>ConfigClient</strong></li>
+</ol>
+<pre><code class="lang-csharp">void Main()
+{
+  var processName = &quot;ConfigClient&quot;;
+  var process = Process.GetProcesses().FirstOrDefault(p =&gt; p.ProcessName.Equals(processName));
+  var app = Application.Attach(process);
+
+  using (var automation = new UIA3Automation())
+  {
+    var window = app.GetMainWindow(automation);
+
+    var toolbar = window.FindFirstDescendant(&quot;MainMenu : Toolbar&quot;);
+    var children = toolbar.FindAllChildren();
+    foreach (var element in children)
+    {
+        Console.WriteLine(&quot;element: &quot; + element.Name);
+        if (element.Name == &quot;System&quot;)
+        {
+            element.Click();
+        }
+    }
+  }
+}
 </code></pre>
 </article>
           </div>

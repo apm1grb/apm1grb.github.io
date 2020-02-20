@@ -126,13 +126,13 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_ContextMenuManager_ExecuteContextMenu_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.ContextMenuManager.ExecuteContextMenu*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_ContextMenuManager_ExecuteContextMenu_FlaUI_Core_AutomationElements_AutomationElement_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.ContextMenuManager.ExecuteContextMenu(FlaUI.Core.AutomationElements.AutomationElement,System.String)">ExecuteContextMenu(AutomationElement, String)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_ContextMenuManager_ExecuteContextMenu_FlaUI_Core_AutomationElements_Window_FlaUI_Core_AutomationElements_AutomationElement_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.ContextMenuManager.ExecuteContextMenu(FlaUI.Core.AutomationElements.Window,FlaUI.Core.AutomationElements.AutomationElement,System.String)">ExecuteContextMenu(Window, AutomationElement, String)</h4>
   <div class="markdown level1 summary"><p>Executes a context menu.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ExecuteContextMenu(AutomationElement automationElement, string contextMenuTitle)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ExecuteContextMenu(Window window, AutomationElement automationElement, string contextMenuTitle)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -144,6 +144,12 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>Window which provides the context to execute the context menu.</p>
+</td>
+      </tr>
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
         <td><span class="parametername">automationElement</span></td>
