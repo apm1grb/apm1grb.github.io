@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>DocFX | BVMS UI Automation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="DocFX | BVMS UI Automation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="docfx">DocFX</h1>
+
+<p>To process the content of these sources we use <strong>DocFX</strong> which is the successor of <strong>SHFB</strong> (Sandcastle Help File Builder). DocFX is platform-agnostic and runs perfectly also under .NET Core. <strong>DocFX</strong> creates static web-sites which can easily hosted somewhere.</p>
+<p>To update the documentation these steps are essential:</p>
+<ol>
+<li>Update the working tree to the latest stand of the Wiki content</li>
+<li>Extract the XML metadata of the source code (the XML comment) with <strong>DocFX</strong></li>
+<li>Process the documentation input with <strong>DocFX</strong> to create static web sites as output</li>
+<li>Commit the output of <strong>DocFX</strong> to the &quot;online documentation&quot; repository connected to hoster</li>
+<li>Push this &quot;online documentation&quot; repository</li>
+</ol>
+<p>Follow the next sections to do that:</p>
+<h2 id="update-the-working-tree">Update the working tree</h2>
+<ol>
+<li>Open <strong>Git Bash</strong> in/with sub-folder <code>.../doc/wiki/</code></li>
+<li>Run command <code>git fetch</code> to get the latest stand into your local repository</li>
+<li>Run command <code>git status</code> to ensure that nothing is uncommitted and the local and remote branch are at the latest stand
+<ul>
+<li>the output should be something like: <code>Your branch is up to date with 'origin/wikiMaster'.</code></li>
+<li>if not: stop further processing and first commit changes, rebase, ...</li>
+</ul>
+</li>
+<li>Run command <code>Git pull --ff-only</code> to get the latest stand in your working tree</li>
+</ol>
+<h2 id="extract-the-xml-metadata--process-the-documentation-input">Extract the XML metadata &amp; process the documentation input</h2>
+<p>For the following steps the <strong>DocFX</strong> toolset needs to be installed on your machine.<br>
+Use <strong>Chocolatey</strong> with <code>choco install docfx</code></p>
+<ol>
+<li>Open <strong>Command Prompt</strong> in/with sub-folder <code>.../doc/</code></li>
+<li>Run command <code>docfx metadata doc\docfx.json -o doc</code> to extract the metadata of the source code</li>
+<li>Run command <code>docfx build .\doc\docfx.json</code> to create the static web-sites</li>
+</ol>
+<h2 id="publish-the-updated-documentation">Publish the updated documentation</h2>
+<p>To have the updated documentation online available the repository containing the static web-pages must be updated and pushed.</p>
+<ol>
+<li>Open <strong>Git Bash</strong> in/with sub-folder <code>.../doc/_site_/</code></li>
+<li>Run command <code>git commit -am &quot;update DocFX documentation&quot;</code> to commit the changes</li>
+<li>Run command <code>git push</code> to update the remote</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

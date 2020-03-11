@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Developer Tree | BVMS UI Automation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Developer Tree | BVMS UI Automation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="developer-tree">Developer Tree</h1>
+
+<p>[[<em>TOC</em>]]</p>
+<hr>
+<h2 id="folders-at-highest-level">Folders at highest level</h2>
+<table>
+<thead>
+<tr>
+<th>Folder</th>
+<th>what's in &amp; Intention</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.paket</code></td>
+<td>artifacts of our dependency management toolset named <a href="https://fsprojects.github.io/Paket/"><strong>Paket</strong></a></td>
+</tr>
+<tr>
+<td><code>cfg</code></td>
+<td>configuration items</td>
+</tr>
+<tr>
+<td><code>data</code></td>
+<td>sample data and data sets to play around (in case the data are important, consider to move to <code>cfg</code>)</td>
+</tr>
+<tr>
+<td><a href="#documentation"><code>doc</code></a></td>
+<td>documentation for the project, please read the section <a href="#documentation">Documentation</a></td>
+</tr>
+<tr>
+<td><code>packages</code></td>
+<td>extracted packages and temporary artifacts from <strong>Paket</strong> (not included into repository)</td>
+</tr>
+<tr>
+<td><code>paket-files</code></td>
+<td>temporary artifacts from <strong>Paket</strong> (not included into repository)</td>
+</tr>
+<tr>
+<td><a href="#Solution"><code>src</code></a></td>
+<td>the source or <a href="#Solution">solution tree</a> containing the source code</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="solution">Solution</h2>
+<p>The <code>src</code>-folder (aka solution tree) is the developer`s main part of the project.<br>
+It consists of these projects:</p>
+<ul>
+<li><p>DomainModel<br>
+Contains the (UI-)Domain classes of the <strong>Configuration Client</strong></p>
+</li>
+<li><p>DomainModel.Tests<br>
+Unit tests to test the DomainModel</p>
+</li>
+<li><p>Utils<br>
+Contains some helper classes and extensions.</p>
+</li>
+<li><p>Utils.Tests
+Unit tests to test the helper classes and extensions.</p>
+</li>
+<li><p>ConfigClient.Sdk<br>
+This project could be treated as an internal SDK for test developers to interact with UI elements (abstracts the UI).</p>
+</li>
+<li><p>ConfigClient.Sdk.Tests<br>
+Unit tests for ConfigClient.Sdk</p>
+</li>
+<li><p>ConfigClient.Api<br>
+API for high level interaction with the <strong>Config Client</strong> to address use cases.</p>
+</li>
+<li><p>ConfigClient.Api.Tests<br>
+Unit tests to test the API correctness as well as the entry point for automatic Use Case tests in the context of complete workflows driving the API</p>
+</li>
+<li><p>OpClient.Sdk<br>
+This project could be treated as an internal SDK for test developers to interact with UI elements (abstracts the UI) of the <strong>Operation Client</strong>.</p>
+</li>
+<li><p>OpClient.Sdk.Tests<br>
+Unit tests for OpClient.Sdk</p>
+</li>
+<li><p>OpClient.Api<br>
+API for high level interaction with the <strong>Operation Client</strong> to address use cases.</p>
+</li>
+<li><p>OpClient.Api.Tests<br>
+Unit tests to test the API correctness as well as the entry point for automatic Use Case tests in the context of complete workflows driving the API</p>
+</li>
+<li><p>Sdk.Commons<br>
+Shared functionalities for the ConfigClient and OpClient projects at SDK level</p>
+</li>
+<li><p>UseCaseTests<br>
+Test to cover complete end to end use cases between <strong>Config Client</strong> and <strong>Operation Client</strong></p>
+</li>
+<li><p>ConfigClient.ExcelAdapter<br>
+The ExcelAdapter is the bridge to configure the <strong>Config Client</strong> via an Excel sheet.</p>
+</li>
+<li><p>ConfigClient.ConsoleApp<br>
+The runner to instantiate the <code>ExcelAdapter</code>.</p>
+</li>
+<li><p>AutomationElements<br>
+Contains enhanced or new UI AutomationElements compared to the FlaUI project, for instance the <code>Spinner</code> control.</p>
+</li>
+</ul>
+<p>The distinction between the SDK and the API is the level of abstraction. SDK abstracts the UI, API abstracts a use case. To add a device it is one call in the API (<code>Add Device</code>) but it needs different steps of the UI which are triggered via the SDK (<code>Activate Device Pane</code>, <code>Select the device type in tree</code>, <code>setup the device properties</code>).</p>
+<hr>
+<h2 id="documentation">Documentation</h2>
+<p>see also <a href="../documentation.html">Documentation</a></p>
+<p>The <code>doc</code>-folder contains the project`s documentation. This documentation is built upon</p>
+<ul>
+<li>a Git sub-module to reference the project Wiki (sub-folder <code>wiki</code>)</li>
+<li>artifacts to configure the <strong>DocFX</strong> documentation system and temporary output from it (sub-folders <code>sdk</code>, <code>api</code> <code>sdk-api</code>)</li>
+<li>a Git sub-module with the static web-sites for the hosting platform (sub-folder <code>_site</code>)</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Page Object Pattern | BVMS UI Automation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Page Object Pattern | BVMS UI Automation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="page-object-pattern">Page Object Pattern</h1>
+
+<p>The access to the UI elements is abstracted via the <em>Page Object Pattern</em>. This is done for whole windows (e.g. the main application like <strong>ConfigClient</strong>), for individual dialogs (e.g. to edit device properties) and for parts (e.g. the pane to configure a device).</p>
+<p>The following hierarchy gives an understanding about the contexts and scenarios in which to use:</p>
+<p><img src="media/PageObject.01.png" alt="Pic: Hierarchy of Page Objects"></p>
+<h2 id="separation-of-concerns-for-page-objects">Separation of Concerns for Page Objects</h2>
+<p>To follow a the Single Responsibility Principle (see article &quot;Page Object Pattern in Automated Testing&quot;) and allow an easier navigation &amp; understanding we use partial classes to separate the diverse facets of the page object pattern. The suffix in the <code>*.cs</code> file name reflects the intention. So a source file which name contains <code>ElementMap</code> contains only the logic to interact with the UI elements which we like to access - mostly the logic to find the UI element in the parent UI container.</p>
+<p>See also <a href="../guidelines/organizing-partial-classes.html">Organizing Partial Classes</a> to get an understanding how these partial classes parts are organized.</p>
+<h3 id="main-class">Main class</h3>
+<p>The main partial class is the class without any suffix. This class contains:</p>
+<ul>
+<li>the interface to the outside - all the public methods to interact with the Page Object</li>
+<li>additional internal logic to process interactions</li>
+</ul>
+<p><strong>Sample:</strong></p>
+<pre><code class="lang-cs">public partial class AddBrsDibosDialog : AddDeviceDialog&lt;BrsDibos&gt;
+{
+    public AddBrsDibosDialog(Window parentWindow, AddBrsDibosDialogConfig config)
+        : base(parentWindow, config)
+    {}
+
+    protected override string DeviceNameTextBoxAutomationId =&gt; &quot;textBoxNetworkAddress&quot;;
+
+    protected override void AddDeviceCore()
+    {
+        var config = (AddBrsDibosDialogConfig)Config;
+        NetworkAddressTextBox.Text = config.Address;
+        UsernameTextBox.Text = config.Credentials.UserName;
+        PasswordTextBox.Text = config.Credentials.Password;
+    }
+}
+</code></pre>
+<h3 id="elementmap-class">ElementMap class</h3>
+<p>The <code>*.ElementMap.cs</code> class keeps all the logic to find and access the UI elements.</p>
+<p><strong>Sample:</strong></p>
+<pre><code class="lang-cs">public partial class AddBrsDibosDialog
+{
+    private TextBox NetworkAddressTextBox =&gt; FindElement&lt;TextBox&gt;(&quot;textBoxNetworkAddress&quot;);
+    private TextBox UsernameTextBox =&gt; FindElement&lt;TextBox&gt;(&quot;textBoxUsername&quot;);
+    private TextBox PasswordTextBox =&gt; FindElement&lt;TextBox&gt;(&quot;textBoxPassword&quot;);
+    protected override Button OkButton =&gt; GetButtonByText(&quot;Scan&quot;);
+}
+</code></pre>
+<h2 id="summaries-of-the-content-behind-the-references-stated-at-the-end-of-this-section">Summaries of the content behind the references (stated at the end of this section)</h2>
+<ul>
+<li>Page Object: wraps all elements, actions and validations happening on a page in one single object</li>
+<li>There's an argument here that the name &quot;page object&quot; is misleading because it makes you think you should have just one page object per page. Something like &quot;panel object&quot; would be better - but the term &quot;page object&quot; is what's become accepted</li>
+<li>Model user behavior not user interfaces</li>
+<li>Think Page Components/Fragments, not Page Objects</li>
+<li>Keep business logic out of your Page Objects; a cleaner approach is to make Page Object classes responsible for doing a single job: locating elements on the page.</li>
+<li>Encapsulate interaction logic inside step methods, Keep step methods in “action” classes and use action classes to model user tasks</li>
+<li>Split into dedicated classes (SRP)
+<ul>
+<li>Page Object Element Map: Contains all element properties and their location logic</li>
+<li>Page Object Validator: Consists of the validations that will be performed on the page</li>
+<li>Page Object (SearchEngineMainPage): Holds the actions that can be performed on the page like Search and Navigate. Exposes an easy access to the Page Validator through the Validate() method. The best implementations of the pattern hide the usage of the Element Map, wrapping it through all action methods</li>
+<li>UI Tests (SearchEngineTests): This class contains a group of tests related to the above page; it can hold only a single instance of the page object</li>
+</ul>
+</li>
+<li>basic rule of thumb for a page object
+<ul>
+<li>should allow a software client to do anything and see anything that a human can</li>
+<li>provide an interface that's easy to program to and hides the underlying widgetry in the window</li>
+<li>should encapsulate the mechanics required to find and manipulate the data in the gui control itself</li>
+<li>if you navigate to another page, the initial page object should return another page object for the new page (should return the a page object for the next page)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<table>
+<thead>
+<tr>
+<th>to access a</th>
+<th>you should</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text field</td>
+<td>have accessor methods that take and return a string</td>
+</tr>
+<tr>
+<td>check box</td>
+<td>should use a boolean</td>
+</tr>
+<tr>
+<td>button</td>
+<td>represent it by an action oriented method names</td>
+</tr>
+</tbody>
+</table>
+<p><strong>see also:</strong></p>
+<ul>
+<li><a href="../guidelines/naming.html#page-object">Naming-Guideline for Page Objects</a></li>
+<li><a href="../basics/dev-tree.html#organizing-partial-classes">Organizing Partial Classes</a></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li>PluralSight course &quot;<a href="https://app.pluralsight.com/library/courses/wpf-applications-automating-ui-tests/table-of-contents">Automating UI Tests for WPF Applications</a>&quot;, notably module &quot;Building a Domain-specific Framework&quot; and video &quot;The architecture of the Domain-specific Framework&quot;</li>
+<li><a href="https://johnfergusonsmart.com/page-objects-that-suck-less-tips-for-writing-more-maintainable-page-objects/">Page Objects that Suck Less – Tips for writing more maintainable Page Objects</a></li>
+<li><a href="https://www.automatetheplanet.com/page-object-pattern/">Page Object Pattern in Automated Testing</a></li>
+<li><a href="https://martinfowler.com/bliki/PageObject.html">PageObject</a></li>
+<li><a href="https://burdettelamar.wordpress.com/2014/03/21/keep-your-page-objects-dry/">Keep Your Page Objects DRY</a></li>
+<li><a href="http://testautomationguru.com/arquillian-graphene-page-fragments/">Advanced Page Object Pattern with Page Fragments</a></li>
+<li><a href="https://app.pluralsight.com/guides/getting-started-with-page-object-pattern-for-your-selenium-tests">Getting Started with Page Object Pattern</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
