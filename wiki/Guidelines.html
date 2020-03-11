@@ -79,72 +79,34 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="guidelines">Guidelines</h1>
 
-<h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><p><a href="#Naming">Naming</a></p>
-<ul>
-<li><a href="#Page-Object">Page Object</a><br>
-how to name the classes and parts of it</li>
-<li><a href="#Branches">Branches</a><br>
-naming the <strong>Git</strong> branches</li>
-</ul>
+<li><p><a href="guidelines/naming.html">Naming Guidelines</a></p>
+</li>
+<li><p><a href="guidelines/organizing-partial-classes.html">Organizing Partial Classes</a></p>
+</li>
+<li><p>to bundle all belonging class parts (<code>&lt;PageObject&gt;.ElementMap.cs</code>under one main node in the <em>Solution Explorer</em> we use the the tag <code>&lt;DependentUpon&gt;</code> in a <code>*.csproj</code> file</p>
+</li>
+<li><p>the edit needs to be done manually with an editor like <strong>Notepad++</strong></p>
 </li>
 </ul>
-<hr>
-<h2 id="naming">Naming</h2>
-<h3 id="page-object">Page Object</h3>
-<p>see also <a href="./Patterns#Page-Object-Pattern">Pattern: Page Object Pattern</a></p>
+<p>see also:</p>
 <ul>
-<li>page objects (aka page components/fragments) should contain a partial class (with suffix <code>ElementMap</code>) containing the access to UI elements as private properties</li>
-<li>these properties must (or must not?) end with the UI element type (e.g. <code>private TextBox ServerNameTextBox</code>) Todo: clarify what better is (must or must not?)</li>
-<li>data input to page objects must follow the Fluent Interface design principle (must have for creational fashion!)</li>
-<li>data input must/should? be done via methods having the prefix <code>Set</code> to facilitate the fluent utilization (<code>fooDialog.SetPassword(&quot;p&quot;).SetUsername(&quot;u&quot;).SetPasswordShowing(false)</code>) Todo: clarify must/should</li>
+<li><a href="patterns/page-object.html">Overview about typical used patterns: Page Object Pattern</a></li>
+<li><a href="guidelines/naming.html#page-object">Naming-Guideline for Page Objects</a></li>
 </ul>
-<h3 id="branches">Branches</h3>
-<ul>
-<li><p>default branches:</p>
-<ul>
-<li><code>develop</code><br>
-common branch to share information; similar to <code>Main</code> in <strong>TFVC</strong></li>
-<li><code>master</code><br>
-we don't care now; but important in the future; don't use it yet</li>
-</ul>
-</li>
-<li><p>individual/feature/realization branches follow this scheme <code>[branch-type]/[user-identification]/[backlog-item-number]/[context]</code>, where:</p>
-<ul>
-<li><p><code>branch type</code> could be one of the following values:</p>
-<ul>
-<li><code>feat</code><br>
-realize a backlog-item</li>
-<li><code>spike</code><br>
-play around with new stuff, prototype new ideas</li>
-<li><code>dev</code><br>
-under consideration; might be meaningful in case where we don't have a PBI which could be referenced</li>
-</ul>
-</li>
-<li><p><code>user-identification</code> is the prefix of the Bosch identifier (e.g. <code>mue</code> for Erika Mustermann</p>
-</li>
-<li><p><code>[backlog-item-number]</code> is the ID of that backlog item</p>
-</li>
-<li><p><code>[context]</code> short name of the backlog item to allow a easier understanding and avoid the necessity to dive into <strong>Azure DevOps Server</strong> to catch the topic/context</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="sample">Sample</h4>
-<ul>
-<li><p><code>feat/mas/248691/replace-timespan</code></p>
-<ul>
-<li>addresses the task <a href="https://tfsservice.bst-eng.com/tfs/OT1TFS/BVMS/_workitems/edit/248691">Replace TimeSpan.FromXyz(#) with #.Xyz()</a></li>
-<li>is realized from Stefan</li>
-</ul>
-</li>
-<li><p><code>dev/apm/convert-to-tree-structure</code></p>
-<ul>
-<li>doesn't belong to a backlog item (e.g. for a &quot;spontaneous&quot; work package)</li>
-</ul>
-</li>
-</ul>
+<h2 id="sample-for-organizing-partial-classes">Sample for organizing partial classes</h2>
+<p>In the follow sample <code>AddVrmDialog.ElementMap.cs</code> contains the ElementMap part of the <code>AddVrmDialog</code> class. This entry needs to get enhanced with the <code>&lt;DependentUpon&gt;</code> element referencing the &quot;main&quot; part of the class.</p>
+<p>the default entry:</p>
+<pre><code class="lang-xml">&lt;Compile Include=&quot;Devices\Recorders\AddVrmDialog.cs&quot; /&gt;
+&lt;Compile Include=&quot;Devices\Recorders\AddVrmDialog.ElementMap.cs&quot; /&gt;
+</code></pre>
+<p>needs to get modified to:</p>
+<pre><code class="lang-xml">&lt;Compile Include=&quot;Devices\Recorders\AddVrmDialog.cs&quot; /&gt;
+&lt;Compile Include=&quot;Devices\Recorders\AddVrmDialog.ElementMap.cs&quot;&gt;
+    &lt;DependentUpon&gt;AddVrmDialog.cs&lt;/DependentUpon&gt;
+&lt;/Compile&gt;
+```]
+</code></pre>
 </article>
           </div>
           

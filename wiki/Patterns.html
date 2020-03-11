@@ -79,81 +79,13 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="overview-about-typical-used-patterns">Overview about typical used patterns</h1>
 
-<h2 id="gof-pattern">GOF Pattern</h2>
-<h3 id="template-method">Template Method</h3>
-<p>In class libraries with similar sibling classes the <strong>Template Method</strong> pattern is often seen. It allows to define in the parent class a common overall logic, where the individual steps could be adjusted regarding the needs in the derived classes.</p>
-<p>In the sample <code>AddDevice</code> is the <strong>Template Method</strong> which defines three steps. The middle step <code>AddDeviceCore</code> should allow the derived classes to implement its own logic. So this step can be defined as <code>abstract</code> or <code>virtual</code> to allow overriding.</p>
-<pre><code class="lang-cs">public class ParentClass
-{
-    ...
-    public void AddDevice(IDevice device)
-    {
-        DoSomethingBefore();
-        AddDeviceCore(device);
-        DoSomethingAfter();
-    }
-
-    protected abstract void AddDeviceCore(IDevice device);
-    ...
-</code></pre>
-<p>In the subclass now <code>AddDeviceCore</code> needs to be implemented.</p>
-<pre><code class="lang-cs">public class ParentClass
-{
-    ...
-    protected override void AddDeviceCore(IDevice device)
-    {
-        DecoderType.Value = device.DecoderName;
-        ...
-    }
-    ...
-</code></pre>
-<p>One other thing is to remark here. In the typical case, that only one step needs to be adjusted, the overridable method is named like the calling method with the suffix <code>Core</code>.</p>
-<h2 id="page-object-pattern">Page Object Pattern</h2>
-<p>To follow a the Single Responsibility Principle (see article &quot;Page Object Pattern in Automated Testing&quot;), allow easier navigation and understanding we use partial classes to separate the diverse facets of the page object pattern. The suffix in the <code>*.cs</code> file name reflects the intention. So a source file which names contains <code>ElementMap</code> contains only the logic to interact with the UI elements which we like to access - mostly the logic to find the UI element in the parent UI container. See also <a href="DevTree.html">Developer Tree</a> to get an understanding how these partial classes parts are organized.</p>
-<p>Summaries of the content behind the references (stated at the end of this section)</p>
+<h2 id="gof-patterns">GOF Patterns</h2>
 <ul>
-<li>Page Object: wraps all elements, actions and validations happening on a page in one single object</li>
-<li>There's an argument here that the name &quot;page object&quot; is misleading because it makes you think you should have just one page object per page. Something like &quot;panel object&quot; would be better - but the term &quot;page object&quot; is what's become accepted</li>
-<li>Model user behavior not user interfaces</li>
-<li>Think Page Components/Fragments, not Page Objects</li>
-<li>Keep business logic out of your Page Objects; a cleaner approach is to make Page Object classes responsible for doing a single job: locating elements on the page.</li>
-<li>Encapsulate interaction logic inside step methods, Keep step methods in “action” classes and use action classes to model user tasks</li>
-<li>Split into dedicated classes (SRP)
-<ul>
-<li>Page Object Element Map: Contains all element properties and their location logic</li>
-<li>Page Object Validator: Consists of the validations that will be performed on the page</li>
-<li>Page Object (SearchEngineMainPage): Holds the actions that can be performed on the page like Search and Navigate. Exposes an easy access to the Page Validator through the Validate() method. The best implementations of the pattern hide the usage of the Element Map, wrapping it through all action methods</li>
-<li>UI Tests (SearchEngineTests): This class contains a group of tests related to the above page; it can hold only a single instance of the page object</li>
+<li><a href="patterns/template-method.html">Template Method Pattern</a></li>
 </ul>
-</li>
-<li>basic rule of thumb for a page object
+<h2 id="ui-automation-patterns">UI Automation Patterns</h2>
 <ul>
-<li>should allow a software client to do anything and see anything that a human can</li>
-<li>provide an interface that's easy to program to and hides the underlying widgetry in the window</li>
-<li>should encapsulate the mechanics required to find and manipulate the data in the gui control itself</li>
-<li>if you navigate to another page, the initial page object should return another page object for the new page (should return the a page object for the next page)</li>
-</ul>
-</li>
-</ul>
-<p>Examples:</p>
-<ul>
-<li>to access a
-<ul>
-<li>text field: you should have accessor methods that take and return a string</li>
-<li>check boxes: should use booleans</li>
-<li>buttons: should be represented by action oriented method names</li>
-</ul>
-</li>
-</ul>
-<h3 id="references">References</h3>
-<ul>
-<li>PluralSight course &quot;<a href="https://app.pluralsight.com/library/courses/wpf-applications-automating-ui-tests/table-of-contents">Automating UI Tests for WPF Applications</a>&quot;, notably module &quot;Building a Domain-specific Framework&quot; and video &quot;The architecture of the Domain-specific Framework&quot;</li>
-<li><a href="https://johnfergusonsmart.com/page-objects-that-suck-less-tips-for-writing-more-maintainable-page-objects/">Page Objects that Suck Less – Tips for writing more maintainable Page Objects</a></li>
-<li><a href="https://www.automatetheplanet.com/page-object-pattern/">Page Object Pattern in Automated Testing</a></li>
-<li><a href="https://martinfowler.com/bliki/PageObject.html">PageObject</a></li>
-<li><a href="https://burdettelamar.wordpress.com/2014/03/21/keep-your-page-objects-dry/">Keep Your Page Objects DRY</a></li>
-<li><a href="http://testautomationguru.com/arquillian-graphene-page-fragments/">Advanced Page Object Pattern with Page Fragments</a></li>
-<li><a href="https://app.pluralsight.com/guides/getting-started-with-page-object-pattern-for-your-selenium-tests">Getting Started with Page Object Pattern</a></li>
+<li><a href="patterns/page-object.html">Page Object Pattern</a></li>
 </ul>
 </article>
           </div>

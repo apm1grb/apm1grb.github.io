@@ -110,6 +110,19 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.Schedules
   nameWithType: ConfigurationClient.Schedules
+- uid: Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.UserManager
+  name: UserManager
+  href: api/Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.html#Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_UserManager
+  commentId: P:Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.UserManager
+  fullName: Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.UserManager
+  nameWithType: ConfigurationClient.UserManager
+- uid: Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.UserManager*
+  name: UserManager
+  href: api/Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.html#Bvms_UiAutomation_ConfigClient_API_ConfigurationClient_UserManager_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.UserManager
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.API.ConfigurationClient.UserManager
+  nameWithType: ConfigurationClient.UserManager
 - uid: Bvms.UiAutomation.ConfigClient.API.ConfigurationManager
   name: ConfigurationManager
   href: api/Bvms.UiAutomation.ConfigClient.API.ConfigurationManager.html
@@ -690,6 +703,47 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.API.ISchedules.SelectRecordingSchedule
   nameWithType: ISchedules.SelectRecordingSchedule
+- uid: Bvms.UiAutomation.ConfigClient.API.IUserManager
+  name: IUserManager
+  href: api/Bvms.UiAutomation.ConfigClient.API.IUserManager.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.API.IUserManager
+  fullName: Bvms.UiAutomation.ConfigClient.API.IUserManager
+  nameWithType: IUserManager
+- uid: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User,System.String)
+  name: AddUser(User, String)
+  href: api/Bvms.UiAutomation.ConfigClient.API.IUserManager.html#Bvms_UiAutomation_ConfigClient_API_IUserManager_AddUser_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User, System.String)
+  nameWithType: IUserManager.AddUser(User, String)
+- uid: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUser*
+  name: AddUser
+  href: api/Bvms.UiAutomation.ConfigClient.API.IUserManager.html#Bvms_UiAutomation_ConfigClient_API_IUserManager_AddUser_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUser
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUser
+  nameWithType: IUserManager.AddUser
+- uid: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup)
+  name: AddUserGroup(UserGroup)
+  href: api/Bvms.UiAutomation.ConfigClient.API.IUserManager.html#Bvms_UiAutomation_ConfigClient_API_IUserManager_AddUserGroup_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_
+  commentId: M:Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup)
+  fullName: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup)
+  nameWithType: IUserManager.AddUserGroup(UserGroup)
+- uid: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup,System.Collections.Generic.IList{Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User})
+  name: AddUserGroup(UserGroup, IList<User>)
+  href: api/Bvms.UiAutomation.ConfigClient.API.IUserManager.html#Bvms_UiAutomation_ConfigClient_API_IUserManager_AddUserGroup_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_System_Collections_Generic_IList_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User__
+  commentId: M:Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup,System.Collections.Generic.IList{Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User})
+  name.vb: AddUserGroup(UserGroup, IList(Of User))
+  fullName: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup, System.Collections.Generic.IList<Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User>)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup, System.Collections.Generic.IList(Of Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User))
+  nameWithType: IUserManager.AddUserGroup(UserGroup, IList<User>)
+  nameWithType.vb: IUserManager.AddUserGroup(UserGroup, IList(Of User))
+- uid: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup*
+  name: AddUserGroup
+  href: api/Bvms.UiAutomation.ConfigClient.API.IUserManager.html#Bvms_UiAutomation_ConfigClient_API_IUserManager_AddUserGroup_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.API.IUserManager.AddUserGroup
+  nameWithType: IUserManager.AddUserGroup
 - uid: Bvms.UiAutomation.ConfigClient.API.IWeekdaysScheduleTable
   name: IWeekdaysScheduleTable
   href: api/Bvms.UiAutomation.ConfigClient.API.IWeekdaysScheduleTable.html
@@ -1070,6 +1124,60 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.API.Schedules.SetWeekdaysTimeBlock
   nameWithType: Schedules.SetWeekdaysTimeBlock
+- uid: Bvms.UiAutomation.ConfigClient.API.UserManager
+  name: UserManager
+  href: api/Bvms.UiAutomation.ConfigClient.API.UserManager.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.API.UserManager
+  fullName: Bvms.UiAutomation.ConfigClient.API.UserManager
+  nameWithType: UserManager
+- uid: Bvms.UiAutomation.ConfigClient.API.UserManager.#ctor(Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject)
+  name: UserManager(ConfigClientPageObject)
+  href: api/Bvms.UiAutomation.ConfigClient.API.UserManager.html#Bvms_UiAutomation_ConfigClient_API_UserManager__ctor_Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_
+  commentId: M:Bvms.UiAutomation.ConfigClient.API.UserManager.#ctor(Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject)
+  fullName: Bvms.UiAutomation.ConfigClient.API.UserManager.UserManager(Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject)
+  nameWithType: UserManager.UserManager(ConfigClientPageObject)
+- uid: Bvms.UiAutomation.ConfigClient.API.UserManager.#ctor*
+  name: UserManager
+  href: api/Bvms.UiAutomation.ConfigClient.API.UserManager.html#Bvms_UiAutomation_ConfigClient_API_UserManager__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.API.UserManager.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.API.UserManager.UserManager
+  nameWithType: UserManager.UserManager
+- uid: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User,System.String)
+  name: AddUser(User, String)
+  href: api/Bvms.UiAutomation.ConfigClient.API.UserManager.html#Bvms_UiAutomation_ConfigClient_API_UserManager_AddUser_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.API.UserManager.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User, System.String)
+  nameWithType: UserManager.AddUser(User, String)
+- uid: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUser*
+  name: AddUser
+  href: api/Bvms.UiAutomation.ConfigClient.API.UserManager.html#Bvms_UiAutomation_ConfigClient_API_UserManager_AddUser_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.API.UserManager.AddUser
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUser
+  nameWithType: UserManager.AddUser
+- uid: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup)
+  name: AddUserGroup(UserGroup)
+  href: api/Bvms.UiAutomation.ConfigClient.API.UserManager.html#Bvms_UiAutomation_ConfigClient_API_UserManager_AddUserGroup_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_
+  commentId: M:Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup)
+  fullName: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup)
+  nameWithType: UserManager.AddUserGroup(UserGroup)
+- uid: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup,System.Collections.Generic.IList{Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User})
+  name: AddUserGroup(UserGroup, IList<User>)
+  href: api/Bvms.UiAutomation.ConfigClient.API.UserManager.html#Bvms_UiAutomation_ConfigClient_API_UserManager_AddUserGroup_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_System_Collections_Generic_IList_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User__
+  commentId: M:Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup,System.Collections.Generic.IList{Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User})
+  name.vb: AddUserGroup(UserGroup, IList(Of User))
+  fullName: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup, System.Collections.Generic.IList<Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User>)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup, System.Collections.Generic.IList(Of Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User))
+  nameWithType: UserManager.AddUserGroup(UserGroup, IList<User>)
+  nameWithType.vb: UserManager.AddUserGroup(UserGroup, IList(Of User))
+- uid: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup*
+  name: AddUserGroup
+  href: api/Bvms.UiAutomation.ConfigClient.API.UserManager.html#Bvms_UiAutomation_ConfigClient_API_UserManager_AddUserGroup_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.API.UserManager.AddUserGroup
+  nameWithType: UserManager.AddUserGroup
 - uid: Bvms.UiAutomation.ConfigClient.DomainModel
   name: Bvms.UiAutomation.ConfigClient.DomainModel
   href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.html
@@ -5004,114 +5112,592 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdayTimeQuarter.Weekday
   nameWithType: WeekdayTimeQuarter.Weekday
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement
+  name: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.html
+  commentId: N:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement
+  nameWithType: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState
+  name: AbilityState
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState
+  nameWithType: AbilityState
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.Disabled
+  name: Disabled
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_AbilityState_Disabled
+  commentId: F:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.Disabled
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.Disabled
+  nameWithType: AbilityState.Disabled
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.Enabled
+  name: Enabled
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_AbilityState_Enabled
+  commentId: F:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.Enabled
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState.Enabled
+  nameWithType: AbilityState.Enabled
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy
+  name: PasswordChangePolicy
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy
+  nameWithType: PasswordChangePolicy
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.None
+  name: None
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_PasswordChangePolicy_None
+  commentId: F:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.None
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.None
+  nameWithType: PasswordChangePolicy.None
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.UserMustChangePassword
+  name: UserMustChangePassword
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_PasswordChangePolicy_UserMustChangePassword
+  commentId: F:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.UserMustChangePassword
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy.UserMustChangePassword
+  nameWithType: PasswordChangePolicy.UserMustChangePassword
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User
+  name: User
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User
+  nameWithType: User
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.#ctor(System.String,System.String,System.String,Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState,System.String,Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy,System.String)
+  name: User(String, String, String, AbilityState, String, PasswordChangePolicy, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User__ctor_System_String_System_String_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_AbilityState_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_PasswordChangePolicy_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.#ctor(System.String,System.String,System.String,Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState,System.String,Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.User(System.String, System.String, System.String, Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState, System.String, Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy, System.String)
+  nameWithType: User.User(String, String, String, AbilityState, String, PasswordChangePolicy, String)
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.#ctor*
+  name: User
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.User
+  nameWithType: User.User
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.AbilityState
+  name: AbilityState
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_AbilityState
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.AbilityState
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.AbilityState
+  nameWithType: User.AbilityState
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.AbilityState*
+  name: AbilityState
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_AbilityState_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.AbilityState
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.AbilityState
+  nameWithType: User.AbilityState
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Description
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_Description
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Description
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Description
+  nameWithType: User.Description
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Description*
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_Description_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Description
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Description
+  nameWithType: User.Description
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.FullName
+  name: FullName
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_FullName
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.FullName
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.FullName
+  nameWithType: User.FullName
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.FullName*
+  name: FullName
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_FullName_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.FullName
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.FullName
+  nameWithType: User.FullName
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Name
+  name: Name
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_Name
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Name
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Name
+  nameWithType: User.Name
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Name*
+  name: Name
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_Name_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Name
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Name
+  nameWithType: User.Name
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Password
+  name: Password
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_Password
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Password
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Password
+  nameWithType: User.Password
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Password*
+  name: Password
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_Password_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Password
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.Password
+  nameWithType: User.Password
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.PasswordChangePolicy
+  name: PasswordChangePolicy
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_PasswordChangePolicy
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.PasswordChangePolicy
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.PasswordChangePolicy
+  nameWithType: User.PasswordChangePolicy
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.PasswordChangePolicy*
+  name: PasswordChangePolicy
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_PasswordChangePolicy_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.PasswordChangePolicy
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.PasswordChangePolicy
+  nameWithType: User.PasswordChangePolicy
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.UserGroupName
+  name: UserGroupName
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_UserGroupName
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.UserGroupName
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.UserGroupName
+  nameWithType: User.UserGroupName
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.UserGroupName*
+  name: UserGroupName
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_UserGroupName_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.UserGroupName
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.UserGroupName
+  nameWithType: User.UserGroupName
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup
+  name: UserGroup
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup
+  nameWithType: UserGroup
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor(System.String,System.String)
+  name: UserGroup(String, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_System_String_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor(System.String,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.UserGroup(System.String, System.String)
+  nameWithType: UserGroup.UserGroup(String, String)
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor(System.String,System.String,System.Collections.Generic.IList{Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User})
+  name: UserGroup(String, String, IList<User>)
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_System_String_System_String_System_Collections_Generic_IList_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User__
+  commentId: M:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor(System.String,System.String,System.Collections.Generic.IList{Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User})
+  name.vb: UserGroup(String, String, IList(Of User))
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.UserGroup(System.String, System.String, System.Collections.Generic.IList<Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User>)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.UserGroup(System.String, System.String, System.Collections.Generic.IList(Of Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User))
+  nameWithType: UserGroup.UserGroup(String, String, IList<User>)
+  nameWithType.vb: UserGroup.UserGroup(String, String, IList(Of User))
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor*
+  name: UserGroup
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.UserGroup
+  nameWithType: UserGroup.UserGroup
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Description
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_Description
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Description
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Description
+  nameWithType: UserGroup.Description
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Description*
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_Description_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Description
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Description
+  nameWithType: UserGroup.Description
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Name
+  name: Name
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_Name
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Name
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Name
+  nameWithType: UserGroup.Name
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Name*
+  name: Name
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_Name_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Name
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Name
+  nameWithType: UserGroup.Name
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Users
+  name: Users
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_Users
+  commentId: P:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Users
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Users
+  nameWithType: UserGroup.Users
+- uid: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Users*
+  name: Users
+  href: sdk/Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_Users_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Users
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Users
+  nameWithType: UserGroup.Users
 - uid: Bvms.UiAutomation.ConfigClient.SDK
   name: Bvms.UiAutomation.ConfigClient.SDK
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.html
   commentId: N:Bvms.UiAutomation.ConfigClient.SDK
   fullName: Bvms.UiAutomation.ConfigClient.SDK
   nameWithType: Bvms.UiAutomation.ConfigClient.SDK
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2
+  name: ActivateConfigurationDialog<T, TU>
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2
+  name.vb: ActivateConfigurationDialog(Of T, TU)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU)
+  nameWithType: ActivateConfigurationDialog<T, TU>
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan,Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  name: ActivateConfigurationDialog(Window, String, TimeSpan, OperationClientActivationForcingMode)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2__ctor_FlaUI_Core_AutomationElements_Window_System_String_System_TimeSpan_Bvms_UiAutomation_ConfigClient_SDK_OperationClientActivationForcingMode_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan,Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ActivateConfigurationDialog(FlaUI.Core.AutomationElements.Window, System.String, System.TimeSpan, Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ActivateConfigurationDialog(FlaUI.Core.AutomationElements.Window, System.String, System.TimeSpan, Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  nameWithType: ActivateConfigurationDialog<T, TU>.ActivateConfigurationDialog(Window, String, TimeSpan, OperationClientActivationForcingMode)
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ActivateConfigurationDialog(Window, String, TimeSpan, OperationClientActivationForcingMode)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan,Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode,System.Func{`0},System.Func{`1})
+  name: ActivateConfigurationDialog(Window, String, TimeSpan, OperationClientActivationForcingMode, Func<T>, Func<TU>)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2__ctor_FlaUI_Core_AutomationElements_Window_System_String_System_TimeSpan_Bvms_UiAutomation_ConfigClient_SDK_OperationClientActivationForcingMode_System_Func__0__System_Func__1__
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan,Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode,System.Func{`0},System.Func{`1})
+  name.vb: ActivateConfigurationDialog(Window, String, TimeSpan, OperationClientActivationForcingMode, Func(Of T), Func(Of TU))
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ActivateConfigurationDialog(FlaUI.Core.AutomationElements.Window, System.String, System.TimeSpan, Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode, System.Func<T>, System.Func<TU>)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ActivateConfigurationDialog(FlaUI.Core.AutomationElements.Window, System.String, System.TimeSpan, Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode, System.Func(Of T), System.Func(Of TU))
+  nameWithType: ActivateConfigurationDialog<T, TU>.ActivateConfigurationDialog(Window, String, TimeSpan, OperationClientActivationForcingMode, Func<T>, Func<TU>)
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ActivateConfigurationDialog(Window, String, TimeSpan, OperationClientActivationForcingMode, Func(Of T), Func(Of TU))
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.#ctor*
   name: ActivateConfigurationDialog
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html
-  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog
-  nameWithType: ActivateConfigurationDialog
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.#ctor(FlaUI.Core.AutomationElements.Window)
-  name: ActivateConfigurationDialog(Window)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog__ctor_FlaUI_Core_AutomationElements_Window_
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.#ctor(FlaUI.Core.AutomationElements.Window)
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.ActivateConfigurationDialog(FlaUI.Core.AutomationElements.Window)
-  nameWithType: ActivateConfigurationDialog.ActivateConfigurationDialog(Window)
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.#ctor*
-  name: ActivateConfigurationDialog
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog__ctor_
-  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.#ctor
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.#ctor
   isSpec: "True"
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.ActivateConfigurationDialog
-  nameWithType: ActivateConfigurationDialog.ActivateConfigurationDialog
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)
-  name: EndDialog(DialogCompletion)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_EndDialog_Bvms_UiAutomation_SDK_Commons_DialogCompletion_
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)
-  nameWithType: ActivateConfigurationDialog.EndDialog(DialogCompletion)
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.EndDialog*
-  name: EndDialog
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_EndDialog_
-  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.EndDialog
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ActivateConfigurationDialog
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ActivateConfigurationDialog
+  nameWithType: ActivateConfigurationDialog<T, TU>.ActivateConfigurationDialog
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ActivateConfigurationDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ActivationForcingMode
+  name: ActivationForcingMode
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_ActivationForcingMode
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ActivationForcingMode
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ActivationForcingMode
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ActivationForcingMode
+  nameWithType: ActivateConfigurationDialog<T, TU>.ActivationForcingMode
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ActivationForcingMode
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ActivationForcingMode*
+  name: ActivationForcingMode
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_ActivationForcingMode_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ActivationForcingMode
   isSpec: "True"
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.EndDialog
-  nameWithType: ActivateConfigurationDialog.EndDialog
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelay(System.Nullable{System.DateTime})
-  name: WithDelay(Nullable<DateTime>)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_WithDelay_System_Nullable_System_DateTime__
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelay(System.Nullable{System.DateTime})
-  name.vb: WithDelay(Nullable(Of DateTime))
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelay(System.Nullable<System.DateTime>)
-  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelay(System.Nullable(Of System.DateTime))
-  nameWithType: ActivateConfigurationDialog.WithDelay(Nullable<DateTime>)
-  nameWithType.vb: ActivateConfigurationDialog.WithDelay(Nullable(Of DateTime))
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelay*
-  name: WithDelay
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_WithDelay_
-  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelay
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ActivationForcingMode
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ActivationForcingMode
+  nameWithType: ActivateConfigurationDialog<T, TU>.ActivationForcingMode
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ActivationForcingMode
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ApplyButton
+  name: ApplyButton
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_ApplyButton
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ApplyButton
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ApplyButton
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ApplyButton
+  nameWithType: ActivateConfigurationDialog<T, TU>.ApplyButton
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ApplyButton
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ApplyButton*
+  name: ApplyButton
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_ApplyButton_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ApplyButton
   isSpec: "True"
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelay
-  nameWithType: ActivateConfigurationDialog.WithDelay
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelayedActivationAt(System.Nullable{System.DateTime})
-  name: WithDelayedActivationAt(Nullable<DateTime>)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_WithDelayedActivationAt_System_Nullable_System_DateTime__
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelayedActivationAt(System.Nullable{System.DateTime})
-  name.vb: WithDelayedActivationAt(Nullable(Of DateTime))
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelayedActivationAt(System.Nullable<System.DateTime>)
-  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelayedActivationAt(System.Nullable(Of System.DateTime))
-  nameWithType: ActivateConfigurationDialog.WithDelayedActivationAt(Nullable<DateTime>)
-  nameWithType.vb: ActivateConfigurationDialog.WithDelayedActivationAt(Nullable(Of DateTime))
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelayedActivationAt*
-  name: WithDelayedActivationAt
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_WithDelayedActivationAt_
-  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelayedActivationAt
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ApplyButton
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ApplyButton
+  nameWithType: ActivateConfigurationDialog<T, TU>.ApplyButton
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ApplyButton
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ForceActivationCheckbox
+  name: ForceActivationCheckbox
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_ForceActivationCheckbox
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ForceActivationCheckbox
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ForceActivationCheckbox
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ForceActivationCheckbox
+  nameWithType: ActivateConfigurationDialog<T, TU>.ForceActivationCheckbox
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ForceActivationCheckbox
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ForceActivationCheckbox*
+  name: ForceActivationCheckbox
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_ForceActivationCheckbox_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.ForceActivationCheckbox
   isSpec: "True"
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDelayedActivationAt
-  nameWithType: ActivateConfigurationDialog.WithDelayedActivationAt
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDescription(System.String)
-  name: WithDescription(String)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_WithDescription_System_String_
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDescription(System.String)
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDescription(System.String)
-  nameWithType: ActivateConfigurationDialog.WithDescription(String)
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDescription*
-  name: WithDescription
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_WithDescription_
-  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDescription
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.ForceActivationCheckbox
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).ForceActivationCheckbox
+  nameWithType: ActivateConfigurationDialog<T, TU>.ForceActivationCheckbox
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).ForceActivationCheckbox
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithActivationForcingMode(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  name: WithActivationForcingMode(OperationClientActivationForcingMode)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_WithActivationForcingMode_Bvms_UiAutomation_ConfigClient_SDK_OperationClientActivationForcingMode_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithActivationForcingMode(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.WithActivationForcingMode(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).WithActivationForcingMode(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  nameWithType: ActivateConfigurationDialog<T, TU>.WithActivationForcingMode(OperationClientActivationForcingMode)
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).WithActivationForcingMode(OperationClientActivationForcingMode)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithActivationForcingMode*
+  name: WithActivationForcingMode
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_WithActivationForcingMode_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithActivationForcingMode
   isSpec: "True"
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithDescription
-  nameWithType: ActivateConfigurationDialog.WithDescription
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithForcedActivation(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
-  name: WithForcedActivation(OperationClientActivationForcingMode)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_WithForcedActivation_Bvms_UiAutomation_ConfigClient_SDK_OperationClientActivationForcingMode_
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithForcedActivation(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithForcedActivation(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
-  nameWithType: ActivateConfigurationDialog.WithForcedActivation(OperationClientActivationForcingMode)
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithForcedActivation*
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.WithActivationForcingMode
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).WithActivationForcingMode
+  nameWithType: ActivateConfigurationDialog<T, TU>.WithActivationForcingMode
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).WithActivationForcingMode
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithForcedActivation
+  name: WithForcedActivation()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_WithForcedActivation
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithForcedActivation
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.WithForcedActivation()
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).WithForcedActivation()
+  nameWithType: ActivateConfigurationDialog<T, TU>.WithForcedActivation()
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).WithForcedActivation()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithForcedActivation*
   name: WithForcedActivation
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_WithForcedActivation_
-  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithForcedActivation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_WithForcedActivation_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithForcedActivation
   isSpec: "True"
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog.WithForcedActivation
-  nameWithType: ActivateConfigurationDialog.WithForcedActivation
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.WithForcedActivation
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).WithForcedActivation
+  nameWithType: ActivateConfigurationDialog<T, TU>.WithForcedActivation
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).WithForcedActivation
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithoutForcedActivation
+  name: WithoutForcedActivation()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_WithoutForcedActivation
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithoutForcedActivation
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.WithoutForcedActivation()
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).WithoutForcedActivation()
+  nameWithType: ActivateConfigurationDialog<T, TU>.WithoutForcedActivation()
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).WithoutForcedActivation()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithoutForcedActivation*
+  name: WithoutForcedActivation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_WithoutForcedActivation_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog`2.WithoutForcedActivation
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog<T, TU>.WithoutForcedActivation
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog(Of T, TU).WithoutForcedActivation
+  nameWithType: ActivateConfigurationDialog<T, TU>.WithoutForcedActivation
+  nameWithType.vb: ActivateConfigurationDialog(Of T, TU).WithoutForcedActivation
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog
+  name: ActivateExistingConfigurationDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog
+  nameWithType: ActivateExistingConfigurationDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan,Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig,System.Func{Bvms.UiAutomation.SDK.Commons.NullPageObject},System.Func{Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog})
+  name: ActivateExistingConfigurationDialog(Window, String, TimeSpan, ActivateExistingConfigurationDialogConfig, Func<NullPageObject>, Func<ActivationManagerDialog>)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateExistingConfigurationDialog__ctor_FlaUI_Core_AutomationElements_Window_System_String_System_TimeSpan_Bvms_UiAutomation_ConfigClient_SDK_ActivateExistingConfigurationDialogConfig_System_Func_Bvms_UiAutomation_SDK_Commons_NullPageObject__System_Func_Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan,Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig,System.Func{Bvms.UiAutomation.SDK.Commons.NullPageObject},System.Func{Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog})
+  name.vb: ActivateExistingConfigurationDialog(Window, String, TimeSpan, ActivateExistingConfigurationDialogConfig, Func(Of NullPageObject), Func(Of ActivationManagerDialog))
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.ActivateExistingConfigurationDialog(FlaUI.Core.AutomationElements.Window, System.String, System.TimeSpan, Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig, System.Func<Bvms.UiAutomation.SDK.Commons.NullPageObject>, System.Func<Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog>)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.ActivateExistingConfigurationDialog(FlaUI.Core.AutomationElements.Window, System.String, System.TimeSpan, Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig, System.Func(Of Bvms.UiAutomation.SDK.Commons.NullPageObject), System.Func(Of Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog))
+  nameWithType: ActivateExistingConfigurationDialog.ActivateExistingConfigurationDialog(Window, String, TimeSpan, ActivateExistingConfigurationDialogConfig, Func<NullPageObject>, Func<ActivationManagerDialog>)
+  nameWithType.vb: ActivateExistingConfigurationDialog.ActivateExistingConfigurationDialog(Window, String, TimeSpan, ActivateExistingConfigurationDialogConfig, Func(Of NullPageObject), Func(Of ActivationManagerDialog))
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.#ctor*
+  name: ActivateExistingConfigurationDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateExistingConfigurationDialog__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.ActivateExistingConfigurationDialog
+  nameWithType: ActivateExistingConfigurationDialog.ActivateExistingConfigurationDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig
+  name: ActivateExistingConfigurationDialogConfig
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig
+  nameWithType: ActivateExistingConfigurationDialogConfig
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.#ctor(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  name: ActivateExistingConfigurationDialogConfig(OperationClientActivationForcingMode)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateExistingConfigurationDialogConfig__ctor_Bvms_UiAutomation_ConfigClient_SDK_OperationClientActivationForcingMode_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.#ctor(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.ActivateExistingConfigurationDialogConfig(Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  nameWithType: ActivateExistingConfigurationDialogConfig.ActivateExistingConfigurationDialogConfig(OperationClientActivationForcingMode)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.#ctor*
+  name: ActivateExistingConfigurationDialogConfig
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateExistingConfigurationDialogConfig__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.ActivateExistingConfigurationDialogConfig
+  nameWithType: ActivateExistingConfigurationDialogConfig.ActivateExistingConfigurationDialogConfig
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.ActivationForcingMode
+  name: ActivationForcingMode
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateExistingConfigurationDialogConfig_ActivationForcingMode
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.ActivationForcingMode
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.ActivationForcingMode
+  nameWithType: ActivateExistingConfigurationDialogConfig.ActivationForcingMode
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.ActivationForcingMode*
+  name: ActivationForcingMode
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateExistingConfigurationDialogConfig_ActivationForcingMode_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.ActivationForcingMode
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialogConfig.ActivationForcingMode
+  nameWithType: ActivateExistingConfigurationDialogConfig.ActivationForcingMode
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog
+  name: ActivateNewConfigurationDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog
+  nameWithType: ActivateNewConfigurationDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.#ctor(FlaUI.Core.AutomationElements.Window,Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig,Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject)
+  name: ActivateNewConfigurationDialog(Window, ActivateNewConfigurationDialogConfig, ConfigClientPageObject)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog__ctor_FlaUI_Core_AutomationElements_Window_Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig_Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.#ctor(FlaUI.Core.AutomationElements.Window,Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig,Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.ActivateNewConfigurationDialog(FlaUI.Core.AutomationElements.Window, Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject)
+  nameWithType: ActivateNewConfigurationDialog.ActivateNewConfigurationDialog(Window, ActivateNewConfigurationDialogConfig, ConfigClientPageObject)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.#ctor*
+  name: ActivateNewConfigurationDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.ActivateNewConfigurationDialog
+  nameWithType: ActivateNewConfigurationDialog.ActivateNewConfigurationDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.ActivationTime
+  name: ActivationTime
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_ActivationTime
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.ActivationTime
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.ActivationTime
+  nameWithType: ActivateNewConfigurationDialog.ActivationTime
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.ActivationTime*
+  name: ActivationTime
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_ActivationTime_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.ActivationTime
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.ActivationTime
+  nameWithType: ActivateNewConfigurationDialog.ActivationTime
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.DelayedActivation
+  name: DelayedActivation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_DelayedActivation
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.DelayedActivation
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.DelayedActivation
+  nameWithType: ActivateNewConfigurationDialog.DelayedActivation
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.DelayedActivation*
+  name: DelayedActivation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_DelayedActivation_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.DelayedActivation
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.DelayedActivation
+  nameWithType: ActivateNewConfigurationDialog.DelayedActivation
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.Description
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_Description
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.Description
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.Description
+  nameWithType: ActivateNewConfigurationDialog.Description
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.Description*
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_Description_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.Description
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.Description
+  nameWithType: ActivateNewConfigurationDialog.Description
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDelayedActivation(System.DateTime)
+  name: WithDelayedActivation(DateTime)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_WithDelayedActivation_System_DateTime_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDelayedActivation(System.DateTime)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDelayedActivation(System.DateTime)
+  nameWithType: ActivateNewConfigurationDialog.WithDelayedActivation(DateTime)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDelayedActivation*
+  name: WithDelayedActivation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_WithDelayedActivation_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDelayedActivation
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDelayedActivation
+  nameWithType: ActivateNewConfigurationDialog.WithDelayedActivation
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDescription(System.String)
+  name: WithDescription(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_WithDescription_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDescription(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDescription(System.String)
+  nameWithType: ActivateNewConfigurationDialog.WithDescription(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDescription*
+  name: WithDescription
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_WithDescription_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDescription
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithDescription
+  nameWithType: ActivateNewConfigurationDialog.WithDescription
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithoutDelayedActivation
+  name: WithoutDelayedActivation()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_WithoutDelayedActivation
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithoutDelayedActivation
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithoutDelayedActivation()
+  nameWithType: ActivateNewConfigurationDialog.WithoutDelayedActivation()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithoutDelayedActivation*
+  name: WithoutDelayedActivation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialog_WithoutDelayedActivation_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithoutDelayedActivation
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialog.WithoutDelayedActivation
+  nameWithType: ActivateNewConfigurationDialog.WithoutDelayedActivation
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig
+  name: ActivateNewConfigurationDialogConfig
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig
+  nameWithType: ActivateNewConfigurationDialogConfig
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.#ctor(System.String,System.Nullable{System.DateTime},Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  name: ActivateNewConfigurationDialogConfig(String, Nullable<DateTime>, OperationClientActivationForcingMode)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig__ctor_System_String_System_Nullable_System_DateTime__Bvms_UiAutomation_ConfigClient_SDK_OperationClientActivationForcingMode_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.#ctor(System.String,System.Nullable{System.DateTime},Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  name.vb: ActivateNewConfigurationDialogConfig(String, Nullable(Of DateTime), OperationClientActivationForcingMode)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivateNewConfigurationDialogConfig(System.String, System.Nullable<System.DateTime>, Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivateNewConfigurationDialogConfig(System.String, System.Nullable(Of System.DateTime), Bvms.UiAutomation.ConfigClient.SDK.OperationClientActivationForcingMode)
+  nameWithType: ActivateNewConfigurationDialogConfig.ActivateNewConfigurationDialogConfig(String, Nullable<DateTime>, OperationClientActivationForcingMode)
+  nameWithType.vb: ActivateNewConfigurationDialogConfig.ActivateNewConfigurationDialogConfig(String, Nullable(Of DateTime), OperationClientActivationForcingMode)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.#ctor*
+  name: ActivateNewConfigurationDialogConfig
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivateNewConfigurationDialogConfig
+  nameWithType: ActivateNewConfigurationDialogConfig.ActivateNewConfigurationDialogConfig
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationForcingMode
+  name: ActivationForcingMode
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig_ActivationForcingMode
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationForcingMode
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationForcingMode
+  nameWithType: ActivateNewConfigurationDialogConfig.ActivationForcingMode
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationForcingMode*
+  name: ActivationForcingMode
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig_ActivationForcingMode_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationForcingMode
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationForcingMode
+  nameWithType: ActivateNewConfigurationDialogConfig.ActivationForcingMode
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationTime
+  name: ActivationTime
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig_ActivationTime
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationTime
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationTime
+  nameWithType: ActivateNewConfigurationDialogConfig.ActivationTime
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationTime*
+  name: ActivationTime
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig_ActivationTime_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationTime
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.ActivationTime
+  nameWithType: ActivateNewConfigurationDialogConfig.ActivationTime
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.Description
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig_Description
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.Description
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.Description
+  nameWithType: ActivateNewConfigurationDialogConfig.Description
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.Description*
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateNewConfigurationDialogConfig_Description_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.Description
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivateNewConfigurationDialogConfig.Description
+  nameWithType: ActivateNewConfigurationDialogConfig.Description
 - uid: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog
   name: ActivationManagerDialog
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html
   commentId: T:Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog
   fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog
   nameWithType: ActivationManagerDialog
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor(FlaUI.Core.AutomationElements.Window)
-  name: ActivationManagerDialog(Window)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_FlaUI_Core_AutomationElements_Window_
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor(FlaUI.Core.AutomationElements.Window)
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ActivationManagerDialog(FlaUI.Core.AutomationElements.Window)
-  nameWithType: ActivationManagerDialog.ActivationManagerDialog(Window)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor(FlaUI.Core.AutomationElements.Window,System.Int32)
+  name: ActivationManagerDialog(Window, Int32)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_FlaUI_Core_AutomationElements_Window_System_Int32_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor(FlaUI.Core.AutomationElements.Window,System.Int32)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ActivationManagerDialog(FlaUI.Core.AutomationElements.Window, System.Int32)
+  nameWithType: ActivationManagerDialog.ActivationManagerDialog(Window, Int32)
 - uid: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor*
   name: ActivationManagerDialog
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_
@@ -5119,12 +5705,19 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ActivationManagerDialog
   nameWithType: ActivationManagerDialog.ActivationManagerDialog
-- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.IsSomethingToRollback
-  name: IsSomethingToRollback
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_IsSomethingToRollback
-  commentId: F:Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.IsSomethingToRollback
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.IsSomethingToRollback
-  nameWithType: ActivationManagerDialog.IsSomethingToRollback
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ConfirmDialog
+  name: ConfirmDialog()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_ConfirmDialog
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ConfirmDialog
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ConfirmDialog()
+  nameWithType: ActivationManagerDialog.ConfirmDialog()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ConfirmDialog*
+  name: ConfirmDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_ConfirmDialog_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ConfirmDialog
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ConfirmDialog
+  nameWithType: ActivationManagerDialog.ConfirmDialog
 - uid: Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.OkButton
   name: OkButton
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_OkButton
@@ -5201,6 +5794,25 @@ references:
   commentId: F:Bvms.UiAutomation.ConfigClient.SDK.ClickMode.ClickOnlyIfNotSelected
   fullName: Bvms.UiAutomation.ConfigClient.SDK.ClickMode.ClickOnlyIfNotSelected
   nameWithType: ClickMode.ClickOnlyIfNotSelected
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog
+  name: ConfigClientLoginDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog
+  nameWithType: ConfigClientLoginDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.#ctor(FlaUI.Core.Application)
+  name: ConfigClientLoginDialog(Application)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ConfigClientLoginDialog__ctor_FlaUI_Core_Application_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.#ctor(FlaUI.Core.Application)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.ConfigClientLoginDialog(FlaUI.Core.Application)
+  nameWithType: ConfigClientLoginDialog.ConfigClientLoginDialog(Application)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.#ctor*
+  name: ConfigClientLoginDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.html#Bvms_UiAutomation_ConfigClient_SDK_ConfigClientLoginDialog__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientLoginDialog.ConfigClientLoginDialog
+  nameWithType: ConfigClientLoginDialog.ConfigClientLoginDialog
 - uid: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject
   name: ConfigClientPageObject
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html
@@ -5382,6 +5994,19 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.UndoChanges
   nameWithType: ConfigClientPageObject.UndoChanges
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.UserManagementPageObject
+  name: UserManagementPageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_UserManagementPageObject
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.UserManagementPageObject
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.UserManagementPageObject
+  nameWithType: ConfigClientPageObject.UserManagementPageObject
+- uid: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.UserManagementPageObject*
+  name: UserManagementPageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_UserManagementPageObject_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.UserManagementPageObject
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.UserManagementPageObject
+  nameWithType: ConfigClientPageObject.UserManagementPageObject
 - uid: Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.Window
   name: Window
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_Window
@@ -6538,6 +7163,19 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.RemoveDevice
   nameWithType: DevicesPageObject.RemoveDevice
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.SelectDeviceTreeNodeByUri(System.String)
+  name: SelectDeviceTreeNodeByUri(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_SelectDeviceTreeNodeByUri_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.SelectDeviceTreeNodeByUri(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.SelectDeviceTreeNodeByUri(System.String)
+  nameWithType: DevicesPageObject.SelectDeviceTreeNodeByUri(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.SelectDeviceTreeNodeByUri*
+  name: SelectDeviceTreeNodeByUri
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_DevicesPageObject_SelectDeviceTreeNodeByUri_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.SelectDeviceTreeNodeByUri
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.DevicesPageObject.SelectDeviceTreeNodeByUri
+  nameWithType: DevicesPageObject.SelectDeviceTreeNodeByUri
 - uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.EditDeviceDialog`1
   name: EditDeviceDialog<T>
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.EditDeviceDialog-1.html
@@ -6931,6 +7569,93 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.ServerManager.Uri
   nameWithType: ServerManager.Uri
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject
+  name: IDevicesPageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject
+  nameWithType: IDevicesPageObject
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.AddDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)
+  name: AddDevice(IDevice)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_AddDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.AddDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.AddDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)
+  nameWithType: IDevicesPageObject.AddDevice(IDevice)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.AddDevice*
+  name: AddDevice
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_AddDevice_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.AddDevice
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.AddDevice
+  nameWithType: IDevicesPageObject.AddDevice
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConfigureCommunicationDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Email},Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.EmailConfigurationMask)
+  name: ConfigureCommunicationDevice(CommunicationBase<Email>, EmailConfigurationMask)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_ConfigureCommunicationDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_CommunicationDevices_CommunicationBase_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_CommunicationDevices_Email__Bvms_UiAutomation_ConfigClient_DomainModel_Devices_CommunicationDevices_EmailConfigurationMask_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConfigureCommunicationDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Email},Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.EmailConfigurationMask)
+  name.vb: ConfigureCommunicationDevice(CommunicationBase(Of Email), EmailConfigurationMask)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConfigureCommunicationDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase<Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Email>, Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.EmailConfigurationMask)
+  fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConfigureCommunicationDevice(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.CommunicationBase(Of Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Email), Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.EmailConfigurationMask)
+  nameWithType: IDevicesPageObject.ConfigureCommunicationDevice(CommunicationBase<Email>, EmailConfigurationMask)
+  nameWithType.vb: IDevicesPageObject.ConfigureCommunicationDevice(CommunicationBase(Of Email), EmailConfigurationMask)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConfigureCommunicationDevice*
+  name: ConfigureCommunicationDevice
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_ConfigureCommunicationDevice_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConfigureCommunicationDevice
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConfigureCommunicationDevice
+  nameWithType: IDevicesPageObject.ConfigureCommunicationDevice
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConnectMonitorGroupWithDecoder(System.String,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder,System.Int32)
+  name: ConnectMonitorGroupWithDecoder(String, Decoder, Int32)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_ConnectMonitorGroupWithDecoder_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_Decoder_System_Int32_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConnectMonitorGroupWithDecoder(System.String,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder,System.Int32)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConnectMonitorGroupWithDecoder(System.String, Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder, System.Int32)
+  nameWithType: IDevicesPageObject.ConnectMonitorGroupWithDecoder(String, Decoder, Int32)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConnectMonitorGroupWithDecoder*
+  name: ConnectMonitorGroupWithDecoder
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_ConnectMonitorGroupWithDecoder_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConnectMonitorGroupWithDecoder
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.ConnectMonitorGroupWithDecoder
+  nameWithType: IDevicesPageObject.ConnectMonitorGroupWithDecoder
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.EditDevice(System.String,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)
+  name: EditDevice(String, IDevice)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_EditDevice_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.EditDevice(System.String,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.EditDevice(System.String, Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice)
+  nameWithType: IDevicesPageObject.EditDevice(String, IDevice)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.EditDevice*
+  name: EditDevice
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_EditDevice_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.EditDevice
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.EditDevice
+  nameWithType: IDevicesPageObject.EditDevice
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.RemoveDevice(System.String,System.Type)
+  name: RemoveDevice(String, Type)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_RemoveDevice_System_String_System_Type_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.RemoveDevice(System.String,System.Type)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.RemoveDevice(System.String, System.Type)
+  nameWithType: IDevicesPageObject.RemoveDevice(String, Type)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.RemoveDevice*
+  name: RemoveDevice
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_RemoveDevice_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.RemoveDevice
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.RemoveDevice
+  nameWithType: IDevicesPageObject.RemoveDevice
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.SelectDeviceTreeNodeByUri(System.String)
+  name: SelectDeviceTreeNodeByUri(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_SelectDeviceTreeNodeByUri_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.SelectDeviceTreeNodeByUri(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.SelectDeviceTreeNodeByUri(System.String)
+  nameWithType: IDevicesPageObject.SelectDeviceTreeNodeByUri(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.SelectDeviceTreeNodeByUri*
+  name: SelectDeviceTreeNodeByUri
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_IDevicesPageObject_SelectDeviceTreeNodeByUri_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.SelectDeviceTreeNodeByUri
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Devices.IDevicesPageObject.SelectDeviceTreeNodeByUri
+  nameWithType: IDevicesPageObject.SelectDeviceTreeNodeByUri
 - uid: Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors
   name: Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.html
@@ -10009,18 +10734,69 @@ references:
   fullName.vb: Bvms.UiAutomation.ConfigClient.SDK.Factory(Of T).CreateEditDialogConfig
   nameWithType: Factory<T>.CreateEditDialogConfig
   nameWithType.vb: Factory(Of T).CreateEditDialogConfig
+- uid: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent
+  name: IMenuPageComponent
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent
+  nameWithType: IMenuPageComponent
+- uid: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.ActivateNewConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
+  name: ActivateNewConfiguration(Configuration)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_IMenuPageComponent_ActivateNewConfiguration_Bvms_UiAutomation_ConfigClient_SDK_Configuration_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.ActivateNewConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.ActivateNewConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
+  nameWithType: IMenuPageComponent.ActivateNewConfiguration(Configuration)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.ActivateNewConfiguration*
+  name: ActivateNewConfiguration
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_IMenuPageComponent_ActivateNewConfiguration_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.ActivateNewConfiguration
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.ActivateNewConfiguration
+  nameWithType: IMenuPageComponent.ActivateNewConfiguration
+- uid: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.OpenActivationManager
+  name: OpenActivationManager()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_IMenuPageComponent_OpenActivationManager
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.OpenActivationManager
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.OpenActivationManager()
+  nameWithType: IMenuPageComponent.OpenActivationManager()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.OpenActivationManager*
+  name: OpenActivationManager
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_IMenuPageComponent_OpenActivationManager_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.OpenActivationManager
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.IMenuPageComponent.OpenActivationManager
+  nameWithType: IMenuPageComponent.OpenActivationManager
+- uid: Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject
+  name: IPaneSelectorPageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject
+  nameWithType: IPaneSelectorPageObject
+- uid: Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.SelectPane(Bvms.UiAutomation.ConfigClient.SDK.PaneType,Bvms.UiAutomation.ConfigClient.SDK.ClickMode)
+  name: SelectPane(PaneType, ClickMode)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_IPaneSelectorPageObject_SelectPane_Bvms_UiAutomation_ConfigClient_SDK_PaneType_Bvms_UiAutomation_ConfigClient_SDK_ClickMode_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.SelectPane(Bvms.UiAutomation.ConfigClient.SDK.PaneType,Bvms.UiAutomation.ConfigClient.SDK.ClickMode)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.SelectPane(Bvms.UiAutomation.ConfigClient.SDK.PaneType, Bvms.UiAutomation.ConfigClient.SDK.ClickMode)
+  nameWithType: IPaneSelectorPageObject.SelectPane(PaneType, ClickMode)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.SelectPane*
+  name: SelectPane
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_IPaneSelectorPageObject_SelectPane_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.SelectPane
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.IPaneSelectorPageObject.SelectPane
+  nameWithType: IPaneSelectorPageObject.SelectPane
 - uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent
   name: MenuPageComponent
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html
   commentId: T:Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent
   fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent
   nameWithType: MenuPageComponent
-- uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.#ctor(FlaUI.Core.AutomationElements.Window,FlaUI.Core.Application,FlaUI.Core.AutomationBase)
-  name: MenuPageComponent(Window, Application, AutomationBase)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent__ctor_FlaUI_Core_AutomationElements_Window_FlaUI_Core_Application_FlaUI_Core_AutomationBase_
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.#ctor(FlaUI.Core.AutomationElements.Window,FlaUI.Core.Application,FlaUI.Core.AutomationBase)
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.MenuPageComponent(FlaUI.Core.AutomationElements.Window, FlaUI.Core.Application, FlaUI.Core.AutomationBase)
-  nameWithType: MenuPageComponent.MenuPageComponent(Window, Application, AutomationBase)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.#ctor(FlaUI.Core.AutomationElements.Window,Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject,FlaUI.Core.Application,FlaUI.Core.AutomationBase)
+  name: MenuPageComponent(Window, ConfigClientPageObject, Application, AutomationBase)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent__ctor_FlaUI_Core_AutomationElements_Window_Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_FlaUI_Core_Application_FlaUI_Core_AutomationBase_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.#ctor(FlaUI.Core.AutomationElements.Window,Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject,FlaUI.Core.Application,FlaUI.Core.AutomationBase)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.MenuPageComponent(FlaUI.Core.AutomationElements.Window, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject, FlaUI.Core.Application, FlaUI.Core.AutomationBase)
+  nameWithType: MenuPageComponent.MenuPageComponent(Window, ConfigClientPageObject, Application, AutomationBase)
 - uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.#ctor*
   name: MenuPageComponent
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent__ctor_
@@ -10028,19 +10804,6 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.MenuPageComponent
   nameWithType: MenuPageComponent.MenuPageComponent
-- uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
-  name: ActivateConfiguration(Configuration)
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent_ActivateConfiguration_Bvms_UiAutomation_ConfigClient_SDK_Configuration_
-  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
-  nameWithType: MenuPageComponent.ActivateConfiguration(Configuration)
-- uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateConfiguration*
-  name: ActivateConfiguration
-  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent_ActivateConfiguration_
-  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateConfiguration
-  isSpec: "True"
-  fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateConfiguration
-  nameWithType: MenuPageComponent.ActivateConfiguration
 - uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateConfigurationButton
   name: ActivateConfigurationButton
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent_ActivateConfigurationButton
@@ -10054,6 +10817,19 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateConfigurationButton
   nameWithType: MenuPageComponent.ActivateConfigurationButton
+- uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateNewConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
+  name: ActivateNewConfiguration(Configuration)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent_ActivateNewConfiguration_Bvms_UiAutomation_ConfigClient_SDK_Configuration_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateNewConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateNewConfiguration(Bvms.UiAutomation.ConfigClient.SDK.Configuration)
+  nameWithType: MenuPageComponent.ActivateNewConfiguration(Configuration)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateNewConfiguration*
+  name: ActivateNewConfiguration
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent_ActivateNewConfiguration_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateNewConfiguration
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.ActivateNewConfiguration
+  nameWithType: MenuPageComponent.ActivateNewConfiguration
 - uid: Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.Context
   name: Context
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_MenuPageComponent_Context
@@ -10397,6 +11173,90 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.Cell.RowNumber
   nameWithType: Cell.RowNumber
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject
+  name: ISchedulePageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject
+  nameWithType: ISchedulePageObject
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.GetActiveRecordingSchedule
+  name: GetActiveRecordingSchedule()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_GetActiveRecordingSchedule
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.GetActiveRecordingSchedule
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.GetActiveRecordingSchedule()
+  nameWithType: ISchedulePageObject.GetActiveRecordingSchedule()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.GetActiveRecordingSchedule*
+  name: GetActiveRecordingSchedule
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_GetActiveRecordingSchedule_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.GetActiveRecordingSchedule
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.GetActiveRecordingSchedule
+  nameWithType: ISchedulePageObject.GetActiveRecordingSchedule
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.RenameRecordingSchedule(System.String,System.String)
+  name: RenameRecordingSchedule(String, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_RenameRecordingSchedule_System_String_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.RenameRecordingSchedule(System.String,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.RenameRecordingSchedule(System.String, System.String)
+  nameWithType: ISchedulePageObject.RenameRecordingSchedule(String, String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.RenameRecordingSchedule*
+  name: RenameRecordingSchedule
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_RenameRecordingSchedule_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.RenameRecordingSchedule
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.RenameRecordingSchedule
+  nameWithType: ISchedulePageObject.RenameRecordingSchedule
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveRecordingSchedule(System.String)
+  name: SetActiveRecordingSchedule(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_SetActiveRecordingSchedule_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveRecordingSchedule(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveRecordingSchedule(System.String)
+  nameWithType: ISchedulePageObject.SetActiveRecordingSchedule(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveRecordingSchedule*
+  name: SetActiveRecordingSchedule
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_SetActiveRecordingSchedule_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveRecordingSchedule
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveRecordingSchedule
+  nameWithType: ISchedulePageObject.SetActiveRecordingSchedule
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveScheduleTable(Bvms.UiAutomation.ConfigClient.SDK.Schedules.ScheduleTablesEnumeration)
+  name: SetActiveScheduleTable(ScheduleTablesEnumeration)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_SetActiveScheduleTable_Bvms_UiAutomation_ConfigClient_SDK_Schedules_ScheduleTablesEnumeration_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveScheduleTable(Bvms.UiAutomation.ConfigClient.SDK.Schedules.ScheduleTablesEnumeration)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveScheduleTable(Bvms.UiAutomation.ConfigClient.SDK.Schedules.ScheduleTablesEnumeration)
+  nameWithType: ISchedulePageObject.SetActiveScheduleTable(ScheduleTablesEnumeration)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveScheduleTable*
+  name: SetActiveScheduleTable
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_SetActiveScheduleTable_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveScheduleTable
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetActiveScheduleTable
+  nameWithType: ISchedulePageObject.SetActiveScheduleTable
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetHolidaysTimeBlock(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.HolidaysTimeBlock)
+  name: SetHolidaysTimeBlock(HolidaysTimeBlock)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_SetHolidaysTimeBlock_Bvms_UiAutomation_ConfigClient_DomainModel_Schedules_HolidaysTimeBlock_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetHolidaysTimeBlock(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.HolidaysTimeBlock)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetHolidaysTimeBlock(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.HolidaysTimeBlock)
+  nameWithType: ISchedulePageObject.SetHolidaysTimeBlock(HolidaysTimeBlock)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetHolidaysTimeBlock*
+  name: SetHolidaysTimeBlock
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_SetHolidaysTimeBlock_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetHolidaysTimeBlock
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetHolidaysTimeBlock
+  nameWithType: ISchedulePageObject.SetHolidaysTimeBlock
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetWeekdaysTimeBlock(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdaysTimeBlock)
+  name: SetWeekdaysTimeBlock(WeekdaysTimeBlock)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_SetWeekdaysTimeBlock_Bvms_UiAutomation_ConfigClient_DomainModel_Schedules_WeekdaysTimeBlock_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetWeekdaysTimeBlock(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdaysTimeBlock)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetWeekdaysTimeBlock(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.WeekdaysTimeBlock)
+  nameWithType: ISchedulePageObject.SetWeekdaysTimeBlock(WeekdaysTimeBlock)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetWeekdaysTimeBlock*
+  name: SetWeekdaysTimeBlock
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Schedules_ISchedulePageObject_SetWeekdaysTimeBlock_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetWeekdaysTimeBlock
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.SetWeekdaysTimeBlock
+  nameWithType: ISchedulePageObject.SetWeekdaysTimeBlock
 - uid: Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject
   name: SchedulePageObject
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.html
@@ -10657,6 +11517,44 @@ references:
   commentId: N:Bvms.UiAutomation.ConfigClient.SDK.Structures
   fullName: Bvms.UiAutomation.ConfigClient.SDK.Structures
   nameWithType: Bvms.UiAutomation.ConfigClient.SDK.Structures
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject
+  name: IStructurePageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject
+  nameWithType: IStructurePageObject
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice,System.String)
+  name: AddDeviceToLogicalTree(IDevice, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_AddDeviceToLogicalTree_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_IDevice_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice, System.String)
+  nameWithType: IStructurePageObject.AddDeviceToLogicalTree(IDevice, String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree(System.String,System.String)
+  name: AddDeviceToLogicalTree(String, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_AddDeviceToLogicalTree_System_String_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree(System.String,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree(System.String, System.String)
+  nameWithType: IStructurePageObject.AddDeviceToLogicalTree(String, String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree*
+  name: AddDeviceToLogicalTree
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_AddDeviceToLogicalTree_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree
+  nameWithType: IStructurePageObject.AddDeviceToLogicalTree
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.CreateFolder(System.String,System.String)
+  name: CreateFolder(String, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_CreateFolder_System_String_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.CreateFolder(System.String,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.CreateFolder(System.String, System.String)
+  nameWithType: IStructurePageObject.CreateFolder(String, String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.CreateFolder*
+  name: CreateFolder
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.html#Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_CreateFolder_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.CreateFolder
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.CreateFolder
+  nameWithType: IStructurePageObject.CreateFolder
 - uid: Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePageObject
   name: StructurePageObject
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePageObject.html
@@ -10766,6 +11664,432 @@ references:
   isSpec: "True"
   fullName: Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.Context
   nameWithType: StructurePaneToolbar.Context
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement
+  name: Bvms.UiAutomation.ConfigClient.SDK.UserManagement
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.html
+  commentId: N:Bvms.UiAutomation.ConfigClient.SDK.UserManagement
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement
+  nameWithType: Bvms.UiAutomation.ConfigClient.SDK.UserManagement
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject
+  name: IUserManagementPageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject
+  nameWithType: IUserManagementPageObject
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User)
+  name: AddUser(User)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_IUserManagementPageObject_AddUser_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User)
+  nameWithType: IUserManagementPageObject.AddUser(User)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUser*
+  name: AddUser
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_IUserManagementPageObject_AddUser_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUser
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUser
+  nameWithType: IUserManagementPageObject.AddUser
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUserGroup
+  name: AddUserGroup()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_IUserManagementPageObject_AddUserGroup
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUserGroup
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUserGroup()
+  nameWithType: IUserManagementPageObject.AddUserGroup()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUserGroup*
+  name: AddUserGroup
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_IUserManagementPageObject_AddUserGroup_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUserGroup
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.AddUserGroup
+  nameWithType: IUserManagementPageObject.AddUserGroup
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.RenameUser(System.String,System.String,System.String)
+  name: RenameUser(String, String, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_IUserManagementPageObject_RenameUser_System_String_System_String_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.RenameUser(System.String,System.String,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.RenameUser(System.String, System.String, System.String)
+  nameWithType: IUserManagementPageObject.RenameUser(String, String, String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.RenameUser*
+  name: RenameUser
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_IUserManagementPageObject_RenameUser_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.RenameUser
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.RenameUser
+  nameWithType: IUserManagementPageObject.RenameUser
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog
+  name: NewUserGroupDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog
+  nameWithType: NewUserGroupDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.#ctor(FlaUI.Core.AutomationElements.Window)
+  name: NewUserGroupDialog(Window)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog__ctor_FlaUI_Core_AutomationElements_Window_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.#ctor(FlaUI.Core.AutomationElements.Window)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.NewUserGroupDialog(FlaUI.Core.AutomationElements.Window)
+  nameWithType: NewUserGroupDialog.NewUserGroupDialog(Window)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan)
+  name: NewUserGroupDialog(Window, String, TimeSpan)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog__ctor_FlaUI_Core_AutomationElements_Window_System_String_System_TimeSpan_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.NewUserGroupDialog(FlaUI.Core.AutomationElements.Window, System.String, System.TimeSpan)
+  nameWithType: NewUserGroupDialog.NewUserGroupDialog(Window, String, TimeSpan)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.#ctor*
+  name: NewUserGroupDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.NewUserGroupDialog
+  nameWithType: NewUserGroupDialog.NewUserGroupDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Description
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_Description
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Description
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Description
+  nameWithType: NewUserGroupDialog.Description
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Description*
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_Description_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Description
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Description
+  nameWithType: NewUserGroupDialog.Description
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)
+  name: EndDialog(DialogCompletion)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_EndDialog_Bvms_UiAutomation_SDK_Commons_DialogCompletion_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)
+  nameWithType: NewUserGroupDialog.EndDialog(DialogCompletion)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.EndDialog*
+  name: EndDialog
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_EndDialog_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.EndDialog
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.EndDialog
+  nameWithType: NewUserGroupDialog.EndDialog
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Name
+  name: Name
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_Name
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Name
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Name
+  nameWithType: NewUserGroupDialog.Name
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Name*
+  name: Name
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_Name_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Name
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.Name
+  nameWithType: NewUserGroupDialog.Name
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithDescription(System.String)
+  name: WithDescription(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_WithDescription_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithDescription(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithDescription(System.String)
+  nameWithType: NewUserGroupDialog.WithDescription(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithDescription*
+  name: WithDescription
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_WithDescription_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithDescription
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithDescription
+  nameWithType: NewUserGroupDialog.WithDescription
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithName(System.String)
+  name: WithName(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_WithName_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithName(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithName(System.String)
+  nameWithType: NewUserGroupDialog.WithName(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithName*
+  name: WithName
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_NewUserGroupDialog_WithName_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithName
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.NewUserGroupDialog.WithName
+  nameWithType: NewUserGroupDialog.WithName
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject
+  name: UserManagementPageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject
+  nameWithType: UserManagementPageObject
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.#ctor(FlaUI.Core.AutomationElements.Window)
+  name: UserManagementPageObject(Window)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject__ctor_FlaUI_Core_AutomationElements_Window_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.#ctor(FlaUI.Core.AutomationElements.Window)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.UserManagementPageObject(FlaUI.Core.AutomationElements.Window)
+  nameWithType: UserManagementPageObject.UserManagementPageObject(Window)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.#ctor*
+  name: UserManagementPageObject
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.UserManagementPageObject
+  nameWithType: UserManagementPageObject.UserManagementPageObject
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User)
+  name: AddUser(User)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_AddUser_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUser(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User)
+  nameWithType: UserManagementPageObject.AddUser(User)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUser*
+  name: AddUser
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_AddUser_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUser
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUser
+  nameWithType: UserManagementPageObject.AddUser
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUserGroup
+  name: AddUserGroup()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_AddUserGroup
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUserGroup
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUserGroup()
+  nameWithType: UserManagementPageObject.AddUserGroup()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUserGroup*
+  name: AddUserGroup
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_AddUserGroup_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUserGroup
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.AddUserGroup
+  nameWithType: UserManagementPageObject.AddUserGroup
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.Context
+  name: Context
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_Context
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.Context
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.Context
+  nameWithType: UserManagementPageObject.Context
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.Context*
+  name: Context
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_Context_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.Context
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.Context
+  nameWithType: UserManagementPageObject.Context
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUser(System.String,System.String,System.String)
+  name: RenameUser(String, String, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_RenameUser_System_String_System_String_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUser(System.String,System.String,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUser(System.String, System.String, System.String)
+  nameWithType: UserManagementPageObject.RenameUser(String, String, String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUser*
+  name: RenameUser
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_RenameUser_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUser
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUser
+  nameWithType: UserManagementPageObject.RenameUser
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUserGroup(System.String,System.String)
+  name: RenameUserGroup(String, String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_RenameUserGroup_System_String_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUserGroup(System.String,System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUserGroup(System.String, System.String)
+  nameWithType: UserManagementPageObject.RenameUserGroup(String, String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUserGroup*
+  name: RenameUserGroup
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserManagementPageObject_RenameUserGroup_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUserGroup
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.RenameUserGroup
+  nameWithType: UserManagementPageObject.RenameUserGroup
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane
+  name: UserPropertiesPane
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html
+  commentId: T:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane
+  nameWithType: UserPropertiesPane
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.#ctor(FlaUI.Core.AutomationElements.Window)
+  name: UserPropertiesPane(Window)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane__ctor_FlaUI_Core_AutomationElements_Window_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.#ctor(FlaUI.Core.AutomationElements.Window)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.UserPropertiesPane(FlaUI.Core.AutomationElements.Window)
+  nameWithType: UserPropertiesPane.UserPropertiesPane(Window)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.#ctor*
+  name: UserPropertiesPane
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane__ctor_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.#ctor
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.UserPropertiesPane
+  nameWithType: UserPropertiesPane.UserPropertiesPane
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.AbilityState
+  name: AbilityState
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_AbilityState
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.AbilityState
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.AbilityState
+  nameWithType: UserPropertiesPane.AbilityState
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.AbilityState*
+  name: AbilityState
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_AbilityState_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.AbilityState
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.AbilityState
+  nameWithType: UserPropertiesPane.AbilityState
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Apply
+  name: Apply()
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_Apply
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Apply
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Apply()
+  nameWithType: UserPropertiesPane.Apply()
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Apply*
+  name: Apply
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_Apply_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Apply
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Apply
+  nameWithType: UserPropertiesPane.Apply
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Context
+  name: Context
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_Context
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Context
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Context
+  nameWithType: UserPropertiesPane.Context
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Context*
+  name: Context
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_Context_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Context
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Context
+  nameWithType: UserPropertiesPane.Context
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Description
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_Description
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Description
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Description
+  nameWithType: UserPropertiesPane.Description
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Description*
+  name: Description
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_Description_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Description
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Description
+  nameWithType: UserPropertiesPane.Description
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.FullName
+  name: FullName
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_FullName
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.FullName
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.FullName
+  nameWithType: UserPropertiesPane.FullName
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.FullName*
+  name: FullName
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_FullName_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.FullName
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.FullName
+  nameWithType: UserPropertiesPane.FullName
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Password
+  name: Password
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_Password
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Password
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Password
+  nameWithType: UserPropertiesPane.Password
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Password*
+  name: Password
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_Password_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Password
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.Password
+  nameWithType: UserPropertiesPane.Password
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordChangePolicy
+  name: PasswordChangePolicy
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_PasswordChangePolicy
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordChangePolicy
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordChangePolicy
+  nameWithType: UserPropertiesPane.PasswordChangePolicy
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordChangePolicy*
+  name: PasswordChangePolicy
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_PasswordChangePolicy_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordChangePolicy
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordChangePolicy
+  nameWithType: UserPropertiesPane.PasswordChangePolicy
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordConfirmation
+  name: PasswordConfirmation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_PasswordConfirmation
+  commentId: P:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordConfirmation
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordConfirmation
+  nameWithType: UserPropertiesPane.PasswordConfirmation
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordConfirmation*
+  name: PasswordConfirmation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_PasswordConfirmation_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordConfirmation
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.PasswordConfirmation
+  nameWithType: UserPropertiesPane.PasswordConfirmation
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithAbilityState(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState)
+  name: WithAbilityState(AbilityState)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithAbilityState_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_AbilityState_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithAbilityState(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithAbilityState(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.AbilityState)
+  nameWithType: UserPropertiesPane.WithAbilityState(AbilityState)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithAbilityState*
+  name: WithAbilityState
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithAbilityState_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithAbilityState
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithAbilityState
+  nameWithType: UserPropertiesPane.WithAbilityState
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithDescription(System.String)
+  name: WithDescription(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithDescription_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithDescription(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithDescription(System.String)
+  nameWithType: UserPropertiesPane.WithDescription(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithDescription*
+  name: WithDescription
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithDescription_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithDescription
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithDescription
+  nameWithType: UserPropertiesPane.WithDescription
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithFullName(System.String)
+  name: WithFullName(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithFullName_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithFullName(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithFullName(System.String)
+  nameWithType: UserPropertiesPane.WithFullName(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithFullName*
+  name: WithFullName
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithFullName_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithFullName
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithFullName
+  nameWithType: UserPropertiesPane.WithFullName
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPassword(System.String)
+  name: WithPassword(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithPassword_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPassword(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPassword(System.String)
+  nameWithType: UserPropertiesPane.WithPassword(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPassword*
+  name: WithPassword
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithPassword_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPassword
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPassword
+  nameWithType: UserPropertiesPane.WithPassword
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordChangePolicy(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy)
+  name: WithPasswordChangePolicy(PasswordChangePolicy)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithPasswordChangePolicy_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_PasswordChangePolicy_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordChangePolicy(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordChangePolicy(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.PasswordChangePolicy)
+  nameWithType: UserPropertiesPane.WithPasswordChangePolicy(PasswordChangePolicy)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordChangePolicy*
+  name: WithPasswordChangePolicy
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithPasswordChangePolicy_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordChangePolicy
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordChangePolicy
+  nameWithType: UserPropertiesPane.WithPasswordChangePolicy
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordConfirmation(System.String)
+  name: WithPasswordConfirmation(String)
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithPasswordConfirmation_System_String_
+  commentId: M:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordConfirmation(System.String)
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordConfirmation(System.String)
+  nameWithType: UserPropertiesPane.WithPasswordConfirmation(String)
+- uid: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordConfirmation*
+  name: WithPasswordConfirmation
+  href: sdk/Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html#Bvms_UiAutomation_ConfigClient_SDK_UserManagement_UserPropertiesPane_WithPasswordConfirmation_
+  commentId: Overload:Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordConfirmation
+  isSpec: "True"
+  fullName: Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.WithPasswordConfirmation
+  nameWithType: UserPropertiesPane.WithPasswordConfirmation
 - uid: Bvms.UiAutomation.ConfigClient.SDK.Utils
   name: Bvms.UiAutomation.ConfigClient.SDK.Utils
   href: sdk/Bvms.UiAutomation.ConfigClient.SDK.Utils.html
@@ -11047,12 +12371,12 @@ references:
   commentId: T:Bvms.UiAutomation.OpClient.Sdk.OperatorClient
   fullName: Bvms.UiAutomation.OpClient.Sdk.OperatorClient
   nameWithType: OperatorClient
-- uid: Bvms.UiAutomation.OpClient.Sdk.OperatorClient.#ctor(FlaUI.Core.Application,FlaUI.Core.AutomationBase)
-  name: OperatorClient(Application, AutomationBase)
-  href: sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClient.html#Bvms_UiAutomation_OpClient_Sdk_OperatorClient__ctor_FlaUI_Core_Application_FlaUI_Core_AutomationBase_
-  commentId: M:Bvms.UiAutomation.OpClient.Sdk.OperatorClient.#ctor(FlaUI.Core.Application,FlaUI.Core.AutomationBase)
-  fullName: Bvms.UiAutomation.OpClient.Sdk.OperatorClient.OperatorClient(FlaUI.Core.Application, FlaUI.Core.AutomationBase)
-  nameWithType: OperatorClient.OperatorClient(Application, AutomationBase)
+- uid: Bvms.UiAutomation.OpClient.Sdk.OperatorClient.#ctor(FlaUI.Core.Application)
+  name: OperatorClient(Application)
+  href: sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClient.html#Bvms_UiAutomation_OpClient_Sdk_OperatorClient__ctor_FlaUI_Core_Application_
+  commentId: M:Bvms.UiAutomation.OpClient.Sdk.OperatorClient.#ctor(FlaUI.Core.Application)
+  fullName: Bvms.UiAutomation.OpClient.Sdk.OperatorClient.OperatorClient(FlaUI.Core.Application)
+  nameWithType: OperatorClient.OperatorClient(Application)
 - uid: Bvms.UiAutomation.OpClient.Sdk.OperatorClient.#ctor*
   name: OperatorClient
   href: sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClient.html#Bvms_UiAutomation_OpClient_Sdk_OperatorClient__ctor_

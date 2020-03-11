@@ -91,19 +91,41 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></div>
     <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO</span></div>
-    <div class="level3"><span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog</span></div>
-    <div class="level4"><span class="xref">ActivationManagerDialog</span></div>
+    <div class="level3"><span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase</span></div>
+    <div class="level4"><span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html">ActivateExistingConfigurationDialog</a>, <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a>&gt;</div>
+    <div class="level5"><span class="xref">ActivationManagerDialog</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)</span>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.ConfirmationCommand</span>
     </div>
     <div>
-      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.EndDialogCore()</span>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.CancelCommand</span>
     </div>
     <div>
-      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.CancelButton</span>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.ConfirmDialog()</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.CancelDialog()</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.ConfirmDialog(System.Func&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.CancelDialog(System.Func&lt;Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.EndDialogCore()</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.CancelButton</span>
     </div>
     <div>
       <span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO.Context</span>
@@ -152,19 +174,31 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ActivationManagerDialog : Dialog</code></pre>
+    <pre><code class="lang-csharp hljs">public class ActivationManagerDialog : GenericDialog&lt;ActivateExistingConfigurationDialog, ConfigClientPageObject&gt;</code></pre>
   </div>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>After closing the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html">ActivationManagerDialog</a> a simple &quot;OK/Cancel&quot;-dialog appears.
+Because that dialog has no deeper meaning we can handle it inside the logic of this class.
+With a confirmation of this dialog we return the next but one page object and skip the simple &quot;OK/Cancel&quot;-dialog for an outside perspective.</p>
+</div>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_examples"><strong>Examples</strong></h5>
+  <p>So the initial expected signature</p>
+<pre><code>public class ActivationManagerDialog : GenericDialog&lt;GenericDialog&lt;ActivateExistingConfigurationDialog, ActivationManagerDialog>, ConfigClientPageObject></code></pre>
+<p>gets simplified to</p>
+<pre><code>public class ActivationManagerDialog : GenericDialog&lt;LoginDialog&lt;ConfigClientPageObject>, ConfigClientPageObject></code></pre>
+
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor(FlaUI.Core.AutomationElements.Window)">ActivationManagerDialog(Window)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_FlaUI_Core_AutomationElements_Window_System_Int32_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor(FlaUI.Core.AutomationElements.Window,System.Int32)">ActivationManagerDialog(Window, Int32)</h4>
+  <div class="markdown level1 summary"><p>The is something to rollback</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ActivationManagerDialog(Window parentWindow)</code></pre>
+    <pre><code class="lang-csharp hljs">public ActivationManagerDialog(Window parentWindow, int timeOut = 5)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,36 +215,14 @@
         <td><span class="parametername">parentWindow</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_IsSomethingToRollback" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.IsSomethingToRollback">IsSomethingToRollback</h4>
-  <div class="markdown level1 summary"><p>The is something to rollback</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsSomethingToRollback</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeOut</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_IsSomethingToRollback_remarks">Remarks</h5>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_FlaUI_Core_AutomationElements_Window_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Refactor: get rid of static variable.</p>
 </div>
   <h3 id="properties">Properties
@@ -241,9 +253,36 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.OkButton</span></div>
+  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.OkButton</span></div>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_ConfirmDialog_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ConfirmDialog*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_ConfirmDialog" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.ConfirmDialog">ConfirmDialog()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ActivateExistingConfigurationDialog ConfirmDialog()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html">ActivateExistingConfigurationDialog</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.ConfirmDialog()</span></div>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_RollbackLastConfiguration_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.RollbackLastConfiguration*"></a>
@@ -253,11 +292,26 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RollbackLastConfiguration()</code></pre>
+    <pre><code class="lang-csharp hljs">public ActivateExistingConfigurationDialog RollbackLastConfiguration()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html">ActivateExistingConfigurationDialog</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
-      <div><span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog</span></div>
+      <div><span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase</span></div>
   </div>
 </article>
           </div>

@@ -83,7 +83,8 @@
   
   <h1 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient" class="text-break">Class OperatorClient
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Wrapper for the OpClient app.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -125,12 +126,13 @@
   
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient__ctor_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient__ctor_FlaUI_Core_Application_FlaUI_Core_AutomationBase_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.#ctor(FlaUI.Core.Application,FlaUI.Core.AutomationBase)">OperatorClient(Application, AutomationBase)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient__ctor_FlaUI_Core_Application_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.#ctor(FlaUI.Core.Application)">OperatorClient(Application)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.html">OperatorClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OperatorClient(Application application, AutomationBase automationBase)</code></pre>
+    <pre><code class="lang-csharp hljs">public OperatorClient(Application application)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,12 +147,8 @@
       <tr>
         <td><span class="xref">FlaUI.Core.Application</span></td>
         <td><span class="parametername">application</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationBase</span></td>
-        <td><span class="parametername">automationBase</span></td>
-        <td></td>
+        <td><p>The application.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -160,7 +158,8 @@
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient_OperatorClientPageObject_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.OperatorClientPageObject*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient_OperatorClientPageObject" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.OperatorClientPageObject">OperatorClientPageObject</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the <span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span> for the OpClient.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -177,7 +176,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.html">OperatorClientPageObject</a></td>
-        <td></td>
+        <td><p>The operator client page object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -187,7 +187,8 @@
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient_Kill_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.Kill*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient_Kill" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.Kill">Kill()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Kills this app instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -197,7 +198,8 @@
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient_Login_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.Login*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClient_Login_System_String_System_String_System_String_System_Int32_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClient.Login(System.String,System.String,System.String,System.Int32)">Login(String, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Logins the specified user.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -216,22 +218,42 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">user</span></td>
-        <td></td>
+        <td><p>The user.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">password</span></td>
-        <td></td>
+        <td><p>The password.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">comparisonMode</span></td>
-        <td></td>
+        <td><p>The comparison mode.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">comparisonTime</span></td>
-        <td></td>
+        <td><p>The comparison time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>Login attempt too slow or too fast.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -83,26 +83,27 @@
   
   <h1 id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog" class="text-break">Class LoginDialog
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The login dialog.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></div>
     <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO</span></div>
-    <div class="level3"><span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog</span></div>
+    <div class="level3"><span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase</span></div>
     <div class="level4"><span class="xref">LoginDialog</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)</span>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)</span>
     </div>
     <div>
-      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.EndDialogCore()</span>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.EndDialogCore()</span>
     </div>
     <div>
-      <span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.CancelButton</span>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.CancelButton</span>
     </div>
     <div>
       <span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO.Context</span>
@@ -151,7 +152,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.OpClient.Sdk.dll</h6>
   <h5 id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LoginDialog : Dialog</code></pre>
+    <pre><code class="lang-csharp hljs">public class LoginDialog : DialogBase</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -193,7 +194,8 @@
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_IsLoginAttemptPossible_" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.IsLoginAttemptPossible*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_IsLoginAttemptPossible" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.IsLoginAttemptPossible">IsLoginAttemptPossible</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether a login attempt can be started or it is necessary to wait.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -210,7 +212,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if a login attempt possible; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -240,14 +243,15 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.Dialog.OkButton</span></div>
+  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.OkButton</span></div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_Login_" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.Login*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_Login_System_Boolean_" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.Login(System.Boolean)">Login(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Logs in and defines expectation for the success.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -266,7 +270,8 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">success</span></td>
-        <td></td>
+        <td><p>if set to <code>true</code> [success].</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -281,7 +286,24 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>Time in seconds how long the login attempt need to process.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>default is not possible, but we need it to suppress an R# warning</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -289,7 +311,8 @@
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_SetPassword_" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.SetPassword*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_SetPassword_System_String_" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.SetPassword(System.String)">SetPassword(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the password.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -308,7 +331,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">password</span></td>
-        <td></td>
+        <td><p>The password.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -323,7 +347,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.html">LoginDialog</a></td>
-        <td></td>
+        <td><p>The instance of the <a class="xref" href="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.html">LoginDialog</a> itself to foster fluent interface style.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -331,7 +356,8 @@
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_SetUserName_" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.SetUserName*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Sdk_LoginDialog_SetUserName_System_String_" data-uid="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.SetUserName(System.String)">SetUserName(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the name of the user.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -350,7 +376,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">username</span></td>
-        <td></td>
+        <td><p>The username.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -365,10 +392,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.html">LoginDialog</a></td>
-        <td></td>
+        <td><p>The instance of the <a class="xref" href="Bvms.UiAutomation.OpClient.Sdk.LoginDialog.html">LoginDialog</a> itself to foster fluent interface style.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase</span></div>
+  </div>
 </article>
           </div>
           
