@@ -2665,9 +2665,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/architecture/introduction.md",
       "output": {
@@ -2680,15 +2677,45 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/architecture/main-classes.md",
       "output": {
         ".html": {
           "relative_path": "wiki/architecture/main-classes.html",
           "hash": "idCgyDLpPPX9yoG7dylOVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/architecture/media/architecture.devices-hierarchy.01.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/architecture/media/architecture.devices-hierarchy.01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/architecture/media/xunit.unit-test-explorer.01.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/architecture/media/xunit.unit-test-explorer.01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/architecture/media/xunit.unit-test-explorer.01.small.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/architecture/media/xunit.unit-test-explorer.01.small.png"
         }
       },
       "is_incremental": false,
@@ -2712,7 +2739,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/basics/dev-tree.html",
-          "hash": "9/XvTpGkrps+jAIEUR+5iw=="
+          "hash": "z2Rawv/yW0rUECTpJIWYuQ=="
         }
       },
       "is_incremental": false,
@@ -2736,7 +2763,7 @@
       "output": {
         ".html": {
           "relative_path": "wiki/basics/tools.html",
-          "hash": "8RMzegVjYC/7WJ7xOzP44A=="
+          "hash": "tUYMY2tVnQGiD2qrNCAqdQ=="
         }
       },
       "is_incremental": false,
@@ -2767,15 +2794,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "wiki/documentation/folder-structure.md",
       "output": {
         ".html": {
           "relative_path": "wiki/documentation/folder-structure.html",
-          "hash": "32kaJ2iZ/Cnz6YENGZ9Iqw=="
+          "hash": "rWBdbLDt0RNXiY0IrYyrzA=="
         }
       },
       "is_incremental": false,
@@ -2842,15 +2866,122 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/AddDeviceUnusualDialog.01.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/AddDeviceUnusualDialog.01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/AddDeviceUnusualDialog.01.small.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/AddDeviceUnusualDialog.01.small.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/AddDeviceUnusualDialog.02.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/AddDeviceUnusualDialog.02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/AddDeviceUnusualDialog.02.small.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/AddDeviceUnusualDialog.02.small.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/AddDeviceUsualDialog.01.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/AddDeviceUsualDialog.01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/AddDeviceUsualDialog.01.small.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/AddDeviceUsualDialog.01.small.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/MismatchUiElementName2AutomationIdAndUsage.01.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/MismatchUiElementName2AutomationIdAndUsage.01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/MismatchUiElementName2AutomationIdAndUsage.02.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/MismatchUiElementName2AutomationIdAndUsage.02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/MismatchUiElementName2AutomationIdAndUsage.03.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/MismatchUiElementName2AutomationIdAndUsage.03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "wiki/issues/media/MismatchUiElementName2AutomationIdAndUsage.03.small.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/issues/media/MismatchUiElementName2AutomationIdAndUsage.03.small.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "wiki/issues/noticeable-problems.md",
       "output": {
         ".html": {
           "relative_path": "wiki/issues/noticeable-problems.html",
-          "hash": "w1xbc809jHcIXciAh2IYOg=="
+          "hash": "sv9UwsGi+77pZ50u4f+ctg=="
         }
       },
       "is_incremental": false,
@@ -2893,15 +3024,23 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Resource",
+      "source_relative_path": "wiki/patterns/media/PageObject.01.png",
+      "output": {
+        "resource": {
+          "relative_path": "wiki/patterns/media/PageObject.01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "wiki/patterns/page-object.md",
       "output": {
         ".html": {
           "relative_path": "wiki/patterns/page-object.html",
-          "hash": "eT+oOMzfc/yeg6sNtw3p3A=="
+          "hash": "w6Qe0Yc39++xozVagEftng=="
         }
       },
       "is_incremental": false,
@@ -2941,6 +3080,20 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
@@ -2952,13 +3105,6 @@
           "incrementalPhase": "build",
           "total_file_count": 216,
           "skipped_file_count": 216
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
         }
       }
     },
