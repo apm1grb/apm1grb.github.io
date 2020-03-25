@@ -89,14 +89,27 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">OperatorClientApp</span></div>
+    <div class="level1"><span class="xref">Bvms.UiAutomation.API.Commons.BvmsApp</span>&lt;<span class="xref">Bvms.UiAutomation.SDK.Commons.BvmsClient</span>&lt;<a class="xref" href="../sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.html">OperatorClientPageObject</a>&gt;, <a class="xref" href="../sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.html">OperatorClientPageObject</a>&gt;</div>
+    <div class="level2"><span class="xref">OperatorClientApp</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Bvms.UiAutomation.OpClient.Api.IBvmsApp.html">IBvmsApp</a></div>
+    <div><span class="xref">Bvms.UiAutomation.API.Commons.IBvmsApp</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Bvms.UiAutomation.API.Commons.BvmsApp&lt;Bvms.UiAutomation.SDK.Commons.BvmsClient&lt;Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;, Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;.Shutdown()</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.API.Commons.BvmsApp&lt;Bvms.UiAutomation.SDK.Commons.BvmsClient&lt;Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;, Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;.BvmsClient</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.API.Commons.BvmsApp&lt;Bvms.UiAutomation.SDK.Commons.BvmsClient&lt;Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;, Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;.BvmsClientPo</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.API.Commons.BvmsApp&lt;Bvms.UiAutomation.SDK.Commons.BvmsClient&lt;Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;, Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;.StartAppWithCredentialsByLoginForm(System.String, System.String, System.String)</span>
+    </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
     </div>
@@ -123,7 +136,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.OpClient.Api.dll</h6>
   <h5 id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OperatorClientApp : IBvmsApp</code></pre>
+    <pre><code class="lang-csharp hljs">public class OperatorClientApp : BvmsApp&lt;BvmsClient&lt;OperatorClientPageObject&gt;, OperatorClientPageObject&gt;, IBvmsApp</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -131,8 +144,7 @@
   
   <a id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp__ctor_" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.#ctor*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp__ctor" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.#ctor">OperatorClientApp()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.html">OperatorClientApp</a> class.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -142,14 +154,14 @@
   </h3>
   
   
-  <a id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_OperatorClient_" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.OperatorClient*"></a>
-  <h4 id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_OperatorClient" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.OperatorClient">OperatorClient</h4>
-  <div class="markdown level1 summary"><p>Gets the operator client.</p>
+  <a id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_LogicalTree_" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.LogicalTree*"></a>
+  <h4 id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_LogicalTree" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.LogicalTree">LogicalTree</h4>
+  <div class="markdown level1 summary"><p>Gets the logical tree.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OperatorClient OperatorClient { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ILogicalTree LogicalTree { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,49 +173,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="../sdk/Bvms.UiAutomation.OpClient.Sdk.OperatorClient.html">OperatorClient</a></td>
-        <td><p>The operator client.</p>
+        <td><a class="xref" href="Bvms.UiAutomation.OpClient.Api.ILogicalTree.html">ILogicalTree</a></td>
+        <td><p>The logical tree.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  
-  
-  <a id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_Login_" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.Login*"></a>
-  <h4 id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_Login_System_String_System_String_" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.Login(System.String,System.String)">Login(String, String)</h4>
-  <div class="markdown level1 summary"><p>Logins the specified user.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Login(string user, string password)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">user</span></td>
-        <td><p>The user.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">password</span></td>
-        <td><p>The password.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_Reattach_" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.Reattach*"></a>
@@ -219,20 +196,21 @@
   
   <a id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_Shutdown_" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.Shutdown*"></a>
   <h4 id="Bvms_UiAutomation_OpClient_Api_OperatorClientApp_Shutdown" data-uid="Bvms.UiAutomation.OpClient.Api.OperatorClientApp.Shutdown">Shutdown()</h4>
-  <div class="markdown level1 summary"><p>Shuts down this instance.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Shutdown()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Shutdown()</code></pre>
   </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Bvms.UiAutomation.API.Commons.BvmsApp&lt;Bvms.UiAutomation.SDK.Commons.BvmsClient&lt;Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;, Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject&gt;.Shutdown()</span></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Bvms.UiAutomation.OpClient.Api.IBvmsApp.html">IBvmsApp</a>
+      <span class="xref">Bvms.UiAutomation.API.Commons.IBvmsApp</span>
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
-      <div><a class="xref" href="Bvms.UiAutomation.OpClient.Api.IBvmsApp.html">IBvmsApp</a></div>
+      <div><span class="xref">Bvms.UiAutomation.API.Commons.IBvmsApp</span></div>
   </div>
 </article>
           </div>

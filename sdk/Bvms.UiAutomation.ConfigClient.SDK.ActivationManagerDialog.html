@@ -119,13 +119,25 @@
       <span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.CancelDialog(System.Func&lt;Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;)</span>
     </div>
     <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.ConfirmDialog2()</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.CancelDialog2()</span>
+    </div>
+    <div>
       <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.EndDialog(Bvms.UiAutomation.SDK.Commons.DialogCompletion)</span>
     </div>
     <div>
       <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.EndDialogCore()</span>
     </div>
     <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.ConfirmationButton</span>
+    </div>
+    <div>
       <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.CancelButton</span>
+    </div>
+    <div>
+      <span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.FindCancelButton()</span>
     </div>
     <div>
       <span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO.Context</span>
@@ -193,7 +205,8 @@ With a confirmation of this dialog we return the next but one page object and sk
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog__ctor_FlaUI_Core_AutomationElements_Window_System_Int32_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.#ctor(FlaUI.Core.AutomationElements.Window,System.Int32)">ActivationManagerDialog(Window, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html">ActivationManagerDialog</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -212,44 +225,17 @@ With a confirmation of this dialog we return the next but one page object and sk
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
         <td><span class="parametername">parentWindow</span></td>
-        <td></td>
+        <td><p>The parent window.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">timeOut</span></td>
-        <td></td>
+        <td><p>The time in seconds for the timeout to search for the dialog.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_OkButton_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.OkButton*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_OkButton" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.OkButton">OkButton</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Button OkButton { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.Button</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.OkButton</span></div>
   <h3 id="methods">Methods
   </h3>
   
@@ -281,15 +267,85 @@ With a confirmation of this dialog we return the next but one page object and sk
   <div><span class="xref">Bvms.UiAutomation.SDK.Commons.GenericDialog&lt;Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog, Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject&gt;.ConfirmDialog()</span></div>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_RollbackLastConfiguration_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.RollbackLastConfiguration*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_RollbackLastConfiguration" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.RollbackLastConfiguration">RollbackLastConfiguration()</h4>
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_FindConfirmationButton_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.FindConfirmationButton*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_FindConfirmationButton" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.FindConfirmationButton">FindConfirmationButton()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Button FindConfirmationButton()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Button</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.DialogBase.FindConfirmationButton()</span></div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_RevertUnactivatedChanges_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.RevertUnactivatedChanges*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_RevertUnactivatedChanges" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.RevertUnactivatedChanges">RevertUnactivatedChanges()</h4>
   <div class="markdown level1 summary"><p>Rolls back to the last configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ActivateExistingConfigurationDialog RollbackLastConfiguration()</code></pre>
+    <pre><code class="lang-csharp hljs">public ActivateExistingConfigurationDialog RevertUnactivatedChanges()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html">ActivateExistingConfigurationDialog</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_RollbackLastConfiguration_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.RollbackLastConfiguration*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_RollbackLastConfiguration_System_Int32_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.RollbackLastConfiguration(System.Int32)">RollbackLastConfiguration(Int32)</h4>
+  <div class="markdown level1 summary"><p>Rolls back to the last configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivateExistingConfigurationDialog RollbackLastConfiguration(int amountOfActivationsToRollBack = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amountOfActivationsToRollBack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>

@@ -105,14 +105,14 @@
 <p>For the following steps the <strong>DocFX</strong> toolset needs to be installed on your machine.<br>
 Use <strong>Chocolatey</strong> with <code>choco install docfx</code></p>
 <ol>
-<li>Open <strong>Command Prompt</strong> in/with sub-folder <code>.../doc/</code></li>
+<li>Open <strong>Command Prompt</strong> in/with DevTree root folder</li>
 <li>Run command <code>docfx metadata doc\docfx.json -o doc</code> to extract the metadata of the source code</li>
 <li>Run command <code>docfx build .\doc\docfx.json</code> to create the static web-sites</li>
 </ol>
 <h2 id="publish-the-updated-documentation">Publish the updated documentation</h2>
 <p>To have the updated documentation online available the repository containing the static web-pages must be updated and pushed.</p>
 <ol>
-<li>Open <strong>Git Bash</strong> in/with sub-folder <code>.../doc/_site_/</code></li>
+<li>Open <strong>Git Bash</strong> in/with sub-folder <code>.../doc/_site/</code></li>
 <li>Run command <code>git commit -am &quot;update DocFX documentation&quot;</code> to commit the changes</li>
 <li>Run command <code>git push</code> to update the remote</li>
 </ol>

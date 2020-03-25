@@ -99,11 +99,13 @@ Sporadically it is necessary to use long waits and timeouts, notably during the 
 <p>see also <a href="../patterns/page-object.html">Pattern: Page Object Pattern</a></p>
 <ul>
 <li>page objects (aka page components/fragments) should consist of multiple files which contains the parts of a (partial) class</li>
-<li>one part should have the suffix <code>ElementMap</code> and must contain the access to UI elements as private properties</li>
-<li>these properties must (or must not?) end with the UI element type (e.g. <code>private TextBox ServerNameTextBox</code>) Todo: clarify what better is (must or must not?)</li>
+<li>one part should have the suffix <code>ElementMap</code> and must contain the access to UI elements as protected properties [1]</li>
+<li>these properties must (or must not?) end with the UI element type (e.g. <code>protected TextBox ServerNameTextBox</code>) Todo: clarify what better is (must or must not?)</li>
 <li>data input to page objects must follow the Fluent Interface design principle (must have for creational fashion!)</li>
 <li>data input must/should? be done via methods having the prefix <code>Set</code> to facilitate the fluent utilization (<code>fooDialog.SetPassword(&quot;p&quot;).SetUsername(&quot;u&quot;).SetPasswordShowing(false)</code>) Todo: clarify must/should</li>
 </ul>
+<p>[1] In the past we tried to use the private access modifier. But then we discovered situation where in derived classes we had the necessity to access the UI element of a parent class. One case was the check whether a dialog has finished to run some internal validation logic by using the <code>Enabled</code> property.<br>
+e.g. <code>if (OkButton.IsEnabled) { /* process next step */ }</code></p>
 <p>see also:</p>
 <ul>
 <li><a href="../patterns/page-object.html">Overview about typical used patterns: Page Object Pattern</a></li>

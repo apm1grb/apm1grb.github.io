@@ -90,8 +90,9 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></div>
-    <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageComponent</span></div>
-    <div class="level3"><span class="xref">ConfigClientPageObject</span></div>
+    <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO</span></div>
+    <div class="level3"><span class="xref">Bvms.UiAutomation.SDK.Commons.BvmsClientPo</span></div>
+    <div class="level4"><span class="xref">ConfigClientPageObject</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -139,31 +140,20 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ConfigClientPageObject : PageComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConfigClientPageObject : BvmsClientPo</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject__ctor" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.#ctor">ConfigClientPageObject()</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject__ctor_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.#ctor(FlaUI.Core.AutomationElements.Window)">ConfigClientPageObject(Window)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConfigClientPageObject()</code></pre>
-  </div>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject__ctor_FlaUI_Core_Application_FlaUI_Core_AutomationBase_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.#ctor(FlaUI.Core.Application,FlaUI.Core.AutomationBase)">ConfigClientPageObject(Application, AutomationBase)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConfigClientPageObject(Application application, AutomationBase automation)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConfigClientPageObject(Window mainWindow)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,15 +166,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">FlaUI.Core.Application</span></td>
-        <td><span class="parametername">application</span></td>
-        <td><p>The application.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationBase</span></td>
-        <td><span class="parametername">automation</span></td>
-        <td><p>The automation.</p>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
+        <td><span class="parametername">mainWindow</span></td>
+        <td><p>The main window of the ConfigClient app.</p>
 </td>
       </tr>
     </tbody>
@@ -217,7 +201,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.Context</span></div>
+  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO.Context</span></div>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_DevicesPageObject_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.DevicesPageObject*"></a>
@@ -413,48 +397,31 @@
   </h3>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_EnsureCamsTabIsActive_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.EnsureCamsTabIsActive*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_EnsureCamsTabIsActive" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.EnsureCamsTabIsActive">EnsureCamsTabIsActive()</h4>
-  <div class="markdown level1 summary"><p>Ensures that the cams tab is active.</p>
-</div>
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_RenewMainWindow_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.RenewMainWindow*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_RenewMainWindow_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.RenewMainWindow(FlaUI.Core.AutomationElements.Window)">RenewMainWindow(Window)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EnsureCamsTabIsActive()</code></pre>
+    <pre><code class="lang-csharp hljs">public void RenewMainWindow(Window mainWindow)</code></pre>
   </div>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_EnsureMapsTabIsActive_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.EnsureMapsTabIsActive*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_EnsureMapsTabIsActive" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.EnsureMapsTabIsActive">EnsureMapsTabIsActive()</h4>
-  <div class="markdown level1 summary"><p>Ensures that the maps tab is active.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EnsureMapsTabIsActive()</code></pre>
-  </div>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_EnsureSchedulesTabIsActive_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.EnsureSchedulesTabIsActive*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_EnsureSchedulesTabIsActive" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.EnsureSchedulesTabIsActive">EnsureSchedulesTabIsActive()</h4>
-  <div class="markdown level1 summary"><p>Ensures the schedules tab is active.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EnsureSchedulesTabIsActive()</code></pre>
-  </div>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_Kill_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.Kill*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_Kill" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.Kill">Kill()</h4>
-  <div class="markdown level1 summary"><p>Kills this instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Kill()</code></pre>
-  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
+        <td><span class="parametername">mainWindow</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_SaveChanges_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.SaveChanges*"></a>

@@ -129,13 +129,20 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class MonitorGroup : Device&lt;MonitorGroup&gt;, IDevice</code></pre>
   </div>
+  <h5 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If not created with belonging new <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_Decoder">Decoder</a> the properties for <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_Decoder">Decoder</a>
+and <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_MonitorNumber">MonitorNumber</a> are <code>null</code>.</p>
+<p>Refactoring necessary 
+<ul><li>a MonitorGroup can connect to several decoders</li><li>a MonitorGroup can be connected to several monitors.</li></ul>
+a MonitorGroup can connect to several decoders.</p>
+</div>
   <h3 id="properties">Properties
   </h3>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_Decoder_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.Decoder*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_Decoder" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.Decoder">Decoder</h4>
-  <div class="markdown level1 summary"><p>Refactor: a MonitorGroup can connect to several decoders.</p>
+  <div class="markdown level1 summary"><p>The connected decoder.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -189,7 +196,7 @@
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_MonitorNumber_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.MonitorNumber*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_MonitorNumber" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.MonitorNumber">MonitorNumber</h4>
-  <div class="markdown level1 summary"><p>Refactor: a MonitorGroup can be connected to several monitors.</p>
+  <div class="markdown level1 summary"><p>The connected monitor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

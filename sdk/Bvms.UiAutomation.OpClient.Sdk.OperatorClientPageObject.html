@@ -90,8 +90,9 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject</span></div>
-    <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.PageComponent</span></div>
-    <div class="level3"><span class="xref">OperatorClientPageObject</span></div>
+    <div class="level2"><span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO</span></div>
+    <div class="level3"><span class="xref">Bvms.UiAutomation.SDK.Commons.BvmsClientPo</span></div>
+    <div class="level4"><span class="xref">OperatorClientPageObject</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -139,20 +140,20 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.OpClient.Sdk.dll</h6>
   <h5 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClientPageObject_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OperatorClientPageObject : PageComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class OperatorClientPageObject : BvmsClientPo</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_OperatorClientPageObject__ctor_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClientPageObject__ctor_FlaUI_Core_AutomationElements_Window_FlaUI_Core_AutomationElements_AutomationElement_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.#ctor(FlaUI.Core.AutomationElements.Window,FlaUI.Core.AutomationElements.AutomationElement)">OperatorClientPageObject(Window, AutomationElement)</h4>
+  <h4 id="Bvms_UiAutomation_OpClient_Sdk_OperatorClientPageObject__ctor_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.#ctor(FlaUI.Core.AutomationElements.Window)">OperatorClientPageObject(Window)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.html">OperatorClientPageObject</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OperatorClientPageObject(Window parentWindow, AutomationElement context)</code></pre>
+    <pre><code class="lang-csharp hljs">public OperatorClientPageObject(Window mainWindow)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,14 +167,8 @@
     <tbody>
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
-        <td><span class="parametername">parentWindow</span></td>
+        <td><span class="parametername">mainWindow</span></td>
         <td><p>The parent window.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
-        <td><span class="parametername">context</span></td>
-        <td><p>The context.</p>
 </td>
       </tr>
     </tbody>
@@ -206,7 +201,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.PageObject.Context</span></div>
+  <div><span class="xref">Bvms.UiAutomation.SDK.Commons.WindowPO.Context</span></div>
   
   
   <a id="Bvms_UiAutomation_OpClient_Sdk_OperatorClientPageObject_LogicalTree_" data-uid="Bvms.UiAutomation.OpClient.Sdk.OperatorClientPageObject.LogicalTree*"></a>
