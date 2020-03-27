@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PageObject
+   | BVMS UI Automation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PageObject
+   | BVMS UI Automation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../sdk-api/toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject">
+  
+  
+  <h1 id="Bvms_UiAutomation_SDK_Commons_PageObject" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject" class="text-break">Class PageObject
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for the page object pattern.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PageObject</span></div>
+      <div class="level2"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.NullPageObject.html">NullPageObject</a></div>
+      <div class="level2"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageComponent.html">PageComponent</a></div>
+      <div class="level2"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.WindowPO.html">WindowPO</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bvms.UiAutomation.SDK.Commons.html">Bvms.UiAutomation.SDK.Commons</a></h6>
+  <h6><strong>Assembly</strong>: Bvms.UiAutomation.SDK.Commons.dll</h6>
+  <h5 id="Bvms_UiAutomation_SDK_Commons_PageObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PageObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject__ctor_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.#ctor*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject__ctor_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.#ctor(FlaUI.Core.AutomationElements.Window)">PageObject(Window)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PageObject(Window parentWindow)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
+        <td><span class="parametername">parentWindow</span></td>
+        <td><p>The parent parentWindow.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_Context_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.Context*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_Context" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.Context">Context</h4>
+  <div class="markdown level1 summary"><p>Gets the context which UI element is wrapped by this <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract AutomationElement Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td><p>The UI element which is wrapped.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_ParentWindow_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.ParentWindow*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_ParentWindow" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.ParentWindow">ParentWindow</h4>
+  <div class="markdown level1 summary"><p>Gets the parent parentWindow. Usually the windows of the application</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Window ParentWindow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
+        <td><p>The parent Window.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_FindElement_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.FindElement*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.FindElement``1(System.String)">FindElement&lt;TElement&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Finds an AutomationElement inside a dialog based upon the AutomationID and type of the element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TElement FindElement&lt;TElement&gt;(string automationId)
+    where TElement : AutomationElement</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">automationId</span></td>
+        <td><p>The automation identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TElement</span></td>
+        <td><p>The found AutomationElement.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td><p>The type of the element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.FindTree*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.FindTree(System.String)">FindTree(String)</h4>
+  <div class="markdown level1 summary"><p>Finds a tree by its Automation ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Tree FindTree(string automationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">automationId</span></td>
+        <td><p>The automation ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Tree</span></td>
+        <td><p>The tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.GetButtonByText*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.GetButtonByText(System.String)">GetButtonByText(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the button via its text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button GetButtonByText(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The text on the button.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Button</span></td>
+        <td><p>The button.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_GetScreenshotName_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.GetScreenshotName*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_GetScreenshotName" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.GetScreenshotName">GetScreenshotName()</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the screenshot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetScreenshotName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of the screenshot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_SaveScreenshot_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.SaveScreenshot*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_SaveScreenshot_System_String_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.SaveScreenshot(System.String)">SaveScreenshot(String)</h4>
+  <div class="markdown level1 summary"><p>Saves a screenshot in case of an error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveScreenshot(string fileName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
