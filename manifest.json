@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk-api/toc.html",
-          "hash": "czDtbra6J+mhvNlwaOD/IQ=="
+          "hash": "qZLyVTVfcP70aFNBLN8PDA=="
         }
       },
       "is_incremental": false,
@@ -3666,13 +3666,6 @@
         "skipped_file_count": 0
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -3685,6 +3678,13 @@
           "incrementalPhase": "build",
           "total_file_count": 28,
           "skipped_file_count": 28
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
