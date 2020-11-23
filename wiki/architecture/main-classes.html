@@ -81,15 +81,55 @@
 
 <p>[[<em>TOC</em>]]</p>
 <h2 id="devices">Devices</h2>
+<p>Classes which are derived from <code>IDevice</code> are the assets which are managed from <strong>BVMS</strong> as devices in the <em>Device Tree</em>. Usually these devices are only a dumb representation of the <strong>BVMS</strong> managed devices in the meaning that they mostly consists of properties (e.g. device name, IP address,...). But in some cases they also own a behavior. A VRM for instance offers the possibility to add a pool via the method <code>AddPool</code> and a pool offers the possibility to add an encoder, VSG, SCSI via <code>AddEncoder</code>, <code>AddVsg</code> and <code>AddScsi</code>.</p>
 <p>All devices have one common property - that is the name of the device. Depending on the device type a device is listed in the <em>DeviceTree</em> on the left side or a pane on the right side.</p>
 <p>All devices are derived from <code>IDevice</code> and <code>Device</code>.</p>
 <p>The following picture gives an overview about the class hierarchy of devices.</p>
 <p><img src="media/architecture.devices-hierarchy.01.png" alt="Pic: Class Hierarchy of Devices"></p>
+<h2 id="deviceconfig">DeviceConfig</h2>
+<p>The properties of a device are set during creation or update of a device. The necessary values are brought into the device via a belonging <code>Config</code> object. So each device <code>Foo</code> has a corresponding config object <code>FooConfig</code>. The config objects also form a hierarchy analogue to the hierarchy of the devices. And because they belong to devices they are implemented in a generic fashion:</p>
+<pre><code class="lang-cs">public class DeviceConfig&lt;T&gt; : IDeviceConfig
+    where T : Device&lt;T&gt;
+</code></pre>
+<p>This allows later inside the creation and update of a device an easy access to the properties of the provided configuration.</p>
+<p>The update of a device is done via this method:</p>
+<pre><code class="lang-cs">public virtual Device&lt;T&gt; UpdateDevice(DeviceConfig&lt;T&gt; config)
+</code></pre>
+<p>So in the derived abstract <code>VideoDeviceBase</code> class we have this:<br>
+Still not nice are the casts in the concrete config class and the cast to <code>Device&lt;T&gt;</code>. Maybe in future versions we find a way to eliminate this.)</p>
+<pre><code class="lang-cs">public override Device&lt;T&gt; UpdateDevice(DeviceConfig&lt;T&gt; config)
+{
+    base.UpdateDevice(config);
+
+    var cfg =  (VideoDeviceBaseConfig&lt;T&gt;) config;
+
+    IpAddress = cfg.IpAddress;
+    Port = cfg.Port;
+    ConnectionSecurity = cfg.ConnectionSecurity;
+    Credentials = cfg.Credentials;
+
+    return (T) this;
+</code></pre>
 <h2 id="devicemanager">DeviceManager</h2>
 <p>To add and/or configure a device it is necessary to know how the device needs to be added. Some devices are added by using a context-sensitive menu at the device type node in the tree others are added via a button in the pane.</p>
 <p>A <code>DeviceManager</code> is responsible to handle that logic for a specific device. That means each device needs a corresponding and individual DeviceManager. All these DeviceManagers are subclasses of <code>DeviceManager</code>.</p>
-<h2 id="adddevicedialog">AddDeviceDialog</h2>
-<p>During adding a device, most devices need some details specified via a dialog. These dialogs are subclasses of a class generic  <code>AddDeviceDialog&lt;T&gt; where T : IDevice</code>. All devices with needs further details captured via a dialog, should derive from <code>AddDeviceDialog&lt;T&gt;</code> and implement the necessary individual logic.</p>
+<h2 id="adddevicedialog-and-editdevicedialog">AddDeviceDialog and EditDeviceDialog</h2>
+<p>During adding a device, most devices need some details specified via a dialog. These dialogs are subclasses of a generic class:</p>
+<pre><code class="lang-cs">public abstract partial class AddDeviceDialog&lt;T&gt; : DeviceDialog&lt;T&gt;
+    where T : Device&lt;T&gt;
+</code></pre>
+<p>All devices with needs further details captured via a dialog, should derive from <code>AddDeviceDialog&lt;T&gt;</code> and implement the necessary individual logic. The same concerns the update case. There the base class is <code>EditDeviceDialog&lt;T&gt;</code>.</p>
+<p>In former versions the device itself was used as an input parameter a device related dialog. The properties of that device were used as the information how the content of a dialog (the UI elements) needs to be configured. Usually this maps indeed 1:1 (if you have a property of a device, you need a UI element to specify the property - e.g. device name via text field, TCP port via an integer spinner, and so on). But in some rare cases this dependency was not enough to manage the interaction with the dialog comprehensively. For an example, in dialog with capturing passwords a checkbox <em>Show password</em> is available. This information (to show the password or to hide it) is not part of the device. It is only a functionality inside the dialog for interacting with the password field in a specific manner. Hence we recognized that the dialog configuration needs to get separated from the device which needs to be configured. Therefore to each device configuring dialog <code>AddFooDialog</code> or <code>EditFooDialog</code> now a configuration class <code>AddFooDialogConfig</code> respectively <code>EditFooDialogConfig</code> belongs. These config classes are used in the dialog constructors to configure the UI elements of this dialog.</p>
+<h2 id="generic-dialog">Generic Dialog</h2>
+<p>From the perspective of the <code>PageObject</code> pattern (see also <a href="../patterns/page-object.html">Page Object Pattern</a>) and the best practices to return the subsequent <code>PageObject</code> (in case the dialog interaction will leave a <code>PageObject</code>), it seemed to be a good idea to see a dialog as a fork - the <code>OK</code> button returns the <code>PageObject</code> for the confirmation case and the <code>Cancel</code> button returns the <code>PageObject</code> for the other one. The <code>PageObject</code> for the confirmation case can be the <code>PageObject</code> of the next &quot;dialog page&quot; in case of a <em>Next</em>-<em>Next</em>-<em>Finish</em> chain of a wizard. The <code>PageObject</code> for the canceling case is most often the <code>PageObject</code> of the preceding context - e.g. the <code>PageObject</code> of the application itself in case you jump directly back to the application.</p>
+<p>Both subsequent <code>PageObject</code>s are taken to design the interface of the <code>GenericDialog</code> as generic type parameters.</p>
+<pre><code class="lang-cs">public class GenericDialog&lt;TConfirmationPo, TCancelPo&gt; : DialogBase
+    where TConfirmationPo : PageObject
+    where TCancelPo : PageObject
+    {
+</code></pre>
+<p>In an instantiable derivation the constructor is used to inject the two logics (as delegates) to return the subsequent <code>PageObject</code>s for the confirmation and cancelation case. Therefore the expected subsequent <code>PageObject</code> can exactly be pre-formed and easily used during stepping through such <code>PageObject</code>-chains in automated UI tests.</p>
+<p>Today (2020/MAY) this design decision looks a little bit over-engineered with some too specific assumptions regarding the two cases and therefore two subsequent dialogs. In some rare cases a dialog has additional exits (and not only the assumpted two). Additionally during automated UI tests only one dedicated <code>PageObject</code> will be the expected one. So the second case will never happen in a concrete unit-test run. It must be clear which <code>PageObject</code> is the subsequent one, otherwise the automated UI test, would test in a too relaxed way. For these reasons it might be good enough to decrease the two type parameters to only one. So this unique <code>PageObject</code> is used as the one and only expected type parameter for the individual test case which is supposed to be realized.</p>
 </article>
           </div>
           

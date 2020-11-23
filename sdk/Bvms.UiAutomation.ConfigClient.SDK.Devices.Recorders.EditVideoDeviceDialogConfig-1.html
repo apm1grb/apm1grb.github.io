@@ -151,12 +151,12 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig`1.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1__ctor_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Bvms_UiAutomation_ConfigClient_BaseTypes_Credentials_System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_PasswordDisplaying__System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_ConnectionSecurity__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig`1.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials,System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying},System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity})">EditVideoDeviceDialogConfig(String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Credentials, Nullable&lt;PasswordDisplaying&gt;, Nullable&lt;ConnectionSecurity&gt;)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1__ctor_System_String_System_String_System_Nullable_System_Int32__System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_ConnectionSecurity__Bvms_UiAutomation_BaseTypes_Credentials_System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_PasswordDisplaying__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig`1.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity},Bvms.UiAutomation.BaseTypes.Credentials,System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying})">EditVideoDeviceDialogConfig(String, String, Nullable&lt;Int32&gt;, Nullable&lt;ConnectionSecurity&gt;, Credentials, Nullable&lt;PasswordDisplaying&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected EditVideoDeviceDialogConfig(string deviceName, string ipAddress, int? port, int? securedPort, Credentials credentials, PasswordDisplaying? passwordDisplaying, ConnectionSecurity? connectionSecurity)</code></pre>
+    <pre><code class="lang-csharp hljs">protected EditVideoDeviceDialogConfig(string deviceName, string ipAddress, int? port, ConnectionSecurity? connectionSecurity, Credentials credentials, PasswordDisplaying? passwordDisplaying)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -184,23 +184,18 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><span class="parametername">securedPort</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a>&gt;</td>
+        <td><span class="parametername">connectionSecurity</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials.html">Credentials</a></td>
+        <td><a class="xref" href="Bvms.UiAutomation.BaseTypes.Credentials.html">Credentials</a></td>
         <td><span class="parametername">credentials</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying.html">PasswordDisplaying</a>&gt;</td>
         <td><span class="parametername">passwordDisplaying</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a>&gt;</td>
-        <td><span class="parametername">connectionSecurity</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -216,7 +211,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConnectionSecurity? ConnectionSecurity { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ConnectionSecurity ConnectionSecurity { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -228,7 +223,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a>&gt;</td>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a></td>
         <td><p>The connection security.</p>
 </td>
       </tr>
@@ -255,7 +250,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials.html">Credentials</a></td>
+        <td><a class="xref" href="Bvms.UiAutomation.BaseTypes.Credentials.html">Credentials</a></td>
         <td><p>The credentials.</p>
 </td>
       </tr>
@@ -351,7 +346,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PasswordDisplaying? PasswordDisplaying { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public PasswordDisplaying PasswordDisplaying { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,7 +358,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying.html">PasswordDisplaying</a>&gt;</td>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying.html">PasswordDisplaying</a></td>
         <td><p>The password displaying.</p>
 </td>
       </tr>
@@ -378,7 +373,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? Port { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Port { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -390,35 +385,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">System.Int32</span></td>
         <td><p>The port.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1_SecuredPort_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig`1.SecuredPort*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1_SecuredPort" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig`1.SecuredPort">SecuredPort</h4>
-  <div class="markdown level1 summary"><p>Gets the secured port.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? SecuredPort { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><p>The secured port.</p>
 </td>
       </tr>
     </tbody>

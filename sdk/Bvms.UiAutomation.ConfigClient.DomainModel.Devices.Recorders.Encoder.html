@@ -94,12 +94,19 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Encoder.html">Encoder</a>&gt;</div>
     <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_DeviceName">Device&lt;Encoder&gt;.DeviceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_UpdateDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0__">Device&lt;Encoder&gt;.UpdateDevice(DeviceConfig&lt;Encoder&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_GetConfig">Device&lt;Encoder&gt;.GetConfig()</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -127,7 +134,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.DomainModel.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Encoder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Encoder : Device&lt;Encoder&gt;, IDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class Encoder : Device&lt;Encoder&gt;, IDevice&lt;Encoder&gt;, IDevice</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -244,13 +251,13 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Encoder_Create_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Encoder.Create*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Encoder_Create_System_String_System_String_System_String_System_String_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Encoder.Create(System.String,System.String,System.String,System.String,System.String)">Create(String, String, String, String, String)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Encoder_Create_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_EncoderConfig_System_String_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Encoder.Create(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.EncoderConfig,System.String,System.String)">Create(EncoderConfig, String, String)</h4>
   <div class="markdown level1 summary"><p>Creates the specified device name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Encoder Create(string deviceName, string ipAddress, string encoderType, string poolName, string vrmName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Encoder Create(EncoderConfig config, string poolName, string vrmName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,21 +270,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">deviceName</span></td>
-        <td><p>Name of the device.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">ipAddress</span></td>
-        <td><p>The ip address.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">encoderType</span></td>
-        <td><p>Type of the encoder.</p>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.EncoderConfig.html">EncoderConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The properties for this encoder.</p>
 </td>
       </tr>
       <tr>
@@ -311,6 +306,9 @@
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice&lt;T&gt;</a>
+  </div>
   <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a>
   </div>

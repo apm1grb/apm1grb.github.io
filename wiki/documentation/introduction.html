@@ -79,7 +79,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="introduction">Introduction</h1>
 
-<p>The documentation for the <strong>BVMS UI Automation</strong> project is provided in a modern and state of the art model. It is based on these sources and perspectives:</p>
+<p>[[_<em>TOC</em>]]</p>
+<h2 id="project-documentation">Project documentation</h2>
+<p>The project documentation for the <strong>BVMS UI Automation</strong> project is provided in a modern and state of the art model. It is based on these sources and perspectives:</p>
 <ul>
 <li>XML Comments<br>
 this is the in-source XML-based code documentation with triple slash (<code>/// &lt;summary&gt;...&lt;/summary&gt;</code>).</li>
@@ -98,6 +100,62 @@ this Wiki is a Git repository itself containing the <strong>MarkDown</strong> wi
 <blockquote>
 <p>Advice: To clone a Git repository together with its sub-modules use the option <code>--recursive</code></p>
 </blockquote>
+<h2 id="documentation-related-workflows-and-guidelines">Documentation related workflows and guidelines</h2>
+<h3 id="hints-and-marker-in-the-source-code">Hints and Marker in the Source Code</h3>
+<p>Often enough the developer is in hurry or in a spike mode where he wrote some unclean code lines which he later likes to adjust according the guidelines. Usually later he forget these necessary refactoring. To keep these construction zones on the desk it is wise to add some marker.</p>
+<p><strong>Visual Studio</strong> offers such marker management with the <a href="https://docs.microsoft.com/en-us/visualstudio/ide/using-the-task-list?view=vs-2019">Task List</a>. Out of the box these markers are available: <code>TODO</code>, <code>HACK</code>, <code>UNDONE</code> and <code>UnresolvedMergeConflict</code>.</p>
+<p>With <strong>ReSharper</strong> we have another option, which allows us a better management of such markers and later an easier search.</p>
+<p><a href="media/ReSharper.TodoExplorer.01.png"><img src="media/ReSharper.TodoExplorer.01.small.png" alt="Pic: ReSharper To-do Explorer"></a></p>
+<p>So we rely on the enhanced features of <strong>ReSharper</strong> for our marker management in the project.</p>
+<p>To have an access to our project specific markers it is necessary to add some additional markers.</p>
+<ol>
+<li><p>Open the <strong>ReSharper</strong> Settings<br>
+<em>Extensions</em> &gt; <em>ReSharper</em> &gt; <em>Options...</em></p>
+</li>
+<li><p>Navigate to the setting for the <strong>To-do Explorer</strong><br>
+<em>Tools</em> &gt; <em>To-do Explorer</em></p>
+</li>
+<li><p>Add the following additional items:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Pattern</th>
+<th>Icon</th>
+<th>Selections</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Refactor</code></td>
+<td><code>(?&lt;=\W|^)(?&lt;TAG&gt;REFACTOR)(\W|$)(.*)</code></td>
+<td><code>Warning</code></td>
+<td><code>Match in comments</code></td>
+</tr>
+<tr>
+<td><code>Hack</code></td>
+<td><code>(?&lt;=\W|^)(?&lt;TAG&gt;HACK)(\W|$)(.*)</code></td>
+<td><code>Warning</code></td>
+<td><code>Match in comments</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Now you can use these new markers, e.g.</p>
+<pre><code class="lang-cs">// Refactor low: Method call without using the result?
+</code></pre>
+<p>You should also add a hint how important that refactoring is. In this case it is <code>low</code>.<br>
+Other priorities should be <code>normal</code> and <code>high</code>.</p>
+</li>
+<li><p>To see the list of all markers open the window <strong>To-do Explorer</strong><br>
+<em>Extensions</em> &gt; <em>ReSharper</em> &gt; <em>Tools</em> &gt; <em>To-do Explorer</em></p>
+</li>
+</ol>
+<p>see also:</p>
+<ul>
+<li><a href="https://www.jetbrains.com/help/resharper/Reference__Windows__To-do_Explorer.html">To-do Explorer</a></li>
+<li><a href="https://blog.jetbrains.com/dotnet/2018/01/10/defining-to-do-patterns-resharper/">Defining to-do patterns in ReSharper</a></li>
+</ul>
 </article>
           </div>
           

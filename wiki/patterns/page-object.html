@@ -82,6 +82,10 @@
 <p>The access to the UI elements is abstracted via the <em>Page Object Pattern</em>. This is done for whole windows (e.g. the main application like <strong>ConfigClient</strong>), for individual dialogs (e.g. to edit device properties) and for parts (e.g. the pane to configure a device).</p>
 <p>The following hierarchy gives an understanding about the contexts and scenarios in which to use:</p>
 <p><img src="media/PageObject.01.png" alt="Pic: Hierarchy of Page Objects"></p>
+<h2 id="return-values-of-pageobject-calls">Return values of PageObject calls</h2>
+<p>If the result of an interaction with a <code>PageObject</code> is another <code>PageObject</code> then this should be the result. As an example, for a dialog chain as used in wizards each click on the <em>Next</em>-button should return the <code>PageObject</code> for the following dialog and so on.
+At the end you can treat the click on the <code>Finish</code>-button to return the <code>PageObject</code> of the whole application, because this is the context for the next <code>PageObject</code> in this case.</p>
+<p>see also <a href="../architecture/main-classes.html#Generic-Dialog">Main Classes | Generic Dialog</a></p>
 <h2 id="separation-of-concerns-for-page-objects">Separation of Concerns for Page Objects</h2>
 <p>To follow a the Single Responsibility Principle (see article &quot;Page Object Pattern in Automated Testing&quot;) and allow an easier navigation &amp; understanding we use partial classes to separate the diverse facets of the page object pattern. The suffix in the <code>*.cs</code> file name reflects the intention. So a source file which name contains <code>ElementMap</code> contains only the logic to interact with the UI elements which we like to access - mostly the logic to find the UI element in the parent UI container.</p>
 <p>See also <a href="../guidelines/organizing-partial-classes.html">Organizing Partial Classes</a> to get an understanding how these partial classes parts are organized.</p>
@@ -109,6 +113,30 @@
     }
 }
 </code></pre>
+<p>Since a while (End 2019) another principle was implemented - the provision of properties to interact with the <code>PageObject</code> in an abstract manner. These properties also contain the dependency logic to related properties. Using the <code>setter</code> of these properties ensures that depended properties are also getting the necessary values. In future versions it should be considered to extract this &quot;<code>PageObject</code> interface&quot; into a own class.</p>
+<p><strong>Sample:</strong></p>
+<p>The (partial class) <code>NewUserGroupDialog</code> contains a property which allows to get and set a name.</p>
+<pre><code class="lang-cs">public partial class NewUserGroupDialog : DialogBase
+{
+    /// &lt;summary&gt;Gets or sets the name of the &lt;see cref=&quot;UserGroup&quot;/&gt;.&lt;/summary&gt;
+    /// &lt;value&gt;The name of the &lt;see cref=&quot;UserGroup&quot;/&gt;.&lt;/value&gt;
+    public string Name
+    {
+        get =&gt; NameTextBox.Text;
+        set =&gt; NameTextBox.Text = value;
+    }
+</code></pre>
+<p>In the corresponding &quot;mapping&quot; partial class part (<code>*.ElementMap.cs</code>) the logic to find the <code>NameTextBox</code> is provided (see section <a href="#ElementMap-class">ElementMap class</a>).</p>
+<pre><code class="lang-cs">public partial class NewUserGroupDialog
+{
+    private TextBox NameTextBox =&gt; FindElement&lt;TextBox&gt;(&quot;userGroupNameTextBox&quot;);
+</code></pre>
+<blockquote>
+<p><strong>Remark:</strong> In a more &quot;command-based&quot;-style the setter would be expressed with something like <code>SetName(string name)</code>. But because we also need a getter and the context itself is more like an essential feature/attribute/property of the class, the C# class property seems to be the best fitting construct.</p>
+</blockquote>
+<blockquote>
+<p><strong>Remark:</strong> But the &quot;command-based&quot;-style is also used in other contexts - e.g. for clicking a button. Then the logic inside the <code>ClickFooButton</code> can also check whether the button is clickable/enabled and raise an exception if not.</p>
+</blockquote>
 <h3 id="elementmap-class">ElementMap class</h3>
 <p>The <code>*.ElementMap.cs</code> class keeps all the logic to find and access the UI elements.</p>
 <p><strong>Sample:</strong></p>

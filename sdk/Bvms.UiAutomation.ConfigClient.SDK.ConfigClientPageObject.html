@@ -97,6 +97,9 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.BvmsClientPo.html#Bvms_UiAutomation_SDK_Commons_BvmsClientPo_Context">BvmsClientPo.Context</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_SaveScreenshot_System_String_">PageObject.SaveScreenshot(String)</a>
     </div>
     <div>
@@ -109,7 +112,13 @@
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_">PageObject.FindElement&lt;TElement&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_">PageObject.FindElement2&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_">PageObject.GetButtonByText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_">PageObject.GetButtonByName(String)</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_">PageObject.FindTree(String)</a>
@@ -175,35 +184,6 @@
   </table>
   <h3 id="properties">Properties
   </h3>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_Context_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.Context*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_Context" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.Context">Context</h4>
-  <div class="markdown level1 summary"><p>Gets the context which UI element is wrapped by this <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override sealed AutomationElement Context { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
-        <td><p>The UI element which is wrapped.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.WindowPO.html#Bvms_UiAutomation_SDK_Commons_WindowPO_Context">WindowPO.Context</a></div>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_DevicesPageObject_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.DevicesPageObject*"></a>
@@ -289,9 +269,37 @@
   </table>
   
   
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_RecordingSchedulePageObject_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.RecordingSchedulePageObject*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_RecordingSchedulePageObject" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.RecordingSchedulePageObject">RecordingSchedulePageObject</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a> manage the schedules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRecordingSchedulePageObject RecordingSchedulePageObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.RecordingSchedules.IRecordingSchedulePageObject.html">IRecordingSchedulePageObject</a></td>
+        <td><p>The schedule page object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_RecordingSettings_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.RecordingSettings*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_RecordingSettings" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.RecordingSettings">RecordingSettings</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IRecordingSettings.html">IRecordingSettings</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -308,33 +316,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IRecordingSettings.html">IRecordingSettings</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_SchedulePageObject_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.SchedulePageObject*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_SchedulePageObject" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.SchedulePageObject">SchedulePageObject</h4>
-  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a> manage the schedules.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISchedulePageObject SchedulePageObject { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.ISchedulePageObject.html">ISchedulePageObject</a></td>
-        <td><p>The schedule page object.</p>
+        <td><p>The <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IRecordingSettings.html">IRecordingSettings</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -368,14 +350,13 @@
   </table>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_ToolbarPageComponent_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.ToolbarPageComponent*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_ToolbarPageComponent" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.ToolbarPageComponent">ToolbarPageComponent</h4>
-  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_ToolbarPageComponent">ToolbarPageComponent</a> page component.</p>
-</div>
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_TaskSchedulePageObject_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.TaskSchedulePageObject*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_TaskSchedulePageObject" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.TaskSchedulePageObject">TaskSchedulePageObject</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IToolbarPageComponent ToolbarPageComponent { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ITaskSchedulePageObject TaskSchedulePageObject { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,7 +368,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbarPageComponent.html">IToolbarPageComponent</a></td>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.TaskSchedules.ITaskSchedulePageObject.html">ITaskSchedulePageObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_ToolbarPageComponent_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.ToolbarPageComponent*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_ToolbarPageComponent" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.ToolbarPageComponent">ToolbarPageComponent</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_ToolbarPageComponent">ToolbarPageComponent</a> page component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToolbarPageComponent ToolbarPageComponent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.html">ToolbarPageComponent</a></td>
         <td><p>The <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html#Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_ToolbarPageComponent">ToolbarPageComponent</a>.</p>
 </td>
       </tr>
@@ -417,35 +424,6 @@
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.UserManagement.IUserManagementPageObject.html">IUserManagementPageObject</a></td>
         <td><p>The user management page object.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_RenewMainWindow_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.RenewMainWindow*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_RenewMainWindow_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.RenewMainWindow(FlaUI.Core.AutomationElements.Window)">RenewMainWindow(Window)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RenewMainWindow(Window mainWindow)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
-        <td><span class="parametername">mainWindow</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

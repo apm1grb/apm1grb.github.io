@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GenericDialog&lt;T, TU&gt;
+    <title>Class GenericDialog&lt;TConfirmationPo, TCancelPo&gt;
    | BVMS UI Automation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GenericDialog&lt;T, TU&gt;
+    <meta name="title" content="Class GenericDialog&lt;TConfirmationPo, TCancelPo&gt;
    | BVMS UI Automation ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -81,7 +81,7 @@
             <article class="content wrap" id="_content" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2">
   
   
-  <h1 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2" class="text-break">Class GenericDialog&lt;T, TU&gt;
+  <h1 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2" class="text-break">Class GenericDialog&lt;TConfirmationPo, TCancelPo&gt;
   </h1>
   <div class="markdown level0 summary"><p>Enhanced simple dialog allowing to specify two delegates to define the next page objects
 for the confirmation and cancellation case.</p>
@@ -93,10 +93,22 @@ for the confirmation and cancellation case.</p>
     <div class="level1"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a></div>
     <div class="level2"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.WindowPO.html">WindowPO</a></div>
     <div class="level3"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html">DialogBase</a></div>
-    <div class="level4"><span class="xref">GenericDialog&lt;T, TU&gt;</span></div>
-      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html">ActivateConfigurationDialog&lt;T, TU&gt;</a></div>
+    <div class="level4"><span class="xref">GenericDialog&lt;TConfirmationPo, TCancelPo&gt;</span></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html">ActivateConfigurationDialog&lt;TConfirmationPo, TCancelPo&gt;</a></div>
       <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html">ActivationManagerDialog</a></div>
-      <div class="level5"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.LoginDialog-1.html">LoginDialog&lt;T&gt;</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.AddExceptionDaysDialog.html">AddExceptionDaysDialog</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog-1.html">SelectDaysDialog&lt;T&gt;</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.AddSequenceDialog.html">AddSequenceDialog</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.AddSequenceStepDialog.html">AddSequenceStepDialog</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.LogicalNumberDialog.html">LogicalNumberDialog</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.ResourceManagerDialog.html">ResourceManagerDialog</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.SelectResourceDialog.html">SelectResourceDialog</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.SequenceBuilderDialog.html">SequenceBuilderDialog</a></div>
+      <div class="level5"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.LoginDialog-1.html">LoginDialog&lt;TBvmsClientPo&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.IGenericDialog-2.html">IGenericDialog</a>&lt;TConfirmationPo, TCancelPo&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -134,7 +146,13 @@ for the confirmation and cancellation case.</p>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_">PageObject.FindElement&lt;TElement&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_">PageObject.FindElement2&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_">PageObject.GetButtonByText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_">PageObject.GetButtonByName(String)</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_">PageObject.FindTree(String)</a>
@@ -165,7 +183,7 @@ for the confirmation and cancellation case.</p>
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.SDK.Commons.dll</h6>
   <h5 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GenericDialog&lt;T, TU&gt; : DialogBase where T : PageObject where TU : PageObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class GenericDialog&lt;TConfirmationPo, TCancelPo&gt; : DialogBase, IGenericDialog&lt;TConfirmationPo, TCancelPo&gt; where TConfirmationPo : PageObject where TCancelPo : PageObject</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,12 +195,12 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="parametername">TConfirmationPo</span></td>
         <td><p>Next page object in case of confirmation (OK).</p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">TU</span></td>
+        <td><span class="parametername">TCancelPo</span></td>
         <td><p>Next page object in case of canceling (Cancel).</p>
 </td>
       </tr>
@@ -194,7 +212,7 @@ for the confirmation and cancellation case.</p>
   
   <a id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2__ctor_" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.#ctor*"></a>
   <h4 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2__ctor_FlaUI_Core_AutomationElements_Window_System_String_System_TimeSpan_" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan)">GenericDialog(Window, String, TimeSpan)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html">GenericDialog&lt;T, TU&gt;</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html">GenericDialog&lt;TConfirmationPo, TCancelPo&gt;</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -234,12 +252,12 @@ for the confirmation and cancellation case.</p>
   
   
   <a id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2__ctor_" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2__ctor_FlaUI_Core_AutomationElements_Window_System_String_System_TimeSpan_System_Func__0__System_Func__1__" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan,System.Func{`0},System.Func{`1})">GenericDialog(Window, String, TimeSpan, Func&lt;T&gt;, Func&lt;TU&gt;)</h4>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2__ctor_FlaUI_Core_AutomationElements_Window_System_String_System_TimeSpan_System_Func__0__System_Func__1__" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.TimeSpan,System.Func{`0},System.Func{`1})">GenericDialog(Window, String, TimeSpan, Func&lt;TConfirmationPo&gt;, Func&lt;TCancelPo&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GenericDialog(Window parentWindow, string windowsTitle, TimeSpan timeout, Func&lt;T&gt; confirmationCommand, Func&lt;TU&gt; cancelCommand)</code></pre>
+    <pre><code class="lang-csharp hljs">public GenericDialog(Window parentWindow, string windowsTitle, TimeSpan timeout, Func&lt;TConfirmationPo&gt; confirmationCommand, Func&lt;TCancelPo&gt; cancelCommand)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -267,12 +285,12 @@ for the confirmation and cancellation case.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TConfirmationPo&gt;</td>
         <td><span class="parametername">confirmationCommand</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;TU&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TCancelPo&gt;</td>
         <td><span class="parametername">cancelCommand</span></td>
         <td></td>
       </tr>
@@ -289,7 +307,7 @@ for the confirmation and cancellation case.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Func&lt;TU&gt; CancelCommand { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected Func&lt;TCancelPo&gt; CancelCommand { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -301,7 +319,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;TU&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TCancelPo&gt;</td>
         <td><p>The cancel command.</p>
 </td>
       </tr>
@@ -316,7 +334,7 @@ for the confirmation and cancellation case.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Func&lt;T&gt; ConfirmationCommand { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected Func&lt;TConfirmationPo&gt; ConfirmationCommand { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -328,7 +346,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TConfirmationPo&gt;</td>
         <td><p>The confirmation command.</p>
 </td>
       </tr>
@@ -345,7 +363,7 @@ for the confirmation and cancellation case.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual TU CancelDialog()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual TCancelPo CancelDialog()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,7 +375,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TU</span></td>
+        <td><span class="xref">TCancelPo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -365,13 +383,13 @@ for the confirmation and cancellation case.</p>
   
   
   <a id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2_CancelDialog_" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.CancelDialog*"></a>
-  <h4 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2_CancelDialog_System_Func__1__" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.CancelDialog(System.Func{`1})">CancelDialog(Func&lt;TU&gt;)</h4>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2_CancelDialog_System_Func__1__" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.CancelDialog(System.Func{`1})">CancelDialog(Func&lt;TCancelPo&gt;)</h4>
   <div class="markdown level1 summary"><p>Cancels the dialog (usually by clicking the Cancel button).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual TU CancelDialog(Func&lt;TU&gt; cancelCommand)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual TCancelPo CancelDialog(Func&lt;TCancelPo&gt; cancelCommand)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -384,7 +402,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;TU&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TCancelPo&gt;</td>
         <td><span class="parametername">cancelCommand</span></td>
         <td><p>The command to execute during canceling.</p>
 </td>
@@ -401,7 +419,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TU</span></td>
+        <td><span class="xref">TCancelPo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -415,7 +433,7 @@ for the confirmation and cancellation case.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T ConfirmDialog()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual TConfirmationPo ConfirmDialog()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -427,7 +445,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TConfirmationPo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -435,13 +453,13 @@ for the confirmation and cancellation case.</p>
   
   
   <a id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2_ConfirmDialog_" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.ConfirmDialog*"></a>
-  <h4 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2_ConfirmDialog_System_Func__0__" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.ConfirmDialog(System.Func{`0})">ConfirmDialog(Func&lt;T&gt;)</h4>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_GenericDialog_2_ConfirmDialog_System_Func__0__" data-uid="Bvms.UiAutomation.SDK.Commons.GenericDialog`2.ConfirmDialog(System.Func{`0})">ConfirmDialog(Func&lt;TConfirmationPo&gt;)</h4>
   <div class="markdown level1 summary"><p>Confirms the dialog (usually by clicking the OK button).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual T ConfirmDialog(Func&lt;T&gt; confirmationCommand)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual TConfirmationPo ConfirmDialog(Func&lt;TConfirmationPo&gt; confirmationCommand)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -454,7 +472,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;TConfirmationPo&gt;</td>
         <td><span class="parametername">confirmationCommand</span></td>
         <td><p>The command to execute during confirmation.</p>
 </td>
@@ -471,7 +489,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TConfirmationPo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -485,7 +503,7 @@ for the confirmation and cancellation case.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual (T, TU)EndDialog(DialogCompletion dialogCompletion)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual (TConfirmationPo, TCancelPo)EndDialog(DialogCompletion dialogCompletion)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -515,7 +533,7 @@ for the confirmation and cancellation case.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.ValueTuple</span>&lt;T, TU&gt;</td>
+        <td><span class="xref">System.ValueTuple</span>&lt;TConfirmationPo, TCancelPo&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -565,6 +583,10 @@ for the confirmation and cancellation case.</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_EndDialogCore">DialogBase.EndDialogCore()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.IGenericDialog-2.html">IGenericDialog&lt;TConfirmationPo, TCancelPo&gt;</a>
+  </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html">DialogBase</a></div>

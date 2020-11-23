@@ -92,16 +92,23 @@
     <div class="level1"><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html">Device</a>&lt;T&gt;</div>
     <div class="level2"><span class="xref">CommunicationBase&lt;T&gt;</span></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Email.html">Email</a></div>
-      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Sms.html">Sms</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.CommunicationDevices.Sms-1.html">Sms&lt;T&gt;</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice</a>&lt;T&gt;</div>
     <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_DeviceName">Device&lt;T&gt;.DeviceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_UpdateDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0__">Device&lt;T&gt;.UpdateDevice(DeviceConfig&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_GetConfig">Device&lt;T&gt;.GetConfig()</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -129,7 +136,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.DomainModel.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_CommunicationDevices_CommunicationBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CommunicationBase&lt;T&gt; : Device&lt;T&gt;, IDevice where T : CommunicationBase&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CommunicationBase&lt;T&gt; : Device&lt;T&gt;, IDevice&lt;T&gt;, IDevice where T : CommunicationBase&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,6 +184,9 @@
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice&lt;T&gt;</a>
+  </div>
   <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a>
   </div>

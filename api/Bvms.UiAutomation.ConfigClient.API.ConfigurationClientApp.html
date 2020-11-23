@@ -94,21 +94,24 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Bvms.UiAutomation.API.Commons.IBvmsApp.html">IBvmsApp</a></div>
+    <div><a class="xref" href="Bvms.UiAutomation.API.Commons.IBvmsApp-2.html">IBvmsApp</a>&lt;<a class="xref" href="../sdk/Bvms.UiAutomation.SDK.Commons.BvmsClient-1.html">BvmsClient</a>&lt;<a class="xref" href="../sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a>&gt;, <a class="xref" href="../sdk/Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.API.Commons.BvmsApp-2.html#Bvms_UiAutomation_API_Commons_BvmsApp_2_Shutdown">BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;.Shutdown()</a>
+      <a class="xref" href="Bvms.UiAutomation.API.Commons.BvmsApp-2.html#Bvms_UiAutomation_API_Commons_BvmsApp_2_BvmsClientPo">BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;.BvmsClientPo</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.API.Commons.BvmsApp-2.html#Bvms_UiAutomation_API_Commons_BvmsApp_2_BvmsClient">BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;.BvmsClient</a>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.API.Commons.BvmsApp-2.html#Bvms_UiAutomation_API_Commons_BvmsApp_2_BvmsClientPo">BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;.BvmsClientPo</a>
+      <a class="xref" href="Bvms.UiAutomation.API.Commons.BvmsApp-2.html#Bvms_UiAutomation_API_Commons_BvmsApp_2_Shutdown">BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;.Shutdown()</a>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.API.Commons.BvmsApp-2.html#Bvms_UiAutomation_API_Commons_BvmsApp_2_StartAppWithCredentialsByLoginForm_Bvms_UiAutomation_ConfigClient_BaseTypes_Credentials_System_String_">BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;.StartAppWithCredentialsByLoginForm(Credentials, String)</a>
+      <a class="xref" href="Bvms.UiAutomation.API.Commons.BvmsApp-2.html#Bvms_UiAutomation_API_Commons_BvmsApp_2_StartAppWithCredentialsByLoginForm_Bvms_UiAutomation_BaseTypes_Credentials_System_String_">BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;.StartAppWithCredentialsByLoginForm(Credentials, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.API.Commons.BvmsApp-2.html#Bvms_UiAutomation_API_Commons_BvmsApp_2_AttachToRunningBvmsApp">BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;.AttachToRunningBvmsApp()</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -136,7 +139,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.API.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ConfigurationClientApp : BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;, IBvmsApp</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConfigurationClientApp : BvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;, IBvmsApp&lt;BvmsClient&lt;ConfigClientPageObject&gt;, ConfigClientPageObject&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -152,6 +155,31 @@
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_CameraSequenceManager_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.CameraSequenceManager*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_CameraSequenceManager" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.CameraSequenceManager">CameraSequenceManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICameraSequenceManager CameraSequenceManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../sdk/Bvms.UiAutomation.ConfigClient.SDK.Structures.ICameraSequenceManager.html">ICameraSequenceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_ConfigurationManager_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.ConfigurationManager*"></a>
@@ -235,14 +263,14 @@
   </table>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_Schedules_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.Schedules*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_Schedules" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.Schedules">Schedules</h4>
+  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_RecordingScheduleTables_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.RecordingScheduleTables*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_RecordingScheduleTables" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.RecordingScheduleTables">RecordingScheduleTables</h4>
   <div class="markdown level1 summary"><p>Gets the schedules.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISchedules Schedules { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IRecordingScheduleTables RecordingScheduleTables { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -254,9 +282,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.API.ISchedules.html">ISchedules</a></td>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.API.Schedules.RecordingSchedules.IRecordingScheduleTables.html">IRecordingScheduleTables</a></td>
         <td><p>The schedules.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_TaskScheduleTables_" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.TaskScheduleTables*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_API_ConfigurationClientApp_TaskScheduleTables" data-uid="Bvms.UiAutomation.ConfigClient.API.ConfigurationClientApp.TaskScheduleTables">TaskScheduleTables</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITaskScheduleTables TaskScheduleTables { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.API.Schedules.TaskSchedules.ITaskScheduleTables.html">ITaskScheduleTables</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -320,7 +373,7 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Bvms.UiAutomation.API.Commons.IBvmsApp.html">IBvmsApp</a>
+      <a class="xref" href="Bvms.UiAutomation.API.Commons.IBvmsApp-2.html">IBvmsApp&lt;TBvmsClient, TBvmsClientPo&gt;</a>
   </div>
 </article>
           </div>

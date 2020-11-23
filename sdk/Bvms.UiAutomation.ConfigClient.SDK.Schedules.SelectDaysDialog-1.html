@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SelectDaysDialog&lt;T&gt;
+   | BVMS UI Automation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SelectDaysDialog&lt;T&gt;
+   | BVMS UI Automation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../sdk-api/toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1">
+  
+  
+  <h1 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1" class="text-break">Class SelectDaysDialog&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a></div>
+    <div class="level2"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.WindowPO.html">WindowPO</a></div>
+    <div class="level3"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html">DialogBase</a></div>
+    <div class="level4"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html">GenericDialog</a>&lt;<a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a>, <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a>&gt;</div>
+    <div class="level5"><span class="xref">SelectDaysDialog&lt;T&gt;</span></div>
+      <div class="level6"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectExceptionDaysDialog.html">SelectExceptionDaysDialog</a></div>
+      <div class="level6"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectHolidaysDialog.html">SelectHolidaysDialog</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.IGenericDialog-2.html">IGenericDialog</a>&lt;<a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a>, <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_ConfirmationCommand">GenericDialog&lt;PageObject, PageObject&gt;.ConfirmationCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_CancelCommand">GenericDialog&lt;PageObject, PageObject&gt;.CancelCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_ConfirmDialog">GenericDialog&lt;PageObject, PageObject&gt;.ConfirmDialog()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_ConfirmDialog_System_Func__0__">GenericDialog&lt;PageObject, PageObject&gt;.ConfirmDialog(Func&lt;PageObject&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_CancelDialog">GenericDialog&lt;PageObject, PageObject&gt;.CancelDialog()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_CancelDialog_System_Func__1__">GenericDialog&lt;PageObject, PageObject&gt;.CancelDialog(Func&lt;PageObject&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_EndDialog_Bvms_UiAutomation_SDK_Commons_DialogCompletion_">GenericDialog&lt;PageObject, PageObject&gt;.EndDialog(DialogCompletion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_EndDialogCore">GenericDialog&lt;PageObject, PageObject&gt;.EndDialogCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_ConfirmDialog2">DialogBase.ConfirmDialog2()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_CancelDialog2">DialogBase.CancelDialog2()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_EndDialog_Bvms_UiAutomation_SDK_Commons_DialogCompletion_">DialogBase.EndDialog(DialogCompletion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_EndDialogCore">DialogBase.EndDialogCore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_ConfirmationButton">DialogBase.ConfirmationButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_CancelButton">DialogBase.CancelButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_FindConfirmationButton">DialogBase.FindConfirmationButton()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html#Bvms_UiAutomation_SDK_Commons_DialogBase_FindCancelButton">DialogBase.FindCancelButton()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.WindowPO.html#Bvms_UiAutomation_SDK_Commons_WindowPO_Context">WindowPO.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_SaveScreenshot_System_String_">PageObject.SaveScreenshot(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetScreenshotName">PageObject.GetScreenshotName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_ParentWindow">PageObject.ParentWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_">PageObject.FindElement&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_">PageObject.FindElement2&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_">PageObject.GetButtonByText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_">PageObject.GetButtonByName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_">PageObject.FindTree(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.html">Bvms.UiAutomation.ConfigClient.SDK.Schedules</a></h6>
+  <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SelectDaysDialog&lt;T&gt; : GenericDialog&lt;PageObject, PageObject&gt;, IGenericDialog&lt;PageObject, PageObject&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.#ctor*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1__ctor_FlaUI_Core_AutomationElements_Window_System_String_System_Func_Bvms_UiAutomation_SDK_Commons_PageObject__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.#ctor(FlaUI.Core.AutomationElements.Window,System.String,System.Func{Bvms.UiAutomation.SDK.Commons.PageObject})">SelectDaysDialog(Window, String, Func&lt;PageObject&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SelectDaysDialog(Window parentWindow, string windowsTitle, Func&lt;PageObject&gt; command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
+        <td><span class="parametername">parentWindow</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">windowsTitle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a>&gt;</td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_DayList_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.DayList*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_DayList" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.DayList">DayList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract DayList&lt;T&gt; DayList { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_DayNames_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.DayNames*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_DayNames" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.DayNames">DayNames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;string&gt; DayNames { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetAllDays_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetAllDays*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetAllDays" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetAllDays">GetAllDays()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DayList&lt;T&gt; GetAllDays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetDays_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetDays*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetDays_System_Predicate_FlaUI_Core_AutomationElements_AutomationElement__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetDays(System.Predicate{FlaUI.Core.AutomationElements.AutomationElement})">GetDays(Predicate&lt;AutomationElement&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DayList&lt;T&gt; GetDays(Predicate&lt;AutomationElement&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;<span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetDaysCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetDaysCore*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetDaysCore_System_Collections_Generic_IEnumerable__0__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetDaysCore(System.Collections.Generic.IEnumerable{`0})">GetDaysCore(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract DayList&lt;T&gt; GetDaysCore(IEnumerable&lt;T&gt; days)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">days</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetSelectedDays_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetSelectedDays*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetSelectedDays" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetSelectedDays">GetSelectedDays()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DayList&lt;T&gt; GetSelectedDays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetUnselectedDays_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetUnselectedDays*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_GetUnselectedDays" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.GetUnselectedDays">GetUnselectedDays()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DayList&lt;T&gt; GetUnselectedDays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_ParseFromString_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.ParseFromString*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_ParseFromString_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.ParseFromString(System.String)">ParseFromString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract T ParseFromString(string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_SelectAllDays_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.SelectAllDays*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_SelectAllDays" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.SelectAllDays">SelectAllDays()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectDaysDialog&lt;T&gt; SelectAllDays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog-1.html">SelectDaysDialog</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_SelectDays_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.SelectDays*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_SelectDays_Bvms_UiAutomation_ConfigClient_DomainModel_Schedules_DayList__0__System_Boolean_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.SelectDays(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList{`0},System.Boolean)">SelectDays(DayList&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectDaysDialog&lt;T&gt; SelectDays(DayList&lt;T&gt; dayList, bool enhanceSelection = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td><span class="parametername">dayList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">enhanceSelection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog-1.html">SelectDaysDialog</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_ToggleSelection_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.ToggleSelection*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_ToggleSelection_Bvms_UiAutomation_ConfigClient_DomainModel_Schedules_DayList__0__FlaUI_Core_Definitions_ToggleState_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.ToggleSelection(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList{`0},FlaUI.Core.Definitions.ToggleState)">ToggleSelection(DayList&lt;T&gt;, ToggleState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ToggleSelection(DayList&lt;T&gt; dayList, ToggleState toggleState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td><span class="parametername">dayList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">FlaUI.Core.Definitions.ToggleState</span></td>
+        <td><span class="parametername">toggleState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_UnselectAllDays_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.UnselectAllDays*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_UnselectAllDays" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.UnselectAllDays">UnselectAllDays()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectDaysDialog&lt;T&gt; UnselectAllDays()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog-1.html">SelectDaysDialog</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_UnselectDays_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.UnselectDays*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Schedules_SelectDaysDialog_1_UnselectDays_Bvms_UiAutomation_ConfigClient_DomainModel_Schedules_DayList__0__System_Boolean_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog`1.UnselectDays(Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList{`0},System.Boolean)">UnselectDays(DayList&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectDaysDialog&lt;T&gt; UnselectDays(DayList&lt;T&gt; dayList, bool shrinkSelection = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Schedules.DayList-1.html">DayList</a>&lt;T&gt;</td>
+        <td><span class="parametername">dayList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shrinkSelection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SelectDaysDialog-1.html">SelectDaysDialog</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.IGenericDialog-2.html">IGenericDialog&lt;TConfirmationPo, TCancelPo&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

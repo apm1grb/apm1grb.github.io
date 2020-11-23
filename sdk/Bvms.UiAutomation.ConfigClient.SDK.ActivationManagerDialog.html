@@ -95,6 +95,10 @@
     <div class="level4"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html">GenericDialog</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html">ActivateExistingConfigurationDialog</a>, <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a>&gt;</div>
     <div class="level5"><span class="xref">ActivationManagerDialog</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.IGenericDialog-2.html">IGenericDialog</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateExistingConfigurationDialog.html">ActivateExistingConfigurationDialog</a>, <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -158,7 +162,13 @@
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_">PageObject.FindElement&lt;TElement&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_">PageObject.FindElement2&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_">PageObject.GetButtonByText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_">PageObject.GetButtonByName(String)</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_">PageObject.FindTree(String)</a>
@@ -189,7 +199,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ActivationManagerDialog : GenericDialog&lt;ActivateExistingConfigurationDialog, ConfigClientPageObject&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ActivationManagerDialog : GenericDialog&lt;ActivateExistingConfigurationDialog, ConfigClientPageObject&gt;, IGenericDialog&lt;ActivateExistingConfigurationDialog, ConfigClientPageObject&gt;</code></pre>
   </div>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ActivationManagerDialog_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>After closing the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html">ActivationManagerDialog</a> a simple &quot;OK/Cancel&quot;-dialog appears.
@@ -365,6 +375,10 @@ With a confirmation of this dialog we return the next but one page object and sk
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.IGenericDialog-2.html">IGenericDialog&lt;TConfirmationPo, TCancelPo&gt;</a>
+  </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html">DialogBase</a></div>

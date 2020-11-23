@@ -104,9 +104,6 @@
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig-1.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1_Port">EditVideoDeviceDialogConfig&lt;Vrm&gt;.Port</a>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig-1.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1_SecuredPort">EditVideoDeviceDialogConfig&lt;Vrm&gt;.SecuredPort</a>
-    </div>
-    <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig-1.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1_Credentials">EditVideoDeviceDialogConfig&lt;Vrm&gt;.Credentials</a>
     </div>
     <div>
@@ -144,19 +141,19 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EditVrmDialogConfig : EditVideoDeviceDialogConfig&lt;Vrm&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class EditVrmDialogConfig : EditVideoDeviceDialogConfig&lt;Vrm&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig__ctor_System_String_System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VrmType__System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Bvms_UiAutomation_ConfigClient_BaseTypes_Credentials_System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_PasswordDisplaying__System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_ConnectionSecurity__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.#ctor(System.String,System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VrmType},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials,System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying},System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity})">EditVrmDialogConfig(String, Nullable&lt;VrmType&gt;, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Credentials, Nullable&lt;PasswordDisplaying&gt;, Nullable&lt;ConnectionSecurity&gt;)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig__ctor_System_String_System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VrmType__System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_ConnectionSecurity__Bvms_UiAutomation_BaseTypes_Credentials_System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_PasswordDisplaying__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.#ctor(System.String,System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VrmType},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity},Bvms.UiAutomation.BaseTypes.Credentials,System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying})">EditVrmDialogConfig(String, Nullable&lt;VrmType&gt;, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;ConnectionSecurity&gt;, Credentials, Nullable&lt;PasswordDisplaying&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EditVrmDialogConfig(string deviceName, VrmType? vrmType, string masterVrm, string ipAddress, int? port, int? securedPort, Credentials credentials, PasswordDisplaying? passwordDisplaying, ConnectionSecurity? connectionSecurity)</code></pre>
+    <pre><code class="lang-csharp hljs">public EditVrmDialogConfig(string deviceName, VrmType? vrmType, string masterVrm, string ipAddress, int? port, int? httpPort, int? httpsPort, ConnectionSecurity? connectionSecurity, Credentials credentials, PasswordDisplaying? passwordDisplaying)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -195,11 +192,21 @@
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><span class="parametername">securedPort</span></td>
+        <td><span class="parametername">httpPort</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials.html">Credentials</a></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">httpsPort</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a>&gt;</td>
+        <td><span class="parametername">connectionSecurity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.BaseTypes.Credentials.html">Credentials</a></td>
         <td><span class="parametername">credentials</span></td>
         <td></td>
       </tr>
@@ -208,15 +215,37 @@
         <td><span class="parametername">passwordDisplaying</span></td>
         <td></td>
       </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a>&gt;</td>
-        <td><span class="parametername">connectionSecurity</span></td>
-        <td></td>
-      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_DefaultHttpPort_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.DefaultHttpPort*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_DefaultHttpPort" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.DefaultHttpPort">DefaultHttpPort</h4>
+  <div class="markdown level1 summary"><p>Gets the default HTTP port for unsecured connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DefaultHttpPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The default HTTP port.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_DefaultPort_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.DefaultPort*"></a>
@@ -273,6 +302,60 @@
   <div><span class="xref">Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig&lt;Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm&gt;.DefaultSecuredPort</span></div>
   
   
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_HttpPort_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.HttpPort*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_HttpPort" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.HttpPort">HttpPort</h4>
+  <div class="markdown level1 summary"><p>Gets the HTTP port.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HttpPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The HTTP port.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_HttpsPort_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.HttpsPort*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_HttpsPort" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.HttpsPort">HttpsPort</h4>
+  <div class="markdown level1 summary"><p>Gets the HTTPS port.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HttpsPort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The HTTPS port.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_MasterVrm_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.MasterVrm*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVrmDialogConfig_MasterVrm" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVrmDialogConfig.MasterVrm">MasterVrm</h4>
   <div class="markdown level1 summary"><p>Gets the master VRM.</p>
@@ -307,7 +390,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VrmType? VrmType { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public VrmType VrmType { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,7 +402,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VrmType.html">VrmType</a>&gt;</td>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VrmType.html">VrmType</a></td>
         <td><p>The type of the VRM.</p>
 </td>
       </tr>

@@ -96,6 +96,10 @@
     <div class="level5"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html">ActivateConfigurationDialog</a>&lt;<a class="xref" href="Bvms.UiAutomation.SDK.Commons.NullPageObject.html">NullPageObject</a>, <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html">ActivationManagerDialog</a>&gt;</div>
     <div class="level6"><span class="xref">ActivateExistingConfigurationDialog</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.IGenericDialog-2.html">IGenericDialog</a>&lt;<a class="xref" href="Bvms.UiAutomation.SDK.Commons.NullPageObject.html">NullPageObject</a>, <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivationManagerDialog.html">ActivationManagerDialog</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -109,12 +113,6 @@
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_WithActivationForcingMode_Bvms_UiAutomation_ConfigClient_SDK_OperationClientActivationForcingMode_">ActivateConfigurationDialog&lt;NullPageObject, ActivationManagerDialog&gt;.WithActivationForcingMode(OperationClientActivationForcingMode)</a>
-    </div>
-    <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_ForceActivationCheckbox">ActivateConfigurationDialog&lt;NullPageObject, ActivationManagerDialog&gt;.ForceActivationCheckbox</a>
-    </div>
-    <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html#Bvms_UiAutomation_ConfigClient_SDK_ActivateConfigurationDialog_2_ApplyButton">ActivateConfigurationDialog&lt;NullPageObject, ActivationManagerDialog&gt;.ApplyButton</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.GenericDialog-2.html#Bvms_UiAutomation_SDK_Commons_GenericDialog_2_ConfirmationCommand">GenericDialog&lt;NullPageObject, ActivationManagerDialog&gt;.ConfirmationCommand</a>
@@ -180,7 +178,13 @@
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_">PageObject.FindElement&lt;TElement&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_">PageObject.FindElement2&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_">PageObject.GetButtonByText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_">PageObject.GetButtonByName(String)</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_">PageObject.FindTree(String)</a>
@@ -211,7 +215,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ActivateExistingConfigurationDialog_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ActivateExistingConfigurationDialog : ActivateConfigurationDialog&lt;NullPageObject, ActivationManagerDialog&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ActivateExistingConfigurationDialog : ActivateConfigurationDialog&lt;NullPageObject, ActivationManagerDialog&gt;, IGenericDialog&lt;NullPageObject, ActivationManagerDialog&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -267,9 +271,13 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.IGenericDialog-2.html">IGenericDialog&lt;TConfirmationPo, TCancelPo&gt;</a>
+  </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
-      <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html">ActivateConfigurationDialog</a>&lt;T, TU&gt;</div>
+      <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ActivateConfigurationDialog-2.html">ActivateConfigurationDialog</a>&lt;TConfirmationPo, TCancelPo&gt;</div>
   </div>
 </article>
           </div>

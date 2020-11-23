@@ -126,13 +126,13 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_DecoderFactory_CreateDecoder_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderFactory.CreateDecoder*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_DecoderFactory_CreateDecoder_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_DecoderType_System_String_Bvms_UiAutomation_ConfigClient_BaseTypes_Credentials_System_Int32_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderFactory.CreateDecoder(System.String,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderType,System.String,Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials,System.Int32)">CreateDecoder(String, DecoderType, String, Credentials, Int32)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_DecoderFactory_CreateDecoder_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_DecoderType_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_DecoderConfig_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderFactory.CreateDecoder(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderType,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderConfig)">CreateDecoder(DecoderType, DecoderConfig)</h4>
   <div class="markdown level1 summary"><p>Creates  a new instance of a <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder.html">Decoder</a> sub class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Decoder CreateDecoder(string deviceName, DecoderType decoderType, string ipAddress, Credentials credentials, int monitorCount = 1)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Decoder CreateDecoder(DecoderType decoderType, DecoderConfig config)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,33 +145,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">deviceName</span></td>
-        <td><p>Name of the device.</p>
-</td>
-      </tr>
-      <tr>
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderType.html">DecoderType</a></td>
         <td><span class="parametername">decoderType</span></td>
         <td><p>Type of the decoder.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">ipAddress</span></td>
-        <td><p>The IP address.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials.html">Credentials</a></td>
-        <td><span class="parametername">credentials</span></td>
-        <td><p>The <a class="xref" href="Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials.html">Credentials</a> for this decoder</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">monitorCount</span></td>
-        <td><p>The amount of connected monitors.</p>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderConfig.html">DecoderConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The configuration for this decoder.</p>
 </td>
       </tr>
     </tbody>

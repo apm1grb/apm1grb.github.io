@@ -126,13 +126,13 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_System_String_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor(System.String,System.String)">UserGroup(String, String)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_System_String_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_Permissions_PermissionSet_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor(System.String,System.String,Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.Permissions.PermissionSet)">UserGroup(String, String, PermissionSet)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html">UserGroup</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UserGroup(string name, string description)</code></pre>
+    <pre><code class="lang-csharp hljs">public UserGroup(string name, string description, PermissionSet permissionSet = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,18 +156,23 @@
         <td><p>The description of the user group.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.Permissions.PermissionSet.html">PermissionSet</a></td>
+        <td><span class="parametername">permissionSet</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_System_String_System_String_System_Collections_Generic_IList_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User__" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor(System.String,System.String,System.Collections.Generic.IList{Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User})">UserGroup(String, String, IList&lt;User&gt;)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup__ctor_System_String_System_String_System_Collections_Generic_IList_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_User__Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_Permissions_PermissionSet_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.#ctor(System.String,System.String,System.Collections.Generic.IList{Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User},Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.Permissions.PermissionSet)">UserGroup(String, String, IList&lt;User&gt;, PermissionSet)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html">UserGroup</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UserGroup(string name, string description, IList&lt;User&gt; users)</code></pre>
+    <pre><code class="lang-csharp hljs">public UserGroup(string name, string description, IList&lt;User&gt; users, PermissionSet permissionSet = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,6 +201,11 @@
         <td><span class="parametername">users</span></td>
         <td><p>A list of users inside this user group.</p>
 </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.Permissions.PermissionSet.html">PermissionSet</a></td>
+        <td><span class="parametername">permissionSet</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -257,6 +267,31 @@
   </table>
   
   
+  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_PermissionSet_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.PermissionSet*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_PermissionSet" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.PermissionSet">PermissionSet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PermissionSet PermissionSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.Permissions.PermissionSet.html">PermissionSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_Users_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Users*"></a>
   <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_Users" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.Users">Users</h4>
   <div class="markdown level1 summary"><p>The users in this user group.</p>
@@ -279,6 +314,50 @@
         <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.User.html">User</a>&gt;</td>
         <td><p>The users.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_WithConfigurationPermission_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.WithConfigurationPermission*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_UserGroup_WithConfigurationPermission_Bvms_UiAutomation_ConfigClient_DomainModel_UserManagement_Permissions_Configuration_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.WithConfigurationPermission(Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.Permissions.Configuration)">WithConfigurationPermission(Configuration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserGroup WithConfigurationPermission(Configuration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.Permissions.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.UserManagement.UserGroup.html">UserGroup</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

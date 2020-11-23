@@ -94,12 +94,19 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html">MonitorGroup</a>&gt;</div>
     <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_DeviceName">Device&lt;MonitorGroup&gt;.DeviceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_UpdateDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0__">Device&lt;MonitorGroup&gt;.UpdateDevice(DeviceConfig&lt;MonitorGroup&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_GetConfig">Device&lt;MonitorGroup&gt;.GetConfig()</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -127,7 +134,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.DomainModel.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MonitorGroup : Device&lt;MonitorGroup&gt;, IDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class MonitorGroup : Device&lt;MonitorGroup&gt;, IDevice&lt;MonitorGroup&gt;, IDevice</code></pre>
   </div>
   <h5 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>If not created with belonging new <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_Decoder">Decoder</a> the properties for <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.MonitorGroup.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_MonitorGroup_Decoder">Decoder</a>
@@ -418,6 +425,9 @@ a MonitorGroup can connect to several decoders.</p>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice&lt;T&gt;</a>
+  </div>
   <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a>
   </div>

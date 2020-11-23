@@ -104,9 +104,6 @@
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig-1.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1_Port">EditVideoDeviceDialogConfig&lt;Vsg&gt;.Port</a>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig-1.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1_SecuredPort">EditVideoDeviceDialogConfig&lt;Vsg&gt;.SecuredPort</a>
-    </div>
-    <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVideoDeviceDialogConfig-1.html#Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVideoDeviceDialogConfig_1_Credentials">EditVideoDeviceDialogConfig&lt;Vsg&gt;.Credentials</a>
     </div>
     <div>
@@ -151,12 +148,12 @@
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVsgDialogConfig__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVsgDialogConfig.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVsgDialogConfig__ctor_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__Bvms_UiAutomation_ConfigClient_BaseTypes_Credentials_System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_PasswordDisplaying__System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_ConnectionSecurity__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVsgDialogConfig.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials,System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying},System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity})">EditVsgDialogConfig(String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Credentials, Nullable&lt;PasswordDisplaying&gt;, Nullable&lt;ConnectionSecurity&gt;)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_Recorders_EditVsgDialogConfig__ctor_System_String_System_String_System_Nullable_System_Int32__System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_ConnectionSecurity__Bvms_UiAutomation_BaseTypes_Credentials_System_Nullable_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_PasswordDisplaying__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.EditVsgDialogConfig.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity},Bvms.UiAutomation.BaseTypes.Credentials,System.Nullable{Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying})">EditVsgDialogConfig(String, String, Nullable&lt;Int32&gt;, Nullable&lt;ConnectionSecurity&gt;, Credentials, Nullable&lt;PasswordDisplaying&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EditVsgDialogConfig(string deviceName, string ipAddress, int? port, int? securedPort, Credentials credential, PasswordDisplaying? passwordDisplaying, ConnectionSecurity? connectionSecurity)</code></pre>
+    <pre><code class="lang-csharp hljs">public EditVsgDialogConfig(string deviceName, string ipAddress, int? port, ConnectionSecurity? connectionSecurity, Credentials credential, PasswordDisplaying? passwordDisplaying)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -184,23 +181,18 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><span class="parametername">securedPort</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a>&gt;</td>
+        <td><span class="parametername">connectionSecurity</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.BaseTypes.Credentials.html">Credentials</a></td>
+        <td><a class="xref" href="Bvms.UiAutomation.BaseTypes.Credentials.html">Credentials</a></td>
         <td><span class="parametername">credential</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.PasswordDisplaying.html">PasswordDisplaying</a>&gt;</td>
         <td><span class="parametername">passwordDisplaying</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.ConnectionSecurity.html">ConnectionSecurity</a>&gt;</td>
-        <td><span class="parametername">connectionSecurity</span></td>
         <td></td>
       </tr>
     </tbody>

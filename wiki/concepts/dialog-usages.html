@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Usage of Dialog classes | BVMS UI Automation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Usage of Dialog classes | BVMS UI Automation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="usage-of-dialog-classes">Usage of <code>Dialog</code> classes</h1>
+
+<h2 id="overview">Overview</h2>
+<p><img src="media/DialogClasses.ClassDiagram.01.png" alt="Hierarchy of Dialog classes"></p>
+<h2 id="dialogbase">DialogBase</h2>
+<ul>
+<li><p>derived from <code>WindowsPO</code> (page object), which is a real window and not only a window part (aka page fragment, page component)</p>
+</li>
+<li><p>abstract base class for dialogs with a confirmation and a cancellation option (usually via <code>OK</code> and <code>Cancel</code> buttons)</p>
+</li>
+<li><p>provides an easy way to close the dialog via <code>EndDialog(DialogCompletion dialogCompletion)</code> where <code>dialogCompletion</code> indicates the way how to close (confirm or cancel)</p>
+<pre><code class="lang-cs">public virtual PageObject EndDialog(DialogCompletion dialogCompletion)
+</code></pre>
+</li>
+</ul>
+<h2 id="simpledialog">SimpleDialog</h2>
+<ul>
+<li><p>derived from <code>DialogBase</code></p>
+</li>
+<li><p>describes a very simple dialog which needs to get clicked away (Yes/No dialogs, OK-only dialogs)<br>
+e.g. an informational dialog without any deeper meaning to respect</p>
+</li>
+<li><p>for easy click away possibility two static methods are given</p>
+<ul>
+<li><code>ClickAway(Window parentWindow, string windowsTitle, TimeSpan timeout, DialogCompletion dialogCompletion)</code></li>
+<li><code>ClickAway(Window parentWindow, DialogCompletion dialogCompletion, Func&lt;Button&gt; findConfirmationButton, Func&lt;Button&gt; findCancelButton)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="genericdialogtconfirmationpo-tcancelpo">GenericDialog&lt;TConfirmationPo, TCancelPo&gt;</h3>
+<ul>
+<li><p>derived from <code>DialogBase</code></p>
+</li>
+<li><p>describes an abstract dialog with buttons to confirm or cancel the dialog (<code>OK</code>, <code>Cancel</code> button)</p>
+</li>
+<li><p>the generic type parameters <code>TConfirmationPo</code> and <code>TCancelPo</code> stand for the page objects which are returned as successors for confirmation and cancellation</p>
+</li>
+<li><p>via delegates the behavior to return these succeeding page objects is managed</p>
+</li>
+<li><p>the delegates can be set</p>
+<ul>
+<li>via constructor (recommended)<br>
+<code>GenericDialog(..., Func&lt;TConfirmationPo&gt; confirmationCommand, Func&lt;TCancelPo&gt; cancelCommand)</code></li>
+<li>via properties<br>
+<code>Func&lt;TConfirmationPo&gt; ConfirmationCommand { get; set; }</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="activateconfigurationdialogtconfirmationpo-tcancelpo">ActivateConfigurationDialog&lt;TConfirmationPo, TCancelPo&gt;</h3>
+<ul>
+<li><p>derived from <code>GenericDialog&lt;TConfirmationPo, TCancelPo&gt;</code></p>
+</li>
+<li><p>base class for <code>ActivateExistingConfigurationDialog</code> and <code>ActivateNewConfigurationDialog</code></p>
+</li>
+<li><p>contains additional logic to</p>
+<ul>
+<li>manage the UI control to force an activation and so on</li>
+<li>wait that the progress windows during activation disappears</li>
+</ul>
+</li>
+</ul>
+<h3 id="activateexistingconfigurationdialog">ActivateExistingConfigurationDialog</h3>
+<ul>
+<li>binds the generic type parameters of base class to <code>NullPageObject</code> and <code>ActivationManagerDialog</code></li>
+</ul>
+<h3 id="activatenewconfigurationdialog">ActivateNewConfigurationDialog</h3>
+<ul>
+<li>binds the generic type parameters of base class to <code>ConfigClientPageObject</code> and <code>ConfigClientPageObject</code></li>
+<li>contains additional logic to handle activation metadata (description, delayed activation, time to take active)</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>see also <code>IFindWindowStrategy</code></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

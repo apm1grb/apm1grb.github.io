@@ -1,0 +1,999 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DeviceManager&lt;T&gt;
+   | BVMS UI Automation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DeviceManager&lt;T&gt;
+   | BVMS UI Automation ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../sdk-api/toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1">
+  
+  
+  <h1 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1" class="text-break">Class DeviceManager&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager-1.html">DeviceManager&lt;T&gt;</a> handles how a device is added, modified and removed in the UI.
+Depending upon the type of a device some devices appear as own nodes in the DeviceTree and others only as a table in the right pane.
+Therefore very distinct UI approaches are necessary to access and manage these devices.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DeviceManager&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.PaneDeviceManager-1.html">PaneDeviceManager&lt;T&gt;</a></div>
+      <div class="level2"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.TreeDeviceManager-1.html">TreeDeviceManager&lt;T&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.IDeviceManager.html">IDeviceManager</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.html">Bvms.UiAutomation.ConfigClient.SDK.Devices</a></h6>
+  <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DeviceManager&lt;T&gt; : IDeviceManager where T : Device&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.#ctor*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1__ctor_Bvms_UiAutomation_SDK_Commons_TreeRepository_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.#ctor(Bvms.UiAutomation.SDK.Commons.TreeRepository)">DeviceManager(TreeRepository)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager-1.html">DeviceManager&lt;T&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DeviceManager(TreeRepository deviceTreeRepository)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.TreeRepository.html">TreeRepository</a></td>
+        <td><span class="parametername">deviceTreeRepository</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_DeviceTreeRepository_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.DeviceTreeRepository*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_DeviceTreeRepository" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.DeviceTreeRepository">DeviceTreeRepository</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Bvms.UiAutomation.SDK.Commons.TreeRepository.html">TreeRepository</a> for devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TreeRepository DeviceTreeRepository { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.TreeRepository.html">TreeRepository</a></td>
+        <td><p>The device tree repository.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_Uri_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.Uri*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_Uri" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.Uri">Uri</h4>
+  <div class="markdown level1 summary"><p>Gets the URI for the node where the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager-1.html">DeviceManager&lt;T&gt;</a> is responsible for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string Uri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AddDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.AddDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AddDevice__0_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.AddDevice(`0)">AddDevice(T)</h4>
+  <div class="markdown level1 summary"><p>Adds a new device to the DeviceTree.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddDevice(T device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The new device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AddDevice__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It implements the template method pattern. The high level process is always the same - first select the node of the device type and then the add logic is called.
+Both steps differ inside for the individual device types.</p>
+</div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AddDeviceCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.AddDeviceCore*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AddDeviceCore_FlaUI_Core_AutomationElements_AutomationElement__0_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.AddDeviceCore(FlaUI.Core.AutomationElements.AutomationElement,`0)">AddDeviceCore(AutomationElement, T)</h4>
+  <div class="markdown level1 summary"><p>Adds an individual device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string AddDeviceCore(AutomationElement node, T device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The parent node where the device needs to be added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of the new device given from the system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AddDeviceCore_FlaUI_Core_AutomationElements_AutomationElement__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Needs to get overwritten for individual device types (variable part of the calling template method).</p>
+</div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AddSubDevices_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.AddSubDevices*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AddSubDevices__0_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.AddSubDevices(`0)">AddSubDevices(T)</h4>
+  <div class="markdown level1 summary"><p>Hook up to add sub devices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddSubDevices(T device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AfterAddDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.AfterAddDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_AfterAddDevice__0_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.AfterAddDevice(`0)">AfterAddDevice(T)</h4>
+  <div class="markdown level1 summary"><p>Hook to run tasks after adding a device (e.g. connect MonitorGroup with Decoder).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AfterAddDevice(T device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_BeforeAddDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.BeforeAddDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_BeforeAddDevice__0_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.BeforeAddDevice(`0)">BeforeAddDevice(T)</h4>
+  <div class="markdown level1 summary"><p>Hook to run tasks before adding a device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void BeforeAddDevice(T device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_ConfigureDeviceWhenAdding_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.ConfigureDeviceWhenAdding*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_ConfigureDeviceWhenAdding_FlaUI_Core_AutomationElements_AutomationElement__0_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.ConfigureDeviceWhenAdding(FlaUI.Core.AutomationElements.AutomationElement,`0)">ConfigureDeviceWhenAdding(AutomationElement, T)</h4>
+  <div class="markdown level1 summary"><p>Configures the device during adding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract PageObject ConfigureDeviceWhenAdding(AutomationElement automationElement, T device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td><span class="parametername">automationElement</span></td>
+        <td><p>The automation element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_EditDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.EditDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_EditDevice_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.EditDevice(System.String,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.DeviceConfig{`0})">EditDevice(String, DeviceConfig&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Configures a device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PageObject EditDevice(string deviceName, DeviceConfig&lt;T&gt; config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>Name of the device to configure.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.DeviceConfig-1.html">DeviceConfig</a>&lt;T&gt;</td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The new device configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_EditDevice_System_String_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It implements the template method pattern. The high level process is always the same - first select the device to configure and then the configuration logic is called.
+Both steps differ inside for the individual device types.</p>
+</div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_EditDeviceCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.EditDeviceCore*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_EditDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0__" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.EditDeviceCore(FlaUI.Core.AutomationElements.AutomationElement,Bvms.UiAutomation.ConfigClient.DomainModel.Devices.DeviceConfig{`0})">EditDeviceCore(AutomationElement, DeviceConfig&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Configures an individual device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract PageObject EditDeviceCore(AutomationElement node, DeviceConfig&lt;T&gt; config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The node of the device to modify.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.DeviceConfig-1.html">DeviceConfig</a>&lt;T&gt;</td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_EditDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Needs to get overwritten for individual device types (variable part of the calling template method).</p>
+</div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_GetDeviceByName_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.GetDeviceByName*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_GetDeviceByName_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.GetDeviceByName(System.String)">GetDeviceByName(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the device by its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract T GetDeviceByName(string deviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>Name of the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_GetUriOfDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.GetUriOfDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_GetUriOfDevice_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.GetUriOfDevice(System.String)">GetUriOfDevice(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the URI of a device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetUriOfDevice(string deviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>The name of the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>URI of a device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RemoveDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.RemoveDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RemoveDevice_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.RemoveDevice(System.String)">RemoveDevice(String)</h4>
+  <div class="markdown level1 summary"><p>Removes a device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveDevice(string deviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>Name of the device to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RemoveDevice_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It implements the template method pattern. The high level process is always the same - first select the device to remove and then the remove logic is called.
+Both steps differ inside for the individual device types.</p>
+</div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RemoveDeviceCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.RemoveDeviceCore*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RemoveDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.RemoveDeviceCore(FlaUI.Core.AutomationElements.AutomationElement,System.String)">RemoveDeviceCore(AutomationElement, String)</h4>
+  <div class="markdown level1 summary"><p>Removes an individual device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RemoveDeviceCore(AutomationElement automationElement, string deviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td><span class="parametername">automationElement</span></td>
+        <td><p>The automation element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>Name of the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RemoveDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Needs to get overwritten for individual device types (variable part of the calling template method).</p>
+</div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RenameDeviceCore_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.RenameDeviceCore*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RenameDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.RenameDeviceCore(FlaUI.Core.AutomationElements.AutomationElement,System.String)">RenameDeviceCore(AutomationElement, String)</h4>
+  <div class="markdown level1 summary"><p>Renames an individual device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RenameDeviceCore(AutomationElement automationElement, string newDeviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td><span class="parametername">automationElement</span></td>
+        <td><p>The device to rename.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newDeviceName</span></td>
+        <td><p>New name of the device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_RenameDeviceCore_FlaUI_Core_AutomationElements_AutomationElement_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Needs to get overwritten for individual device types (variable part of the calling template method).</p>
+</div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_SelectDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.SelectDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_SelectDevice__0_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.SelectDevice(`0)">SelectDevice(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationElement SelectDevice(T device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">device</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_SelectDevice_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.SelectDevice*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_SelectDevice_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.SelectDevice(System.String)">SelectDevice(String)</h4>
+  <div class="markdown level1 summary"><p>Selects a device in the DeviceTree. Needs to get overwritten for individual device types (variable part of the calling template method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract AutomationElement SelectDevice(string deviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td><p>Name of the device to select.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_SelectDeviceTypeNode_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.SelectDeviceTypeNode*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_SelectDeviceTypeNode" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.SelectDeviceTypeNode">SelectDeviceTypeNode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationElement SelectDeviceTypeNode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_SelectDeviceTypeNode_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.SelectDeviceTypeNode*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_SelectDeviceTypeNode__0_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.SelectDeviceTypeNode(`0)">SelectDeviceTypeNode(T)</h4>
+  <div class="markdown level1 summary"><p>Selects the device type node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual AutomationElement SelectDeviceTypeNode(T device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>The device.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_WaitForDeviceNode_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.WaitForDeviceNode*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Devices_DeviceManager_1_WaitForDeviceNode_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Devices.DeviceManager`1.WaitForDeviceNode(System.String)">WaitForDeviceNode(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract AutomationElement WaitForDeviceNode(string deviceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">deviceName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.IDeviceManager.html">IDeviceManager</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

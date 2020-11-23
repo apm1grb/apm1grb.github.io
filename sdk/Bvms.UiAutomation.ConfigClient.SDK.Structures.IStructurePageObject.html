@@ -92,6 +92,33 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IStructurePageObject</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_CameraSequenceManager_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.CameraSequenceManager*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_CameraSequenceManager" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.CameraSequenceManager">CameraSequenceManager</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CameraSequenceManager CameraSequenceManager { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.CameraSequenceManager.html">CameraSequenceManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -119,41 +146,6 @@
         <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></td>
         <td><span class="parametername">device</span></td>
         <td><p>The device.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">destinationUri</span></td>
-        <td><p>The destination URI.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_AddDeviceToLogicalTree_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_AddDeviceToLogicalTree_System_String_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.AddDeviceToLogicalTree(System.String,System.String)">AddDeviceToLogicalTree(String, String)</h4>
-  <div class="markdown level1 summary"><p>Adds a device to the LogicalTree.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AddDeviceToLogicalTree(string sourceUri, string destinationUri)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">sourceUri</span></td>
-        <td><p>The source URI.</p>
 </td>
       </tr>
       <tr>
@@ -196,6 +188,65 @@
         <td><span class="parametername">folderName</span></td>
         <td><p>Name of the folder.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_MoveLogicalTreeItem_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.MoveLogicalTreeItem*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_MoveLogicalTreeItem_System_String_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.MoveLogicalTreeItem(System.String,System.String)">MoveLogicalTreeItem(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MoveLogicalTreeItem(string item, string newParent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newParent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_SelectTreeItem_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.SelectTreeItem*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_IStructurePageObject_SelectTreeItem_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePageObject.SelectTreeItem(System.String)">SelectTreeItem(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SelectTreeItem(string uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

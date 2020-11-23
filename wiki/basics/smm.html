@@ -82,6 +82,9 @@
 <p>[[<em>TOC</em>]]</p>
 <hr>
 <h2 id="get-the-sources">Get the Sources</h2>
+<blockquote>
+<p>To maintain also the <strong>DocFX</strong> assets it is necessary to establish an access to the related <strong>Github</strong> resource (see <a href="#access-github">Access Github</a>). But it is not necessary if you don't like to do that.</p>
+</blockquote>
 <ul>
 <li><p>current URL: <code>git@ssh.dev.azure.com:v3/pas4/Bvms.UiAutomation/Bvms.UiAutomation</code></p>
 </li>
@@ -89,8 +92,76 @@
 see also <a href="../documentation/introduction.html">Documentation</a></p>
 </li>
 </ul>
+<h3 id="access-github">Access Github</h3>
+<blockquote>
+<p>Remark: Some of the following <strong>SSH</strong> assets are located in the <code>.ssh</code> folder of your home folder. Depending on where you have booted your machine this folder can be a different folder. So it is wise to mirror all <strong>SSH</strong> settings for the possible folders.</p>
+</blockquote>
+<p>Usually the home folder is one of these folders:</p>
+<ul>
+<li><code>c:\users\&lt;account&gt;</code></li>
+<li><code>u:\</code></li>
+</ul>
+<p>To check where your current home folder is, run <code>cd %homepath%</code> in a prompt or paste <code>%homepath%</code> in the <strong>File Explorer</strong> address line.</p>
+<h4 id="provide-the-ssh-certificates">Provide the SSH certificates</h4>
+<ol>
+<li>Create a key-pair for <strong>SSH</strong> (name it <code>pas4</code> and <code>pas4.pub</code>)</li>
+<li>Store these files in the <code>.ssh</code> folder</li>
+<li>Ask <code>apm1grb</code> to include the public key (<code>pas4.pub</code>) in the settings of the <code>apm1grb.github.io</code> project</li>
+</ol>
+<blockquote>
+<p>Hint: In case you are not that familiar with <strong>SSH</strong> you can get a valid key-pair which let you skip the creation steps.</p>
+</blockquote>
+<h4 id="create-a-server-alias">Create a server alias</h4>
+<ol>
+<li>Open the <code>.ssh</code> folder in your home folder</li>
+<li>Open the <code>config</code> file and add the alias</li>
+</ol>
+<pre><code class="lang-text">Host as-apm1grb
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/pas4
+  IdentitiesOnly yes
+</code></pre>
+<h4 id="check-the-connection">Check the connection</h4>
+<ul>
+<li>run <code>ssh -v as-apm1grb</code> inside a bash; this should not throw errors</li>
+</ul>
 <hr>
 <h2 id="prerequisites">Prerequisites</h2>
+<h3 id="ignore-specific-exception-types">Ignore specific exception types</h3>
+<blockquote>
+<p>see also <a href="https://michaelscodingspot.com/7-debugging-techniques-know-c-net">7 Debugging Techniques you should know in C# .NET - 2. Breaking on Exceptions with or without source code</a></p>
+</blockquote>
+<ol>
+<li><p>Open tool window <em>Exception Settings</em></p>
+</li>
+<li><p>Navigate to node <em>Common language Runtime Exceptions</em></p>
+</li>
+<li><p>Add the following types of exceptions and adjust the conditions</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Bvms.UiAutomation.ConfigClient.SDK.UiElementDisabledException</code></td>
+<td><em>Module Name</em> <em>Not Equal</em> <code>Bvms.UiAutomation.ConfigClient.SDK.dll</code></td>
+</tr>
+<tr>
+<td><code>Bvms.UiAutomation.SDK.Commons.NavigationException</code></td>
+<td><em>Module Name</em> <em>Not Equal</em> <code>Bvms.UiAutomation.SDK.Commons.dll</code></td>
+</tr>
+<tr>
+<td><code>Bvms.UiAutomation.ConfigClient.SDK.PrepareForWorkaroundException</code></td>
+<td><em>Module Name</em> <em>Not Equal</em> <code>Bvms.UiAutomation.ConfigClient.SDK.dll</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
 <h3 id="environment-variables">Environment Variables</h3>
 <p>During unit testing the <strong>Configuration Client</strong> and the <strong>Operator Client</strong> needs to be started. Hence the unit test needs to know where the executables are located. In case they are not in the default location (<code>%ProgramFiles%\Bosch\..</code>) or the credentials are not the default credentials (user is <code>Admin</code> and password is empty) it needs environment variables to overwrite the default settings.</p>
 <ul>

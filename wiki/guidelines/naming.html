@@ -99,7 +99,7 @@ Sporadically it is necessary to use long waits and timeouts, notably during the 
 <p>see also <a href="../patterns/page-object.html">Pattern: Page Object Pattern</a></p>
 <ul>
 <li>page objects (aka page components/fragments) should consist of multiple files which contains the parts of a (partial) class</li>
-<li>one part should have the suffix <code>ElementMap</code> and must contain the access to UI elements as protected properties [1]</li>
+<li>one part should have the suffix <code>ElementMap</code> and must contain the access to UI elements as <code>private protected</code> properties [1]</li>
 <li>these properties must (or must not?) end with the UI element type (e.g. <code>protected TextBox ServerNameTextBox</code>) Todo: clarify what better is (must or must not?)</li>
 <li>data input to page objects must follow the Fluent Interface design principle (must have for creational fashion!)</li>
 <li>data input must/should? be done via methods having the prefix <code>Set</code> to facilitate the fluent utilization (<code>fooDialog.SetPassword(&quot;p&quot;).SetUsername(&quot;u&quot;).SetPasswordShowing(false)</code>) Todo: clarify must/should</li>

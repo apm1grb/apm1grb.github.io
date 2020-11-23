@@ -83,7 +83,7 @@
   
   <h1 id="Bvms_UiAutomation_ConfigClient_SDK_ToolbarPageComponent" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent" class="text-break">Class ToolbarPageComponent
   </h1>
-  <div class="markdown level0 summary"><p>Wraps the toolbar of the Configuration Client.</p>
+  <div class="markdown level0 summary"><p>Wraps the context of the Configuration Client.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -92,10 +92,13 @@
     <div class="level1"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a></div>
     <div class="level2"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageComponent.html">PageComponent</a></div>
     <div class="level3"><span class="xref">ToolbarPageComponent</span></div>
+      <div class="level4"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.DummyToolbarPageComponent.html">DummyToolbarPageComponent</a></div>
+      <div class="level4"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulesPaneToolbar.html">SchedulesPaneToolbar</a></div>
+      <div class="level4"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.html">StructurePaneToolbar</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbarPageComponent.html">IToolbarPageComponent</a></div>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbar.html">IToolbar</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -112,7 +115,13 @@
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_">PageObject.FindElement&lt;TElement&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_">PageObject.FindElement2&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_">PageObject.GetButtonByText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_">PageObject.GetButtonByName(String)</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_">PageObject.FindTree(String)</a>
@@ -143,20 +152,20 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_ToolbarPageComponent_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ToolbarPageComponent : PageComponent, IToolbarPageComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ToolbarPageComponent : PageComponent, IToolbar</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_ToolbarPageComponent__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ToolbarPageComponent__ctor_FlaUI_Core_AutomationElements_Window_FlaUI_Core_AutomationElements_AutomationElement_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.#ctor(FlaUI.Core.AutomationElements.Window,FlaUI.Core.AutomationElements.AutomationElement)">ToolbarPageComponent(Window, AutomationElement)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_ToolbarPageComponent__ctor_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.#ctor(FlaUI.Core.AutomationElements.Window)">ToolbarPageComponent(Window)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.html">ToolbarPageComponent</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ToolbarPageComponent(Window parentWindow, AutomationElement toolbar)</code></pre>
+    <pre><code class="lang-csharp hljs">protected ToolbarPageComponent(Window parentWindow)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,12 +181,6 @@
         <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
         <td><span class="parametername">parentWindow</span></td>
         <td><p>The parent window.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
-        <td><span class="parametername">toolbar</span></td>
-        <td><p>The toolbar.</p>
 </td>
       </tr>
     </tbody>
@@ -239,12 +242,12 @@
   </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbarPageComponent.html">IToolbarPageComponent</a>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbar.html">IToolbar</a>
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageComponent.html">PageComponent</a></div>
-      <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbarPageComponent.html">IToolbarPageComponent</a></div>
+      <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbar.html">IToolbar</a></div>
   </div>
 </article>
           </div>

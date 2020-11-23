@@ -95,6 +95,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vsg.html">Vsg</a>&gt;</div>
     <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></div>
   </div>
   <div class="inheritedMembers">
@@ -106,19 +107,19 @@
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_Port">VideoDeviceBase&lt;Vsg&gt;.Port</a>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_SecuredPort">VideoDeviceBase&lt;Vsg&gt;.SecuredPort</a>
-    </div>
-    <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_Credentials">VideoDeviceBase&lt;Vsg&gt;.Credentials</a>
-    </div>
-    <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_PasswordDisplaying">VideoDeviceBase&lt;Vsg&gt;.PasswordDisplaying</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_ConnectionSecurity">VideoDeviceBase&lt;Vsg&gt;.ConnectionSecurity</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_UpdateDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0__">VideoDeviceBase&lt;Vsg&gt;.UpdateDevice(DeviceConfig&lt;Vsg&gt;)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_DeviceName">Device&lt;Vsg&gt;.DeviceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_GetConfig">Device&lt;Vsg&gt;.GetConfig()</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -146,7 +147,7 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.DomainModel.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vsg_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Vsg : VideoDeviceBase&lt;Vsg&gt;, IDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class Vsg : VideoDeviceBase&lt;Vsg&gt;, IDevice&lt;Vsg&gt;, IDevice</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -204,7 +205,84 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vsg_Create_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vsg.Create*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_Vsg_Create_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VsgConfig_System_String_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vsg.Create(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VsgConfig,System.String,System.String)">Create(VsgConfig, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates the VSG.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vsg Create(VsgConfig config, string vrmName, string poolName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VsgConfig.html">VsgConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The properties for this VSG.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">vrmName</span></td>
+        <td><p>Name of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vrm.html">Vrm</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">poolName</span></td>
+        <td><p>Name of the <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Pool.html">Pool</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.Vsg.html">Vsg</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Port or secured port must be defined.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice&lt;T&gt;</a>
+  </div>
   <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a>
   </div>

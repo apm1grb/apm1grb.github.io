@@ -83,7 +83,7 @@
   
   <h1 id="Bvms_UiAutomation_SDK_Commons_PageComponent" data-uid="Bvms.UiAutomation.SDK.Commons.PageComponent" class="text-break">Class PageComponent
   </h1>
-  <div class="markdown level0 summary"><p>Base class for the page object pattern.</p>
+  <div class="markdown level0 summary"><p>A <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageComponent.html">PageComponent</a> is similar to a <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageComponent.html">PageComponent</a> beside it wraps only a part of a window.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -96,15 +96,24 @@
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.EnterpriseSystems.ServerListPane.html">ServerListPane</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Monitors.MonitorGroupPageComponent.html">MonitorGroupPageComponent</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.Recorders.PoolPane.html">PoolPane</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Devices.VideoAnalytics.PersonGroupsPane.html">PersonGroupsPane</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.MenuPageComponent.html">MenuPageComponent</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.PaneSelectorPageObject.html">PaneSelectorPageObject</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.RecordingSettingsPageComponent.html">RecordingSettingsPageComponent</a></div>
-      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageObject.html">SchedulePageObject</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.RecordingSchedules.RecordingSchedulePageObject.html">RecordingSchedulePageObject</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulePageComponent.html">SchedulePageComponent</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.SchedulesPageComponent.html">SchedulesPageComponent</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.ScheduleTablePageComponent.html">ScheduleTablePageComponent</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.TaskSchedules.RecurrencePatternBasePageComponent.html">RecurrencePatternBasePageComponent</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.TaskSchedules.RecurrencePatternPageComponent.html">RecurrencePatternPageComponent</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.TaskSchedules.RecurrenceTypePageComponent.html">RecurrenceTypePageComponent</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.TaskSchedules.ScheduleTypePageComponent.html">ScheduleTypePageComponent</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Schedules.TaskSchedules.TaskSchedulePageObject.html">TaskSchedulePageObject</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePageObject.html">StructurePageObject</a></div>
-      <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.html">StructurePaneToolbar</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.html">ToolbarPageComponent</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserManagementPageObject.html">UserManagementPageObject</a></div>
       <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.UserManagement.UserPropertiesPane.html">UserPropertiesPane</a></div>
+      <div class="level3"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.NullPageComponent.html">NullPageComponent</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -124,7 +133,13 @@
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_">PageObject.FindElement&lt;TElement&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_">PageObject.FindElement2&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_">PageObject.GetButtonByText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_">PageObject.GetButtonByName(String)</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_">PageObject.FindTree(String)</a>
@@ -183,11 +198,15 @@
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
         <td><span class="parametername">parentWindow</span></td>
-        <td><p>The parent parentWindow.</p>
+        <td><p>The parent Window.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a></div>
+  </div>
 </article>
           </div>
           

@@ -96,6 +96,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice</a>&lt;<a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder.html">Decoder</a>&gt;</div>
     <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a></div>
   </div>
   <div class="inheritedMembers">
@@ -122,19 +123,19 @@
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_Port">VideoDeviceBase&lt;Decoder&gt;.Port</a>
     </div>
     <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_SecuredPort">VideoDeviceBase&lt;Decoder&gt;.SecuredPort</a>
-    </div>
-    <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_Credentials">VideoDeviceBase&lt;Decoder&gt;.Credentials</a>
-    </div>
-    <div>
-      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_PasswordDisplaying">VideoDeviceBase&lt;Decoder&gt;.PasswordDisplaying</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_ConnectionSecurity">VideoDeviceBase&lt;Decoder&gt;.ConnectionSecurity</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Recorders.VideoDeviceBase-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Recorders_VideoDeviceBase_1_UpdateDevice_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_DeviceConfig__0__">VideoDeviceBase&lt;Decoder&gt;.UpdateDevice(DeviceConfig&lt;Decoder&gt;)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_DeviceName">Device&lt;Decoder&gt;.DeviceName</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Device-1.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Device_1_GetConfig">Device&lt;Decoder&gt;.GetConfig()</a>
     </div>
     <div>
       <span class="xref">System.Object.ToString()</span>
@@ -162,19 +163,19 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.DomainModel.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_BarcoMonitorWallDecoder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BarcoMonitorWallDecoder : Decoder, IDevice</code></pre>
+    <pre><code class="lang-csharp hljs">public class BarcoMonitorWallDecoder : Decoder, IDevice&lt;Decoder&gt;, IDevice</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_BarcoMonitorWallDecoder__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.BarcoMonitorWallDecoder.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_BarcoMonitorWallDecoder__ctor_System_String_System_String_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.BarcoMonitorWallDecoder.#ctor(System.String,System.String)">BarcoMonitorWallDecoder(String, String)</h4>
+  <h4 id="Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_BarcoMonitorWallDecoder__ctor_Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_DecoderConfig_" data-uid="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.BarcoMonitorWallDecoder.#ctor(Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderConfig)">BarcoMonitorWallDecoder(DecoderConfig)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BarcoMonitorWallDecoder(string deviceName, string ipAddress)</code></pre>
+    <pre><code class="lang-csharp hljs">public BarcoMonitorWallDecoder(DecoderConfig config)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,13 +188,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">deviceName</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">ipAddress</span></td>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.DecoderConfig.html">DecoderConfig</a></td>
+        <td><span class="parametername">config</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -259,6 +255,9 @@
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.Monitors.Decoder.html#Bvms_UiAutomation_ConfigClient_DomainModel_Devices_Monitors_Decoder_MaxMonitorCount">Decoder.MaxMonitorCount</a></div>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice-1.html">IDevice&lt;T&gt;</a>
+  </div>
   <div>
       <a class="xref" href="Bvms.UiAutomation.ConfigClient.DomainModel.Devices.IDevice.html">IDevice</a>
   </div>

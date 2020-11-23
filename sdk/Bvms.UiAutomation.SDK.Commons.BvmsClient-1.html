@@ -83,7 +83,8 @@
   
   <h1 id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1" class="text-break">Class BvmsClient&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The BVMS Client app.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -132,7 +133,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a> for the BVMS Client App.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -176,7 +178,8 @@
   
   <a id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_LoginDialog_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.LoginDialog*"></a>
   <h4 id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_LoginDialog" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.LoginDialog">LoginDialog</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the &lt;see cref=&quot;LoginDialog&quot; for the BVMS Client app.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -193,7 +196,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.LoginDialog-1.html">LoginDialog</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>The login dialog.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -201,13 +205,56 @@
   </h3>
   
   
-  <a id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_Kill_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.Kill*"></a>
-  <h4 id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_Kill_System_Action_System_Boolean_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.Kill(System.Action,System.Boolean)">Kill(Action, Boolean)</h4>
+  <a id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_Attach_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.Attach*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_Attach_Bvms_UiAutomation_Utils_BvmsApplicationType_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.Attach(Bvms.UiAutomation.Utils.BvmsApplicationType)">Attach(BvmsApplicationType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Kill(Action action = null, bool runAlsoDefaultShutdown = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public BvmsClientPo Attach(BvmsApplicationType bvmsApplicationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.Utils.BvmsApplicationType.html">BvmsApplicationType</a></td>
+        <td><span class="parametername">bvmsApplicationType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.BvmsClientPo.html">BvmsClientPo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_Kill_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.Kill*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_Kill_System_Action_System_Boolean_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.Kill(System.Action,System.Boolean)">Kill(Action, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Shuts down the BVMS client app.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Kill(Action beforeShutdownAction = null, bool runAlsoDefaultShutdown = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,13 +268,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Action</span></td>
-        <td><span class="parametername">action</span></td>
-        <td></td>
+        <td><span class="parametername">beforeShutdownAction</span></td>
+        <td><p>The action to run just before the usual shutdown is done.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">runAlsoDefaultShutdown</span></td>
-        <td></td>
+        <td><p>if set to <code>true</code> run also default shutdown too.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -235,7 +284,8 @@
   
   <a id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_Start_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.Start*"></a>
   <h4 id="Bvms_UiAutomation_SDK_Commons_BvmsClient_1_Start_Bvms_UiAutomation_Utils_BvmsApplicationType_System_String_" data-uid="Bvms.UiAutomation.SDK.Commons.BvmsClient`1.Start(Bvms.UiAutomation.Utils.BvmsApplicationType,System.String)">Start(BvmsApplicationType, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Starts the specified BVMS Client application.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -254,12 +304,14 @@
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.Utils.BvmsApplicationType.html">BvmsApplicationType</a></td>
         <td><span class="parametername">bvmsApplicationType</span></td>
-        <td></td>
+        <td><p>Type of the BVMS Client application.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">appArgs</span></td>
-        <td></td>
+        <td><p>The application arguments.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -274,7 +326,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.LoginDialog-1.html">LoginDialog</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>The <a class="xref" href="Bvms.UiAutomation.SDK.Commons.BvmsClient-1.html#Bvms_UiAutomation_SDK_Commons_BvmsClient_1_LoginDialog">LoginDialog</a> for the BVMS Client app.</p>
+</td>
       </tr>
     </tbody>
   </table>

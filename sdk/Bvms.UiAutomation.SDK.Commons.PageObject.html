@@ -150,7 +150,7 @@
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
         <td><span class="parametername">parentWindow</span></td>
-        <td><p>The parent parentWindow.</p>
+        <td><p>The parent Window.</p>
 </td>
       </tr>
     </tbody>
@@ -277,6 +277,64 @@
   </table>
   
   
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.FindElement2*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.FindElement2``1(System.String)">FindElement2&lt;TElement&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TElement FindElement2&lt;TElement&gt;(string automationId)
+    where TElement : AutomationElement</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">automationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.FindTree*"></a>
   <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.FindTree(System.String)">FindTree(String)</h4>
   <div class="markdown level1 summary"><p>Finds a tree by its Automation ID.</p>
@@ -316,6 +374,51 @@
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.Tree</span></td>
         <td><p>The tree.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.GetButtonByName*"></a>
+  <h4 id="Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_" data-uid="Bvms.UiAutomation.SDK.Commons.PageObject.GetButtonByName(System.String)">GetButtonByName(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the button via its name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Button GetButtonByName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the button.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FlaUI.Core.AutomationElements.Button</span></td>
+        <td><p>The button.</p>
 </td>
       </tr>
     </tbody>

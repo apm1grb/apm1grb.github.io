@@ -91,10 +91,25 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a></div>
     <div class="level2"><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageComponent.html">PageComponent</a></div>
-    <div class="level3"><span class="xref">StructurePaneToolbar</span></div>
+    <div class="level3"><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.html">ToolbarPageComponent</a></div>
+    <div class="level4"><span class="xref">StructurePaneToolbar</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbar.html">IToolbar</a></div>
+    <div><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePaneToolbar.html">IStructurePaneToolbar</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_ToolbarPageComponent_Context">ToolbarPageComponent.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_ToolbarPageComponent_SaveChanges">ToolbarPageComponent.SaveChanges()</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ToolbarPageComponent.html#Bvms_UiAutomation_ConfigClient_SDK_ToolbarPageComponent_UndoChanges">ToolbarPageComponent.UndoChanges()</a>
+    </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_SaveScreenshot_System_String_">PageObject.SaveScreenshot(String)</a>
     </div>
@@ -108,7 +123,13 @@
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement__1_System_String_">PageObject.FindElement&lt;TElement&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindElement2__1_System_String_">PageObject.FindElement2&lt;TElement&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByText_System_String_">PageObject.GetButtonByText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_GetButtonByName_System_String_">PageObject.GetButtonByName(String)</a>
     </div>
     <div>
       <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_FindTree_System_String_">PageObject.FindTree(String)</a>
@@ -139,20 +160,19 @@
   <h6><strong>Assembly</strong>: Bvms.UiAutomation.ConfigClient.SDK.dll</h6>
   <h5 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StructurePaneToolbar : PageComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class StructurePaneToolbar : ToolbarPageComponent, IToolbar, IStructurePaneToolbar</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar__ctor_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.#ctor*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar__ctor_FlaUI_Core_AutomationElements_Window_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.#ctor(FlaUI.Core.AutomationElements.Window)">StructurePaneToolbar(Window)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a> class.</p>
-</div>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar__ctor_FlaUI_Core_AutomationElements_Window_Bvms_UiAutomation_ConfigClient_SDK_ConfigClientPageObject_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.#ctor(FlaUI.Core.AutomationElements.Window,Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject)">StructurePaneToolbar(Window, ConfigClientPageObject)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StructurePaneToolbar(Window parentWindow)</code></pre>
+    <pre><code class="lang-csharp hljs">public StructurePaneToolbar(Window parentWindow, ConfigClientPageObject configClientPageObject)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -167,25 +187,29 @@
       <tr>
         <td><span class="xref">FlaUI.Core.AutomationElements.Window</span></td>
         <td><span class="parametername">parentWindow</span></td>
-        <td><p>The parent parentWindow.</p>
-</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.ConfigClientPageObject.html">ConfigClientPageObject</a></td>
+        <td><span class="parametername">configClientPageObject</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
+  <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_Context_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.Context*"></a>
-  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_Context" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.Context">Context</h4>
-  <div class="markdown level1 summary"><p>Gets the context which UI element is wrapped by this <a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html">PageObject</a>.</p>
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickAddAppButton_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickAddAppButton*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickAddAppButton" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickAddAppButton">ClickAddAppButton()</h4>
+  <div class="markdown level1 summary"><p>Clicks the &quot;Add external application&quot; button.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override AutomationElement Context { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DialogBase ClickAddAppButton()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -195,14 +219,108 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">FlaUI.Core.AutomationElements.AutomationElement</span></td>
-        <td><p>The UI element which is wrapped.</p>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html">DialogBase</a></td>
+        <td><p><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.SelectResourceDialog.html">SelectResourceDialog</a> if a map is already added; otherwise <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.ResourceManagerDialog.html">ResourceManagerDialog</a></p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageObject.html#Bvms_UiAutomation_SDK_Commons_PageObject_Context">PageObject.Context</a></div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickAddDocumentButton_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickAddDocumentButton*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickAddDocumentButton" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickAddDocumentButton">ClickAddDocumentButton()</h4>
+  <div class="markdown level1 summary"><p>Clicks the &quot;Add document&quot; button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogBase ClickAddDocumentButton()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html">DialogBase</a></td>
+        <td><p><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.SelectResourceDialog.html">SelectResourceDialog</a> if a map is already added; otherwise <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.ResourceManagerDialog.html">ResourceManagerDialog</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickAddFolderButton_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickAddFolderButton*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickAddFolderButton" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickAddFolderButton">ClickAddFolderButton()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClickAddFolderButton()</code></pre>
+  </div>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickAddMapButton_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickAddMapButton*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickAddMapButton" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickAddMapButton">ClickAddMapButton()</h4>
+  <div class="markdown level1 summary"><p>Clicks the &quot;Add map&quot; button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogBase ClickAddMapButton()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.SDK.Commons.DialogBase.html">DialogBase</a></td>
+        <td><p><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.SelectResourceDialog.html">SelectResourceDialog</a> if a map is already added; otherwise <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.ResourceManagerDialog.html">ResourceManagerDialog</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickManageCameraSequenceButton_" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickManageCameraSequenceButton*"></a>
+  <h4 id="Bvms_UiAutomation_ConfigClient_SDK_Structures_StructurePaneToolbar_ClickManageCameraSequenceButton" data-uid="Bvms.UiAutomation.ConfigClient.SDK.Structures.StructurePaneToolbar.ClickManageCameraSequenceButton">ClickManageCameraSequenceButton()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SequenceBuilderDialog ClickManageCameraSequenceButton()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.SequenceBuilderDialog.html">SequenceBuilderDialog</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.IToolbar.html">IToolbar</a>
+  </div>
+  <div>
+      <a class="xref" href="Bvms.UiAutomation.ConfigClient.SDK.Structures.IStructurePaneToolbar.html">IStructurePaneToolbar</a>
+  </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
       <div><a class="xref" href="Bvms.UiAutomation.SDK.Commons.PageComponent.html">PageComponent</a></div>
